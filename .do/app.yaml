@@ -1,0 +1,61 @@
+name: halcyon-timetables-tools
+region: lon
+
+services:
+  - name: tools-server
+    github:
+      repo: AlteredCarduino/halcyon-timetables-tools
+      branch: main
+      deploy_on_push: true
+    dockerfile_path: Dockerfile
+    http_port: 8080
+    instance_count: 1
+    instance_size_slug: basic-xxs
+    routes:
+      - path: /
+    envs:
+      - key: ISAMS_BASE_URL
+        scope: RUN_TIME
+        type: SECRET
+      - key: ISAMS_CLIENT_ID
+        scope: RUN_TIME
+        type: SECRET
+      - key: ISAMS_CLIENT_SECRET
+        scope: RUN_TIME
+        type: SECRET
+      - key: ISAMS_SCOPE
+        scope: RUN_TIME
+        value: restapi
+      - key: SCHOOL_TIMEZONE
+        scope: RUN_TIME
+        value: Europe/London
+      - key: SUPABASE_URL
+        scope: RUN_TIME
+        type: SECRET
+      - key: SUPABASE_SERVICE_ROLE_KEY
+        scope: RUN_TIME
+        type: SECRET
+      - key: REGISTRATION_SCHOOL_KEY
+        scope: RUN_TIME
+        value: halcyon
+      - key: SUPABASE_STAFF_TABLE
+        scope: RUN_TIME
+        value: halcyon_community
+      - key: ISAMS_BATCH_API_KEY
+        scope: RUN_TIME
+        type: SECRET
+      - key: ISAMS_BATCH_API_URL
+        scope: RUN_TIME
+        type: SECRET
+      - key: ISAMS_BATCH_REFERENCE_API_KEY
+        scope: RUN_TIME
+        type: SECRET
+      - key: ROOM_BOOKINGS_ADMIN_TOKEN
+        scope: RUN_TIME
+        type: SECRET
+      - key: SUPABASE_TIMETABLED_ROOMS_BUCKET
+        scope: RUN_TIME
+        value: timetabled-rooms
+      - key: GOOGLE_SERVICE_ACCOUNT_JSON
+        scope: RUN_TIME
+        type: SECRET
