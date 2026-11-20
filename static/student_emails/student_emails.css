@@ -1,0 +1,554 @@
+.page-student-emails .se-content {
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+  color: var(--text, #1f2937);
+  line-height: 1.35;
+  padding: 0.5rem 0.65rem 1rem;
+  --text: #1f2937;
+  --muted: #6b7280;
+  --border: #d1d5db;
+  --card: #ffffff;
+  --accent: #2563eb;
+  --accent-soft: #dbeafe;
+  --accent-border: #93c5fd;
+  --se-navy: #1e2046;
+  --se-navy-soft: #eef0f8;
+  --se-navy-border: #b8bfd8;
+  --se-teal: #0f766e;
+  --se-teal-soft: #ecfdf5;
+  --se-teal-border: #99f6e4;
+  --se-violet: #6d28d9;
+  --se-violet-soft: #f5f3ff;
+  --se-violet-border: #c4b5fd;
+}
+
+.page-student-emails .se-content .header-panel,
+.page-student-emails .se-content .grid-panel {
+  background: var(--card);
+  border: 1px solid var(--border);
+  border-radius: 12px;
+  padding: 20px;
+  margin-bottom: 24px;
+  box-shadow: 0 1px 2px rgba(15, 23, 42, 0.04);
+}
+
+.page-student-emails .se-content .header-panel {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: flex-start;
+  justify-content: space-between;
+  gap: 0.75rem 1rem;
+}
+
+.page-student-emails .se-header-actions {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  flex-shrink: 0;
+}
+
+.page-student-emails .se-sync-meta {
+  margin-top: 0.35rem;
+  color: #166534;
+}
+
+.page-student-emails .se-content .header-panel {
+  background: linear-gradient(180deg, var(--se-navy-soft) 0%, #ffffff 88px);
+}
+
+.page-student-emails .se-content h1 {
+  margin: 0 0 4px;
+  font-size: 1.7rem;
+  font-weight: 700;
+  color: var(--text);
+}
+
+.page-student-emails .se-content .meta {
+  color: var(--muted);
+  margin: 0;
+  font-size: 0.9rem;
+  line-height: 1.5;
+}
+
+.page-student-emails .se-content .meta strong {
+  color: #1d4ed8;
+}
+
+.page-student-emails .se-selected-badge {
+  display: inline-block;
+  margin-left: 0.15rem;
+  padding: 0.15rem 0.55rem;
+  border-radius: 999px;
+  background: var(--accent-soft);
+  border: 1px solid var(--border);
+  color: #1e3a8a;
+  font-weight: 700;
+  font-size: 0.82rem;
+  font-variant-numeric: tabular-nums;
+}
+
+.page-student-emails .se-content .halcyon-status-msg {
+  margin: 0 0 16px;
+}
+
+.page-student-emails .se-workspace {
+  display: flex;
+  flex-direction: row;
+  align-items: stretch;
+  gap: 24px;
+  margin-bottom: 24px;
+}
+
+.page-student-emails .se-workspace .grid-panel {
+  flex: 1 1 0;
+  min-width: 0;
+  margin-bottom: 0;
+  display: flex;
+  flex-direction: column;
+  min-height: 0;
+}
+
+.page-student-emails .se-workspace .se-panel-select {
+  flex: 1.15 1 0;
+  background: linear-gradient(180deg, var(--se-navy-soft) 0%, #ffffff 72px);
+}
+
+.page-student-emails .se-workspace .se-panel-output {
+  flex: 1 1 0;
+  background: linear-gradient(180deg, var(--se-teal-soft) 0%, #ffffff 72px);
+}
+
+.page-student-emails .se-panel-stats {
+  background: linear-gradient(180deg, var(--se-violet-soft) 0%, #ffffff 72px);
+}
+
+.page-student-emails .panel-title {
+  margin: 0 0 16px;
+  font-size: 1.25rem;
+  font-weight: 700;
+  color: var(--text);
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.page-student-emails .panel-title::before {
+  content: "";
+  width: 4px;
+  height: 1.15em;
+  border-radius: 999px;
+  flex-shrink: 0;
+}
+
+.page-student-emails .se-panel-select .panel-title::before {
+  background: var(--se-navy);
+}
+
+.page-student-emails .se-panel-output .panel-title::before {
+  background: var(--se-teal);
+}
+
+.page-student-emails .se-panel-stats .panel-title::before {
+  background: var(--se-violet);
+}
+
+.page-student-emails .control-row {
+  display: flex;
+  gap: 16px;
+  flex-wrap: wrap;
+  align-items: end;
+  margin-bottom: 12px;
+}
+
+.page-student-emails .field {
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+  min-width: 200px;
+  flex: 1 1 0;
+}
+
+.page-student-emails .se-workspace .field {
+  min-width: 0;
+  flex: 1 1 120px;
+}
+
+.page-student-emails .se-workspace .field-compact {
+  flex: 0 1 120px;
+  min-width: 96px;
+}
+
+.page-student-emails .field label {
+  font-weight: 700;
+  font-size: 0.95rem;
+  color: #374151;
+}
+
+.page-student-emails .field input:focus,
+.page-student-emails .field select:focus {
+  outline: none;
+  border-color: #9ca3af;
+  box-shadow: 0 0 0 3px rgba(156, 163, 175, 0.25);
+}
+
+.page-student-emails .field input,
+.page-student-emails .field select {
+  padding: 8px 10px;
+  border: 1px solid var(--border);
+  border-radius: 8px;
+  font: inherit;
+  font-size: 0.9rem;
+  background: #fff;
+  width: 100%;
+  height: 38px;
+  min-height: 38px;
+  box-sizing: border-box;
+  color: var(--text);
+}
+
+.page-student-emails .field-actions {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+  align-items: end;
+  flex: 0 0 auto;
+}
+
+.page-student-emails .btn {
+  padding: 8px 14px;
+  border: 1px solid var(--border);
+  border-radius: 8px;
+  background: #f9fafb;
+  font: inherit;
+  font-size: 0.9rem;
+  line-height: 1.35;
+  font-weight: 600;
+  cursor: pointer;
+  box-sizing: border-box;
+  min-height: 38px;
+}
+
+.page-student-emails .btn:hover {
+  background: #f3f4f6;
+  border-color: var(--border);
+}
+
+.page-student-emails .btn-primary {
+  background: var(--accent-soft);
+  border-color: var(--border);
+  color: #1e3a8a;
+}
+
+.page-student-emails .btn-primary:hover {
+  background: #bfdbfe;
+}
+
+.page-student-emails .btn:disabled {
+  opacity: 0.55;
+  cursor: not-allowed;
+}
+
+.page-student-emails .se-student-list {
+  flex: 1 1 auto;
+  min-height: 0;
+  max-height: min(58vh, 520px);
+  overflow: auto;
+  border: 1px solid var(--border);
+  border-radius: 8px;
+  background: #fff;
+}
+
+.page-student-emails .se-student-row {
+  display: flex;
+  gap: 0.6rem;
+  align-items: flex-start;
+  padding: 0.55rem 0.75rem;
+  cursor: pointer;
+  border-bottom: 1px solid #eef1f5;
+  transition: background-color 0.12s ease;
+}
+
+.page-student-emails .se-student-row:last-child {
+  border-bottom: none;
+}
+
+.page-student-emails .se-student-row:hover {
+  background: #f8fafc;
+}
+
+.page-student-emails .se-student-row:has(.se-student-cb:checked) {
+  background: var(--accent-soft);
+}
+
+.page-student-emails .se-student-cb {
+  margin-top: 0.15rem;
+  width: 1.05rem;
+  height: 1.05rem;
+  accent-color: var(--accent);
+  flex-shrink: 0;
+}
+
+.page-student-emails .se-student-main {
+  display: flex;
+  flex-direction: column;
+  gap: 0.12rem;
+  min-width: 0;
+}
+
+.page-student-emails .se-student-name {
+  font-size: 0.875rem;
+  font-weight: 600;
+  color: var(--text);
+}
+
+.page-student-emails .se-student-meta {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 0.35rem 0.45rem;
+  font-size: 0.8125rem;
+  color: var(--muted);
+  word-break: break-word;
+}
+
+.page-student-emails .se-year-badge {
+  display: inline-block;
+  padding: 0.08rem 0.45rem;
+  border-radius: 999px;
+  font-size: 0.72rem;
+  font-weight: 700;
+  letter-spacing: 0.01em;
+  border: 1px solid var(--border);
+}
+
+.page-student-emails .se-year-badge[data-year="6"] {
+  background: #dbeafe;
+  color: #1e40af;
+}
+
+.page-student-emails .se-year-badge[data-year="7"] {
+  background: #e0e7ff;
+  color: #3730a3;
+}
+
+.page-student-emails .se-year-badge[data-year="8"] {
+  background: #ede9fe;
+  color: #5b21b6;
+}
+
+.page-student-emails .se-year-badge[data-year="9"] {
+  background: #fae8ff;
+  color: #86198f;
+}
+
+.page-student-emails .se-year-badge[data-year="10"] {
+  background: #ccfbf1;
+  color: #0f766e;
+}
+
+.page-student-emails .se-year-badge[data-year="11"] {
+  background: #dcfce7;
+  color: #166534;
+}
+
+.page-student-emails .se-year-badge[data-year="12"] {
+  background: #fef9c3;
+  color: #854d0e;
+}
+
+.page-student-emails .se-year-badge[data-year="13"] {
+  background: #ffe4e6;
+  color: #be123c;
+}
+
+.page-student-emails .se-year-badge:not([data-year="6"]):not([data-year="7"]):not([data-year="8"]):not([data-year="9"]):not([data-year="10"]):not([data-year="11"]):not([data-year="12"]):not([data-year="13"]) {
+  background: #f3f4f6;
+  color: #374151;
+}
+
+.page-student-emails .se-student-email {
+  color: #475569;
+}
+
+.page-student-emails .se-output-meta {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 12px;
+  flex-wrap: wrap;
+  margin-bottom: 12px;
+}
+
+.page-student-emails .se-meta-chip {
+  display: inline-block;
+  padding: 0.25rem 0.65rem;
+  border-radius: 999px;
+  font-size: 0.8125rem;
+  font-weight: 600;
+  background: #f3f4f6;
+  border: 1px solid #e5e7eb;
+  color: #374151;
+}
+
+.page-student-emails .se-meta-chip.has-emails {
+  background: var(--se-teal-soft);
+  color: var(--se-teal);
+}
+
+.page-student-emails .se-hint {
+  margin: 0;
+  font-size: 0.875rem;
+  color: var(--muted);
+}
+
+.page-student-emails .se-email-output {
+  width: 100%;
+  box-sizing: border-box;
+  font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, monospace;
+  font-size: 0.8125rem;
+  line-height: 1.5;
+  padding: 0.75rem;
+  border-radius: 8px;
+  border: 1px solid var(--border);
+  background: #fafbfc;
+  color: var(--text);
+  resize: vertical;
+  min-height: 11rem;
+  flex: 1 1 auto;
+}
+
+.page-student-emails .se-email-output.has-content {
+  background: #ffffff;
+}
+
+.page-student-emails .se-output-body {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  flex: 1 1 auto;
+  min-height: 0;
+}
+
+.page-student-emails .se-output-actions {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+}
+
+.page-student-emails .se-note,
+.page-student-emails .se-loading,
+.page-student-emails .se-empty {
+  margin: 0;
+  padding: 0.75rem;
+  font-size: 0.875rem;
+  color: var(--muted);
+}
+
+.page-student-emails .se-note-success {
+  padding: 0.55rem 0.75rem;
+  border-radius: 8px;
+  background: #ecfdf5;
+  border: 1px solid var(--border);
+  color: #047857;
+  font-size: 0.8125rem;
+}
+
+.page-student-emails .se-usage-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 24px;
+}
+
+.page-student-emails .se-usage-block-title {
+  margin: 0 0 0.55rem;
+  font-size: 0.95rem;
+  font-weight: 700;
+  color: var(--text);
+}
+
+.page-student-emails .se-usage-since {
+  font-weight: 500;
+  color: var(--muted);
+  font-size: 0.82rem;
+}
+
+.page-student-emails .se-usage-counts {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.page-student-emails .se-usage-counts li {
+  display: flex;
+  align-items: baseline;
+  gap: 0.45rem;
+  padding: 0.3rem 0;
+  font-size: 0.875rem;
+  color: #374151;
+}
+
+.page-student-emails .se-usage-counts li.se-usage-empty {
+  color: #9ca3af;
+  font-style: italic;
+}
+
+.page-student-emails .se-usage-counts li[data-event="page_view"] .se-usage-n {
+  background: var(--accent-soft);
+  color: #1e3a8a;
+}
+
+.page-student-emails .se-usage-counts li[data-event="copy_emails"] .se-usage-n {
+  background: var(--se-teal-soft);
+  color: var(--se-teal);
+}
+
+.page-student-emails .se-usage-counts li[data-event="add_parents"] .se-usage-n {
+  background: var(--se-violet-soft);
+  color: var(--se-violet);
+}
+
+.page-student-emails .se-usage-n {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  min-width: 1.75rem;
+  padding: 0.1rem 0.35rem;
+  border-radius: 6px;
+  font-weight: 700;
+  font-variant-numeric: tabular-nums;
+  background: #f3f4f6;
+  color: #1f2937;
+}
+
+.page-student-emails .visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  padding: 0;
+  margin: -1px;
+  overflow: hidden;
+  clip: rect(0, 0, 0, 0);
+  white-space: nowrap;
+  border: 0;
+}
+
+@media (max-width: 640px) {
+  .page-student-emails .se-workspace {
+    flex-direction: column;
+  }
+
+  .page-student-emails .se-content {
+    padding: 0;
+  }
+
+  .page-student-emails .se-content .header-panel,
+  .page-student-emails .se-content .grid-panel {
+    border-radius: 10px;
+    padding: 14px;
+    margin-bottom: 16px;
+  }
+
+  .page-student-emails .se-usage-grid {
+    grid-template-columns: 1fr;
+    gap: 16px;
+  }
+}

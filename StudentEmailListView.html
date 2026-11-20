@@ -1,0 +1,545 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Student Emails</title>
+    <link rel="stylesheet" href="/static/signin/styles.css" />
+    <link rel="stylesheet" href="/static/signin/halcyon-shell.css" />
+    <link rel="stylesheet" href="/static/signin/halcyon-subpages.css?v=15" />
+    <link rel="stylesheet" href="/static/signin/halcyon-tools-section.css?v=3" />
+    <link rel="stylesheet" href="/static/student_emails/student_emails.css?v=6" />
+  </head>
+  <body class="halcyon-page halcyon-tools-section">
+    <div class="halcyon-app">
+      <div id="halcyonNavMount"></div>
+      <script>window.HALCYON_NAV_MODE = 'tools'; window.HALCYON_SECTION_PAGE = 'studentemails';</script>
+    <script src="/static/signin/halcyon-nav.js?v=17"></script>
+      <script src="/static/signin/halcyon-shell.js?v=9"></script>
+      <main class="halcyon-main page-student-emails">
+<div class="se-content">
+          <section class="header-panel">
+            <div class="header-main">
+              <h1>Student Emails</h1>
+              <p class="meta">
+                Build Gmail <strong>To</strong> or <strong>Bcc</strong> lists from student and parent emails ·
+                <span class="se-selected-badge" id="selectedCount">0 selected</span>
+              </p>
+              <p class="se-sync-meta meta" id="syncMeta" hidden></p>
+            </div>
+            <div class="se-header-actions">
+              <button type="button" class="btn btn-primary" id="btnResyncIsams">
+                Refresh from iSAMS
+              </button>
+            </div>
+          </section>
+
+          <p id="err" class="halcyon-status-msg" hidden></p>
+
+          <div class="se-workspace">
+            <section class="grid-panel se-panel-select">
+              <h2 class="panel-title">Select students</h2>
+              <div class="control-row">
+                <div class="field">
+                  <label for="searchInput">Search</label>
+                  <input
+                    type="search"
+                    id="searchInput"
+                    placeholder="Name or email…"
+                    autocomplete="off"
+                  />
+                </div>
+                <div class="field field-compact">
+                  <label for="yearFilter">Year</label>
+                  <select id="yearFilter" aria-label="Filter by year">
+                    <option value="">All years</option>
+                  </select>
+                </div>
+                <div class="field-actions">
+                  <button type="button" class="btn" id="btnSelectAll">Select all</button>
+                  <button type="button" class="btn" id="btnClear">Clear</button>
+                </div>
+              </div>
+              <div class="se-student-list halcyon-scroll-panel" id="studentList">
+                <p class="se-loading" id="loadingStudents">Loading students…</p>
+              </div>
+            </section>
+
+            <section class="grid-panel se-panel-output">
+              <h2 class="panel-title">Gmail recipients</h2>
+              <div class="se-output-meta">
+                <span class="se-meta-chip" id="emailCount">0 emails</span>
+                <span class="se-hint">Paste into Gmail <strong>To</strong> or <strong>Bcc</strong></span>
+              </div>
+              <div class="se-output-body">
+                <textarea
+                  id="emailOutput"
+                  class="se-email-output"
+                  readonly
+                  rows="10"
+                  spellcheck="false"
+                  aria-label="Email list for Gmail"
+                ></textarea>
+                <div class="se-output-actions">
+                  <button type="button" class="btn btn-primary" id="btnCopy">Copy to clipboard</button>
+                  <button type="button" class="btn" id="btnAddParents">Add Parents</button>
+                </div>
+                <p class="se-note se-note-success" id="parentsNote" hidden></p>
+              </div>
+            </section>
+          </div>
+
+          <section class="grid-panel se-panel-stats" id="usageFooter" aria-live="polite">
+            <h2 class="panel-title">Page usage</h2>
+            <div class="se-usage-grid" id="usageGrid">
+              <div class="se-usage-block">
+                <h3 class="se-usage-block-title">Last 30 days</h3>
+                <ul class="se-usage-counts" id="usageCounts30"><li>Loading…</li></ul>
+              </div>
+              <div class="se-usage-block">
+                <h3 class="se-usage-block-title">
+                  All time <span class="se-usage-since" id="usageSince"></span>
+                </h3>
+                <ul class="se-usage-counts" id="usageCountsAll"><li>Loading…</li></ul>
+              </div>
+            </div>
+          </section>
+        </div>
+      </main>
+    </div>
+<script>
+      (function () {
+        var students = [];
+        var selected = {};
+        var includeParents = false;
+        var USAGE_LABELS = {
+          page_view: 'Page visits',
+          copy_emails: 'Copy to clipboard',
+          add_parents: 'Add Parents'
+        };
+        var USAGE_ORDER = ['page_view', 'copy_emails', 'add_parents'];
+
+        function el(id) {
+          return document.getElementById(id);
+        }
+
+        function setErr(msg) {
+          var e = el('err');
+          if (!e) return;
+          if (msg) {
+            e.textContent = msg;
+            e.hidden = false;
+          } else {
+            e.textContent = '';
+            e.hidden = true;
+          }
+        }
+
+        function dedupeEmails(list) {
+          var out = [];
+          var seen = {};
+          (list || []).forEach(function (em) {
+            var x = String(em || '').trim().toLowerCase();
+            if (x && x.indexOf('@') !== -1 && !seen[x]) {
+              seen[x] = true;
+              out.push(x);
+            }
+          });
+          return out;
+        }
+
+        function gmailLine(list) {
+          return dedupeEmails(list).join(', ');
+        }
+
+        function selectedSchoolIds() {
+          return Object.keys(selected).filter(function (k) {
+            return selected[k];
+          });
+        }
+
+        function selectedStudentEmails() {
+          var out = [];
+          students.forEach(function (s) {
+            if (selected[s.schoolId] && s.email) out.push(s.email);
+          });
+          return dedupeEmails(out);
+        }
+
+        function currentEmailList() {
+          var text = el('emailOutput').value || '';
+          if (!text.trim()) return [];
+          return text.split(',').map(function (p) {
+            return p.trim();
+          });
+        }
+
+        function updateOutputFromList(list) {
+          var deduped = dedupeEmails(list);
+          el('emailOutput').value = gmailLine(deduped);
+          el('emailCount').textContent = deduped.length + ' email' + (deduped.length === 1 ? '' : 's');
+          el('emailCount').classList.toggle('has-emails', deduped.length > 0);
+          el('emailOutput').classList.toggle('has-content', deduped.length > 0);
+        }
+
+        function refreshStudentEmailsOnly() {
+          includeParents = false;
+          el('parentsNote').hidden = true;
+          updateOutputFromList(selectedStudentEmails());
+        }
+
+        function updateSelectedCount() {
+          el('selectedCount').textContent = selectedSchoolIds().length + ' selected';
+        }
+
+        function escapeHtml(s) {
+          return String(s)
+            .replace(/&/g, '&amp;')
+            .replace(/</g, '&lt;')
+            .replace(/>/g, '&gt;')
+            .replace(/"/g, '&quot;');
+        }
+
+        function formatTrackingSince(iso) {
+          if (!iso) return '';
+          var d = new Date(iso);
+          if (isNaN(d.getTime())) return '';
+          return '(since ' + d.toLocaleDateString(undefined, { day: 'numeric', month: 'short', year: 'numeric' }) + ')';
+        }
+
+        function renderUsageList(totals) {
+          totals = totals || {};
+          var html = USAGE_ORDER.map(function (key) {
+            return (
+              '<li data-event="' +
+              key +
+              '"><span class="se-usage-n">' +
+              (totals[key] || 0) +
+              '</span> ' +
+              escapeHtml(USAGE_LABELS[key] || key) +
+              '</li>'
+            );
+          }).join('');
+          Object.keys(totals).forEach(function (key) {
+            if (USAGE_ORDER.indexOf(key) !== -1) return;
+            html +=
+              '<li data-event="' +
+              key +
+              '"><span class="se-usage-n">' +
+              totals[key] +
+              '</span> ' +
+              escapeHtml(key) +
+              '</li>';
+          });
+          return html || '<li class="se-usage-empty">No usage recorded yet.</li>';
+        }
+
+        function logUsage(eventType, extra) {
+          fetch('/api/student-emails/usage', {
+            method: 'POST',
+            credentials: 'same-origin',
+            headers: { 'Content-Type': 'application/json' },
+            body: JSON.stringify(
+              Object.assign(
+                {
+                  eventType: eventType,
+                  studentCount: selectedSchoolIds().length,
+                  emailCount: dedupeEmails(currentEmailList()).length,
+                  includeParents: includeParents
+                },
+                extra || {}
+              )
+            )
+          })
+            .then(function (r) {
+              return r.json();
+            })
+            .then(function () {
+              loadUsageStats();
+            })
+            .catch(function () {});
+        }
+
+        function loadUsageStats() {
+          fetch('/api/student-emails/usage/summary', { credentials: 'same-origin' })
+            .then(function (r) {
+              return r.text().then(function (text) {
+                var j = {};
+                try {
+                  j = text ? JSON.parse(text) : {};
+                } catch (e) {
+                  throw new Error('Invalid JSON');
+                }
+                if (!r.ok) throw new Error((j && j.error) || r.statusText);
+                return j;
+              });
+            })
+            .then(function (data) {
+              if (!data.ok) {
+                var msg = '<li class="se-usage-empty">Usage counts unavailable.</li>';
+                el('usageCounts30').innerHTML = msg;
+                el('usageCountsAll').innerHTML = msg;
+                return;
+              }
+              if (data.last30 && data.allTime) {
+                el('usageCounts30').innerHTML = renderUsageList(data.last30.totals);
+                el('usageCountsAll').innerHTML = renderUsageList(data.allTime.totals);
+                el('usageSince').textContent = formatTrackingSince(data.allTime.trackingSince);
+                return;
+              }
+              el('usageCounts30').innerHTML = renderUsageList(data.totals);
+              el('usageCountsAll').innerHTML = '<li class="se-usage-empty">—</li>';
+            })
+            .catch(function () {
+              var msg = '<li class="se-usage-empty">Could not load usage counts.</li>';
+              el('usageCounts30').innerHTML = msg;
+              el('usageCountsAll').innerHTML = msg;
+            });
+        }
+
+        function filteredStudents() {
+          var q = (el('searchInput').value || '').trim().toLowerCase();
+          var year = el('yearFilter').value;
+          return students.filter(function (s) {
+            if (year && String(s.year) !== year) return false;
+            if (!q) return true;
+            return (
+              (s.name || '').toLowerCase().indexOf(q) !== -1 ||
+              (s.email || '').toLowerCase().indexOf(q) !== -1 ||
+              (s.schoolId || '').toLowerCase().indexOf(q) !== -1
+            );
+          });
+        }
+
+        function renderStudentList() {
+          var container = el('studentList');
+          var list = filteredStudents();
+          if (!list.length) {
+            container.innerHTML = '<p class="se-empty">No students match.</p>';
+            return;
+          }
+          container.innerHTML = list
+            .map(function (s) {
+              var checked = selected[s.schoolId] ? ' checked' : '';
+              var email = s.email || '—';
+              return (
+                '<label class="se-student-row">' +
+                '<input type="checkbox" class="se-student-cb" data-id="' +
+                s.schoolId +
+                '"' +
+                checked +
+                ' />' +
+                '<span class="se-student-main">' +
+                '<span class="se-student-name">' +
+                escapeHtml(s.name || '—') +
+                '</span>' +
+                '<span class="se-student-meta">' +
+                '<span class="se-year-badge" data-year="' +
+                escapeHtml(String(s.year || '')) +
+                '">Year ' +
+                escapeHtml(s.year || '?') +
+                '</span>' +
+                '<span class="se-student-email">' +
+                escapeHtml(email) +
+                '</span>' +
+                '</span>' +
+                '</span></label>'
+              );
+            })
+            .join('');
+
+          container.querySelectorAll('.se-student-cb').forEach(function (cb) {
+            cb.addEventListener('change', function () {
+              var id = cb.getAttribute('data-id');
+              if (cb.checked) selected[id] = true;
+              else delete selected[id];
+              includeParents = false;
+              el('parentsNote').hidden = true;
+              updateSelectedCount();
+              refreshStudentEmailsOnly();
+            });
+          });
+        }
+
+        function populateYearFilter() {
+          var years = {};
+          students.forEach(function (s) {
+            if (s.year) years[s.year] = true;
+          });
+          var sel = el('yearFilter');
+          Object.keys(years)
+            .sort(function (a, b) {
+              return parseInt(a, 10) - parseInt(b, 10);
+            })
+            .forEach(function (y) {
+              var opt = document.createElement('option');
+              opt.value = y;
+              opt.textContent = 'Year ' + y;
+              sel.appendChild(opt);
+            });
+        }
+
+        function loadStudents() {
+          fetch('/api/student-emails/students', { credentials: 'same-origin' })
+            .then(function (r) {
+              return r.text().then(function (text) {
+                var j = {};
+                try {
+                  j = text ? JSON.parse(text) : {};
+                } catch (e) {
+                  throw new Error(r.ok ? 'Invalid JSON' : text.slice(0, 200) || r.statusText);
+                }
+                if (!r.ok) throw new Error((j && j.error) || r.statusText);
+                return j;
+              });
+            })
+            .then(function (data) {
+              students = data.students || [];
+              populateYearFilter();
+              renderStudentList();
+              logUsage('page_view');
+            })
+            .catch(function (er) {
+              el('studentList').innerHTML = '';
+              setErr(er.message || String(er));
+            });
+        }
+
+        el('searchInput').addEventListener('input', renderStudentList);
+        el('yearFilter').addEventListener('change', renderStudentList);
+
+        el('btnSelectAll').addEventListener('click', function () {
+          filteredStudents().forEach(function (s) {
+            selected[s.schoolId] = true;
+          });
+          updateSelectedCount();
+          renderStudentList();
+          refreshStudentEmailsOnly();
+        });
+
+        el('btnClear').addEventListener('click', function () {
+          selected = {};
+          includeParents = false;
+          el('parentsNote').hidden = true;
+          updateSelectedCount();
+          renderStudentList();
+          refreshStudentEmailsOnly();
+        });
+
+        el('btnCopy').addEventListener('click', function () {
+          var line = el('emailOutput').value || '';
+          if (!line.trim()) {
+            setErr('Select students first (or add parents).');
+            return;
+          }
+          setErr('');
+          navigator.clipboard.writeText(line).then(
+            function () {
+              logUsage('copy_emails');
+            },
+            function () {
+              el('emailOutput').select();
+              setErr('Could not copy automatically — press Cmd/Ctrl+C.');
+            }
+          );
+        });
+
+        el('btnAddParents').addEventListener('click', function () {
+          var ids = selectedSchoolIds();
+          if (!ids.length) {
+            setErr('Select at least one student.');
+            return;
+          }
+          setErr('');
+          var btn = el('btnAddParents');
+          btn.disabled = true;
+          fetch('/api/student-emails/parents', {
+            method: 'POST',
+            credentials: 'same-origin',
+            headers: { 'Content-Type': 'application/json' },
+            body: JSON.stringify({ schoolIds: ids })
+          })
+            .then(function (r) {
+              return r.text().then(function (text) {
+                var j = {};
+                try {
+                  j = text ? JSON.parse(text) : {};
+                } catch (e) {
+                  throw new Error(r.ok ? 'Invalid JSON' : text.slice(0, 200) || r.statusText);
+                }
+                if (!r.ok) throw new Error((j && j.error) || r.statusText);
+                return j;
+              });
+            })
+            .then(function (data) {
+              includeParents = true;
+              var merged = dedupeEmails(selectedStudentEmails().concat(data.parentEmails || []));
+              updateOutputFromList(merged);
+              var note = el('parentsNote');
+              note.hidden = false;
+              note.textContent =
+                'Added ' +
+                dedupeEmails(data.parentEmails || []).length +
+                ' parent email(s) from halcyon_community.';
+              logUsage('add_parents', { parentCount: dedupeEmails(data.parentEmails || []).length });
+            })
+            .catch(function (er) {
+              setErr(er.message || String(er));
+            })
+            .finally(function () {
+              btn.disabled = false;
+            });
+        });
+
+        loadUsageStats();
+        loadStudents();
+
+        el('btnResyncIsams').addEventListener('click', function () {
+          var btn = el('btnResyncIsams');
+          var meta = el('syncMeta');
+          if (!confirm('Reload the student list from iSAMS? This replaces halcyon_registration_data (may take a minute).')) {
+            return;
+          }
+          setErr('');
+          btn.disabled = true;
+          btn.textContent = 'Refreshing…';
+          meta.hidden = true;
+          fetch('/api/student-emails/resync', {
+            method: 'POST',
+            credentials: 'same-origin',
+            headers: { 'Content-Type': 'application/json' },
+            body: '{}',
+          })
+            .then(function (r) {
+              return r.text().then(function (text) {
+                var j = {};
+                try {
+                  j = text ? JSON.parse(text) : {};
+                } catch (e) {
+                  throw new Error(r.ok ? 'Invalid JSON' : text.slice(0, 200) || r.statusText);
+                }
+                if (!r.ok) throw new Error((j && j.error) || r.statusText);
+                return j;
+              });
+            })
+            .then(function (data) {
+              selected = {};
+              includeParents = false;
+              el('parentsNote').hidden = true;
+              meta.textContent = data.message || 'Student list updated from iSAMS.';
+              meta.hidden = false;
+              loadStudents();
+              loadUsageStats();
+            })
+            .catch(function (er) {
+              setErr(er.message || String(er));
+            })
+            .finally(function () {
+              btn.disabled = false;
+              btn.textContent = 'Refresh from iSAMS';
+            });
+        });
+      })();
+    </script>
+  </body>
+</html>

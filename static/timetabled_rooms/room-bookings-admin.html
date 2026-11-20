@@ -1,0 +1,258 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Room Bookings Admin</title>
+    <link rel="stylesheet" href="/static/signin/styles.css" />
+    <link rel="stylesheet" href="/static/signin/halcyon-shell.css" />
+    <link rel="stylesheet" href="/static/signin/halcyon-subpages.css?v=13" />
+    <link rel="stylesheet" href="/static/signin/halcyon-tools-section.css?v=4" />
+    <link rel="stylesheet" href="/static/timetabled_rooms/room-bookings-admin.css?v=9" />
+  </head>
+  <body class="halcyon-page halcyon-tools-section">
+    <div class="halcyon-app">
+      <div id="halcyonNavMount"></div>
+      <script>window.HALCYON_NAV_MODE = 'admin'; window.HALCYON_SECTION_PAGE = 'roombookingsadmin';</script>
+    <script src="/static/signin/halcyon-nav.js?v=32"></script>
+      <script src="/static/signin/halcyon-shell.js?v=9"></script>
+      <main class="halcyon-main page-room-bookings-admin">
+<div class="rba-content">
+            <section class="header-panel">
+              <div class="header-main">
+                <h1>Room Bookings Admin</h1>
+                <p class="meta">
+                  Block rooms on repeating days or periods, or create visible timetable bookings.
+                  <a href="/timetabled-rooms">View timetabled grid</a>
+                </p>
+                <p class="meta rba-calendar-meta" id="school-calendar-meta" hidden></p>
+              </div>
+            </section>
+
+            <section class="rba-card" id="auth-card">
+              <h2>Admin access</h2>
+              <p class="rba-hint">Enter the room bookings admin token (set as <code>ROOM_BOOKINGS_ADMIN_TOKEN</code> on the server).</p>
+              <div class="rba-row">
+                <input id="admin-token" type="password" placeholder="Admin token" autocomplete="off" />
+                <button type="button" class="rba-btn primary" id="save-token-btn">Unlock</button>
+              </div>
+              <p id="auth-error" class="rba-error" hidden></p>
+            </section>
+
+            <div id="admin-panel" hidden>
+              <section class="rba-card">
+                <h2>Block room (closes booking)</h2>
+                <p class="rba-hint">One rule covers many dates. Choose which days repeat and which periods are blocked. The block title appears on the grid in orange — staff cannot book those slots.</p>
+                <form id="block-form" class="rba-form">
+                  <div class="rba-grid">
+                    <label>Room
+                      <select id="block-room" required></select>
+                    </label>
+                    <label>From date
+                      <input id="block-from" type="date" required />
+                    </label>
+                    <label>To date
+                      <input id="block-to" type="date" required />
+                    </label>
+                    <label>Title / reason
+                      <input id="block-title" type="text" maxlength="120" required placeholder="e.g. Staff office, Maintenance" />
+                    </label>
+                    <label>Staff / organiser
+                      <input id="block-staff" type="text" maxlength="80" required placeholder="Your name" />
+                    </label>
+                  </div>
+
+                  <fieldset class="rba-fieldset">
+                    <legend>Repeat on</legend>
+                    <p class="rba-subhint">Pick which days to block each week:</p>
+                    <div class="rba-weekdays" id="block-weekdays">
+                      <label class="rba-day"><input type="checkbox" value="0" checked /> Mon</label>
+                      <label class="rba-day"><input type="checkbox" value="1" checked /> Tue</label>
+                      <label class="rba-day"><input type="checkbox" value="2" checked /> Wed</label>
+                      <label class="rba-day"><input type="checkbox" value="3" checked /> Thu</label>
+                      <label class="rba-day"><input type="checkbox" value="4" checked /> Fri</label>
+                      <label class="rba-day"><input type="checkbox" value="5" /> Sat</label>
+                      <label class="rba-day"><input type="checkbox" value="6" /> Sun</label>
+                    </div>
+                  </fieldset>
+
+                  <fieldset class="rba-fieldset">
+                    <legend>Periods blocked each day</legend>
+                    <p class="rba-subhint">Pick which timetable periods to block:</p>
+                    <div class="rba-periods" id="block-periods">
+                      <p class="rba-muted">Loading periods…</p>
+                    </div>
+                    <div class="rba-preset-row">
+                      <button type="button" class="rba-preset" id="block-periods-all">All periods</button>
+                      <button type="button" class="rba-preset" id="block-periods-none">Clear</button>
+                    </div>
+                  </fieldset>
+
+                  <p class="rba-summary" id="block-summary" aria-live="polite"></p>
+
+                  <label class="rba-check">
+                    <input id="block-clear-bookings" type="checkbox" checked />
+                    Remove overlapping visible bookings in this range
+                  </label>
+                  <div class="rba-actions">
+                    <button type="button" class="rba-btn secondary" id="block-year-btn">Full school year dates</button>
+                    <button type="submit" class="rba-btn primary">Create repeating block</button>
+                  </div>
+                  <p id="block-msg" class="rba-msg" hidden></p>
+                </form>
+              </section>
+
+              <section class="rba-card">
+                <h2>Visible booking (shows on grid)</h2>
+                <p class="rba-hint">Single-day booking with custom times — appears on the timetabled rooms grid.</p>
+                <form id="create-form" class="rba-form">
+                  <div class="rba-grid">
+                    <label>Room
+                      <select id="create-room" required></select>
+                    </label>
+                    <label>Date
+                      <input id="create-date" type="date" required />
+                    </label>
+                    <label>Title / subject
+                      <input id="create-title" type="text" maxlength="120" required placeholder="e.g. Maths support" />
+                    </label>
+                    <label>Staff name
+                      <input id="create-staff" type="text" maxlength="80" required placeholder="Your name" />
+                    </label>
+                    <label>Start
+                      <input id="create-start" type="time" step="900" value="14:00" required />
+                    </label>
+                    <label>End
+                      <input id="create-end" type="time" step="900" value="14:45" required />
+                    </label>
+                  </div>
+                  <label class="rba-check">
+                    <input id="create-replace" type="checkbox" checked />
+                    Replace overlapping bookings on this room &amp; date
+                  </label>
+                  <div class="rba-actions">
+                    <button type="submit" class="rba-btn primary">Create visible booking</button>
+                  </div>
+                  <p id="create-msg" class="rba-msg" hidden></p>
+                </form>
+              </section>
+
+              <section class="rba-card">
+                <h2>Clear room for a day</h2>
+                <form id="clear-form" class="rba-form rba-row">
+                  <select id="clear-room" required></select>
+                  <input id="clear-date" type="date" required />
+                  <button type="submit" class="rba-btn danger">Remove all visible bookings</button>
+                </form>
+                <p id="clear-msg" class="rba-msg" hidden></p>
+              </section>
+
+              <section class="rba-card">
+                <div class="rba-list-head">
+                  <h2>Room blocks</h2>
+                  <button type="button" class="rba-btn secondary" id="refresh-blocks-btn">Refresh</button>
+                </div>
+                <div class="rba-table-wrap">
+                  <table class="rba-table">
+                    <thead>
+                      <tr>
+                        <th>Room</th>
+                        <th>Dates</th>
+                        <th>Repeat</th>
+                        <th>Period</th>
+                        <th>Reason</th>
+                        <th></th>
+                      </tr>
+                    </thead>
+                    <tbody id="blocks-body">
+                      <tr><td colspan="6" class="rba-muted">Loading…</td></tr>
+                    </tbody>
+                  </table>
+                </div>
+              </section>
+
+              <section class="rba-card">
+                <div class="rba-list-head">
+                  <h2>Visible bookings</h2>
+                  <button type="button" class="rba-btn secondary" id="refresh-list-btn">Refresh</button>
+                </div>
+                <div class="rba-filters rba-grid">
+                  <label>From
+                    <input id="filter-from" type="date" />
+                  </label>
+                  <label>To
+                    <input id="filter-to" type="date" />
+                  </label>
+                  <label>Room
+                    <select id="filter-room">
+                      <option value="">All rooms</option>
+                    </select>
+                  </label>
+                  <div class="rba-actions">
+                    <button type="button" class="rba-btn secondary" id="apply-filter-btn">Apply</button>
+                  </div>
+                </div>
+                <div class="rba-table-wrap">
+                  <table class="rba-table">
+                    <thead>
+                      <tr>
+                        <th>Date</th>
+                        <th>Room</th>
+                        <th>Time</th>
+                        <th>Title</th>
+                        <th>Staff</th>
+                        <th></th>
+                      </tr>
+                    </thead>
+                    <tbody id="bookings-body">
+                      <tr><td colspan="6" class="rba-muted">Loading…</td></tr>
+                    </tbody>
+                  </table>
+                </div>
+              </section>
+
+            <section class="rba-card">
+              <h2>Restricted room access</h2>
+              <p class="rba-hint">
+                Rooms such as <strong>2.3 (Admissions)</strong> appear on the grid but only staff listed here can book them.
+                Add school emails below (one room at a time).
+              </p>
+              <form id="room-access-form" class="rba-form rba-row">
+                <select id="access-room" required></select>
+                <input id="access-email" type="email" placeholder="staff@halcyonlondon.org" autocomplete="email" required />
+                <button type="submit" class="rba-btn primary">Add email</button>
+              </form>
+              <p id="room-access-msg" class="rba-msg" hidden></p>
+              <div class="rba-table-wrap">
+                <table class="rba-table">
+                  <thead>
+                    <tr>
+                      <th>Room</th>
+                      <th>Staff email</th>
+                      <th></th>
+                    </tr>
+                  </thead>
+                  <tbody id="room-access-body">
+                    <tr><td colspan="3" class="rba-muted">Loading…</td></tr>
+                  </tbody>
+                </table>
+              </div>
+            </section>
+
+            <section class="rba-card">
+              <h2>Authorised bookers</h2>
+                <p class="rba-hint">
+                  Staff must enter their school email when booking. Deleting a booking requires the same email.
+                  To restrict who can book, set <code>ROOM_BOOKINGS_ALLOWED_EMAILS</code> on the server
+                  (comma-separated addresses). Leave empty to allow any staff email.
+                </p>
+                <p id="allowed-emails-summary" class="rba-summary" aria-live="polite">Loading…</p>
+                <ul id="allowed-emails-list" class="rba-email-list"></ul>
+              </section>
+            </div>
+          </div>
+      </main>
+    </div>
+<script src="/static/timetabled_rooms/room-bookings-admin.js?v=10"></script>
+  </body>
+</html>

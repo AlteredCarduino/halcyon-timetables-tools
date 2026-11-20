@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>School year calendar — year at a glance</title>
+    <link rel="stylesheet" href="/static/signin/styles.css" />
+    <link rel="stylesheet" href="/static/signin/halcyon-shell.css" />
+    <link rel="stylesheet" href="/static/signin/halcyon-subpages.css?v=15" />
+    <link rel="stylesheet" href="/static/signin/halcyon-tools-section.css?v=3" />
+    <link rel="stylesheet" href="/static/today/today.css?v=4" />
+    <link rel="stylesheet" href="/static/today/school-year-calendar.css?v=23" />
+  </head>
+  <body class="halcyon-page halcyon-tools-section syc-layout-fixed">
+    <div class="halcyon-app">
+      <div id="halcyonNavMount"></div>
+      <script>
+        window.HALCYON_NAV_MODE = 'tools';
+        window.HALCYON_SECTION_PAGE = 'schoolyearcalendar';
+        window.SYC_PAGE_MODE = 'list';
+      </script>
+      <script src="/static/signin/halcyon-nav.js?v=21"></script>
+      <script src="/static/signin/halcyon-shell.js?v=9"></script>
+      <main class="halcyon-main page-today page-school-year-calendar page-school-year-calendar-list">
+        <div class="today-content syc-page-shell">
+          <section class="header-panel syc-header-panel">
+            <div class="syc-header-layout">
+              <div class="syc-header-left">
+                <h1>Year at a glance</h1>
+                <div class="syc-year-controls">
+                  <label class="syc-year-label" for="yearSelect">
+                    <span class="syc-year-label-text">Year from</span>
+                  </label>
+                  <select
+                    id="yearSelect"
+                    class="today-day-picker syc-year-select"
+                    aria-label="Academic year"
+                  ></select>
+                  <button type="button" class="btn btn-primary" id="btnRefresh">Refresh</button>
+                </div>
+              </div>
+              <div class="header-main syc-header-right">
+                <p class="meta">
+                  All twelve months on one page (3×4) — mini calendars plus events for Google Calendar, sheet, and staff absence.
+                </p>
+                <p class="syc-view-links meta">
+                  <a href="/school-calendar-year">Day-by-day view</a>
+                  ·
+                  <a href="/calendar">Full year sheet (overview)</a>
+                </p>
+                <p class="today-generated meta" id="generatedMeta">Loading…</p>
+              </div>
+            </div>
+          </section>
+
+          <div class="syc-page-scroll">
+            <p id="err" class="halcyon-status-msg" hidden></p>
+            <p id="loading" class="today-loading">Loading calendar…</p>
+            <div id="calendarBody" class="syc-all-events" hidden></div>
+          </div>
+        </div>
+      </main>
+    </div>
+    <script src="/static/today/school-year-calendar.js?v=23"></script>
+  </body>
+</html>

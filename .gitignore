@@ -1,0 +1,14 @@
+.vscode/
+.DS_Store
+__pycache__/
+*.pyc
+.venv/
+.env
+credentials/
+tmp/
+*.html.gz
+# Generated / cached HTML (loaded from Supabase Storage at runtime)
+static/registration_wholeyear/attendance.html
+static/timetabled_rooms/timetabled_rooms.html
+static/timetabled_rooms/timetabled_rooms_all_days.html
+static/personal_timetables/personal_timetables.html

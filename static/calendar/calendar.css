@@ -1,0 +1,74 @@
+.page-calendar .cal-content {
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+  color: var(--text, #1f2937);
+  line-height: 1.35;
+  padding: 0.5rem 0.65rem 1rem;
+  --text: #1f2937;
+  --muted: #6b7280;
+  --border: #d1d5db;
+  --card: #ffffff;
+  --calendar-embed-height: min(75vh, calc(100vh - 320px));
+  --calendar-embed-min-height: 520px;
+}
+
+.page-calendar .cal-content .header-panel,
+.page-calendar .cal-content .grid-panel {
+  background: var(--card);
+  border: 1px solid var(--border);
+  border-radius: 12px;
+  padding: 20px;
+  margin-bottom: 24px;
+}
+
+.page-calendar .cal-content h1 {
+  margin: 0 0 4px;
+  font-size: 1.7rem;
+  font-weight: 700;
+  color: var(--text);
+}
+
+.page-calendar .cal-content .meta {
+  color: var(--muted);
+  margin: 0;
+  font-size: 0.9rem;
+  line-height: 1.5;
+}
+
+.page-calendar .calendar-embed-wrap {
+  overflow: auto;
+  height: var(--calendar-embed-height);
+  min-height: var(--calendar-embed-min-height);
+  border: 1px solid var(--border);
+  border-radius: 8px;
+  background: #fff;
+}
+
+.page-calendar .calendar-embed-scaler {
+  width: calc(100% / var(--calendar-embed-zoom));
+  height: calc(100% / var(--calendar-embed-zoom));
+  min-height: calc(var(--calendar-embed-min-height) / var(--calendar-embed-zoom));
+  transform: scale(var(--calendar-embed-zoom));
+  transform-origin: top left;
+}
+
+.page-calendar .calendar-embed {
+  display: block;
+  width: 100%;
+  height: 100%;
+  min-height: calc(var(--calendar-embed-min-height) / var(--calendar-embed-zoom));
+  border: 0;
+}
+
+@media (max-width: 640px) {
+  .page-calendar .cal-content {
+    padding: 0;
+    --calendar-embed-min-height: 420px;
+  }
+
+  .page-calendar .cal-content .header-panel,
+  .page-calendar .cal-content .grid-panel {
+    border-radius: 10px;
+    padding: 14px;
+    margin-bottom: 16px;
+  }
+}

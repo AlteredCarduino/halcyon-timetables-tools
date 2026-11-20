@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Calendar</title>
+    <link rel="stylesheet" href="/static/signin/styles.css" />
+    <link rel="stylesheet" href="/static/signin/halcyon-shell.css" />
+    <link rel="stylesheet" href="/static/signin/halcyon-subpages.css?v=15" />
+    <link rel="stylesheet" href="/static/signin/halcyon-tools-section.css?v=3" />
+    <link rel="stylesheet" href="/static/calendar/calendar.css?v=5" />
+  </head>
+  <body class="halcyon-page halcyon-tools-section" style="--calendar-embed-zoom: __CALENDAR_EMBED_ZOOM__;">
+    <div class="halcyon-app">
+      <div id="halcyonNavMount"></div>
+      <script>window.HALCYON_NAV_MODE = 'tools'; window.HALCYON_SECTION_PAGE = 'calendar';</script>
+    <script src="/static/signin/halcyon-nav.js?v=19"></script>
+      <script src="/static/signin/halcyon-shell.js?v=9"></script>
+      <main class="halcyon-main page-calendar">
+<div class="cal-content">
+            <section class="header-panel">
+              <div class="header-main">
+                <h1>Calendar</h1>
+                <p class="meta">__CALENDAR_TITLE__ · live from Google Sheets</p>
+                <p class="meta cal-view-links">
+                  <a href="/school-calendar-year">Day-by-day calendar (Google + staff)</a>
+                  ·
+                  <a href="/school-calendar-year/all-events">Year at a glance (3×4)</a>
+                </p>
+              </div>
+            </section>
+            <section class="grid-panel">
+              <div class="calendar-embed-wrap">
+                <div class="calendar-embed-scaler">
+                  <iframe
+                    class="calendar-embed"
+                    title="__CALENDAR_TITLE__"
+                    src="__CALENDAR_EMBED_URL__"
+                    loading="lazy"
+                    referrerpolicy="no-referrer-when-downgrade"
+                  ></iframe>
+                </div>
+              </div>
+            </section>
+          </div>
+      </main>
+    </div>
+</body>
+</html>

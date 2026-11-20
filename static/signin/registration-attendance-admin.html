@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Registration Attendance Access</title>
+    <link rel="stylesheet" href="/static/signin/styles.css" />
+    <link rel="stylesheet" href="/static/signin/halcyon-shell.css" />
+    <link rel="stylesheet" href="/static/signin/halcyon-subpages.css?v=13" />
+    <link rel="stylesheet" href="/static/signin/halcyon-tools-section.css?v=4" />
+    <link rel="stylesheet" href="/static/timetabled_rooms/room-bookings-admin.css?v=9" />
+  </head>
+  <body class="halcyon-page halcyon-tools-section">
+    <div class="halcyon-app">
+      <div id="halcyonNavMount"></div>
+      <script>
+        window.HALCYON_NAV_MODE = 'admin';
+        window.HALCYON_SECTION_PAGE = 'registrationattendanceadmin';
+      </script>
+      <script src="/static/signin/halcyon-nav.js?v=32"></script>
+      <script src="/static/signin/halcyon-shell.js?v=9"></script>
+      <main class="halcyon-main page-room-bookings-admin">
+        <div class="rba-content">
+          <section class="header-panel">
+            <div class="header-main">
+              <h1>Registration Attendance Access</h1>
+              <p class="meta">
+                Choose which staff emails may open
+                <a href="/registration-wholeyear">Registration Attendance</a>.
+              </p>
+            </div>
+          </section>
+
+          <section class="rba-card" id="auth-card">
+            <h2>Admin access</h2>
+            <p class="rba-hint">
+              Enter the admin token (same as Room Bookings Admin:
+              <code>ROOM_BOOKINGS_ADMIN_TOKEN</code>).
+            </p>
+            <div class="rba-row">
+              <input id="admin-token" type="password" placeholder="Admin token" autocomplete="off" />
+              <button type="button" class="rba-btn primary" id="save-token-btn">Unlock</button>
+            </div>
+            <p id="auth-error" class="rba-error" hidden></p>
+          </section>
+
+          <div id="admin-panel" hidden>
+            <section class="rba-card">
+              <h2>Allowed viewers</h2>
+              <p class="rba-hint">
+                Add school emails one at a time. Staff must enter the same email on the Registration
+                Attendance page. Optional server fallback:
+                <code>REGISTRATION_ATTENDANCE_ALLOWED_EMAILS</code>.
+              </p>
+              <form id="viewer-form" class="rba-form rba-row">
+                <input
+                  id="viewer-email"
+                  type="email"
+                  placeholder="staff@halcyonlondon.org"
+                  autocomplete="email"
+                  required
+                />
+                <button type="submit" class="rba-btn primary">Add email</button>
+              </form>
+              <p id="viewer-msg" class="rba-msg" hidden></p>
+              <p id="env-summary" class="rba-summary" aria-live="polite"></p>
+              <div class="rba-table-wrap">
+                <table class="rba-table">
+                  <thead>
+                    <tr>
+                      <th>Staff email</th>
+                      <th>Added</th>
+                      <th></th>
+                    </tr>
+                  </thead>
+                  <tbody id="viewer-body">
+                    <tr>
+                      <td colspan="3" class="rba-muted">Unlock to load…</td>
+                    </tr>
+                  </tbody>
+                </table>
+              </div>
+            </section>
+          </div>
+        </div>
+      </main>
+    </div>
+    <script src="/static/signin/registration-attendance-admin.js?v=2"></script>
+  </body>
+</html>

@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="robots" content="noindex" />
+    <title></title>
+  </head>
+  <body style="margin: 0; padding: 0; overflow: hidden">
+    <script>
+      (function () {
+        'use strict';
+        var email = __EMAIL_JSON__;
+        var sent = false;
+
+        function send(payload) {
+          if (sent) return;
+          sent = true;
+          var plain = payload;
+          try {
+            plain = JSON.parse(JSON.stringify(payload));
+          } catch (e) {
+            plain = payload;
+          }
+          var msg = { type: 'staffLookup', payload: plain };
+          var targets = [];
+          try {
+            if (window.top && window.top !== window) targets.push(window.top);
+          } catch (e) {}
+          try {
+            if (window.parent && window.parent !== window && targets.indexOf(window.parent) === -1) {
+              targets.push(window.parent);
+            }
+          } catch (e2) {}
+          var i;
+          var ok = false;
+          for (i = 0; i < targets.length; i++) {
+            try {
+              targets[i].postMessage(msg, '*');
+              ok = true;
+            } catch (e3) {}
+          }
+          if (!ok) {
+            try {
+              if (window.parent && window.parent !== window) {
+                window.parent.postMessage(msg, '*');
+              }
+            } catch (e4) {}
+          }
+        }
+
+        function fail(msg) {
+          send({ ok: false, error: String(msg || 'Lookup failed') });
+        }
+
+        try {
+          if (!email) {
+            fail('Staff bridge: missing email.');
+            return;
+          }
+          fetch('/api/staff/by-email?email=' + encodeURIComponent(email), { credentials: 'same-origin' })
+            .then(function (r) {
+              return r.json().then(function (j) {
+                if (!r.ok) throw new Error(j && j.error ? j.error : r.statusText);
+                return j;
+              });
+            })
+            .then(function (result) {
+              send(result || { ok: false, error: 'Empty result from server.' });
+            })
+            .catch(function (err) {
+              fail(err && err.message);
+            });
+        } catch (e) {
+          fail(e && e.message);
+        }
+      })();
+    </script>
+  </body>
+</html>

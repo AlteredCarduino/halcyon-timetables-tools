@@ -1,0 +1,5651 @@
+{
+  "timetableLabel": "2026-27 (2026-2027)",
+  "generatedAt": "22 Oct 2026, 15:01",
+  "periods": [
+    {
+      "order": 1,
+      "name": "Period ECA 1",
+      "start": "08:00",
+      "end": "09:00"
+    },
+    {
+      "order": 2,
+      "name": "Period 1",
+      "start": "09:00",
+      "end": "10:00"
+    },
+    {
+      "order": 3,
+      "name": "Period 2",
+      "start": "10:15",
+      "end": "11:15"
+    },
+    {
+      "order": 4,
+      "name": "Period 3",
+      "start": "11:15",
+      "end": "12:15"
+    },
+    {
+      "order": 5,
+      "name": "Period Lunch",
+      "start": "12:15",
+      "end": "13:00"
+    },
+    {
+      "order": 6,
+      "name": "Period 4",
+      "start": "13:00",
+      "end": "14:00"
+    },
+    {
+      "order": 7,
+      "name": "Period 5",
+      "start": "14:00",
+      "end": "15:00"
+    },
+    {
+      "order": 8,
+      "name": "Period 6",
+      "start": "15:00",
+      "end": "16:00"
+    },
+    {
+      "order": 9,
+      "name": "Period ECA 2",
+      "start": "16:00",
+      "end": "17:00"
+    }
+  ],
+  "occupied": [
+    {
+      "dayOrder": 1,
+      "periodOrder": 2,
+      "room": "M.8",
+      "subject": "6/7Span2",
+      "teacher": "Ms Delgado Suarez",
+      "studentCount": 4,
+      "type": "lesson"
+    },
+    {
+      "dayOrder": 1,
+      "periodOrder": 2,
+      "room": "3.1",
+      "subject": "6/7Man",
+      "teacher": "Ms Lin",
+      "studentCount": 8,
+      "type": "lesson"
+    },
+    {
+      "dayOrder": 1,
+      "periodOrder": 2,
+      "room": "2.2",
+      "subject": "6/7Span1",
+      "teacher": "Ms Pelaez-Perez",
+      "studentCount": 10,
+      "type": "lesson"
+    },
+    {
+      "dayOrder": 1,
+      "periodOrder": 2,
+      "room": "1.6",
+      "subject": "8XMaths",
+      "teacher": "Mrs McKendry",
+      "studentCount": 9,
+      "type": "lesson"
+    },
+    {
+      "dayOrder": 1,
+      "periodOrder": 2,
+      "room": "1.5",
+      "subject": "8YMaths",
+      "teacher": "Ms Wright",
+      "studentCount": 10,
+      "type": "lesson"
+    },
+    {
+      "dayOrder": 1,
+      "periodOrder": 2,
+      "room": "1.2",
+      "subject": "9XIndSoc",
+      "teacher": "Mr McKendry",
+      "studentCount": 11,
+      "type": "lesson"
+    },
+    {
+      "dayOrder": 1,
+      "periodOrder": 2,
+      "room": "M.1",
+      "subject": "9YSci",
+      "teacher": "Mr Smith II",
+      "studentCount": 11,
+      "type": "lesson"
+    },
+    {
+      "dayOrder": 1,
+      "periodOrder": 2,
+      "room": "1.1",
+      "subject": "10Eng1",
+      "teacher": "Miss Cooke",
+      "studentCount": 16,
+      "type": "lesson"
+    },
+    {
+      "dayOrder": 1,
+      "periodOrder": 2,
+      "room": "2.1",
+      "subject": "10Eng2",
+      "teacher": "Ms Stoneman",
+      "studentCount": 13,
+      "type": "lesson"
+    },
+    {
+      "dayOrder": 1,
+      "periodOrder": 2,
+      "room": "M.2",
+      "subject": "11Chem",
+      "teacher": "Dr Lodhi",
+      "studentCount": 9,
+      "type": "lesson"
+    },
+    {
+      "dayOrder": 1,
+      "periodOrder": 2,
+      "room": "M.7",
+      "subject": "11Hist",
+      "teacher": "Miss Austin",
+      "studentCount": 7,
+      "type": "lesson"
+    },
+    {
+      "dayOrder": 1,
+      "periodOrder": 2,
+      "room": "3.2",
+      "subject": "11Geo",
+      "teacher": "Mr Ashraf",
+      "studentCount": 9,
+      "type": "lesson"
+    },
+    {
+      "dayOrder": 1,
+      "periodOrder": 2,
+      "room": "LG.1",
+      "subject": "12ESS",
+      "teacher": "Mr Steiner",
+      "studentCount": 16,
+      "type": "lesson"
+    },
+    {
+      "dayOrder": 1,
+      "periodOrder": 2,
+      "room": "1.7",
+      "subject": "12UkrainianA",
+      "teacher": "Miss Aleksenko",
+      "studentCount": 1,
+      "type": "lesson"
+    },
+    {
+      "dayOrder": 1,
+      "periodOrder": 2,
+      "room": "HUB",
+      "subject": "Pamoja1",
+      "teacher": "Miss Duenas",
+      "studentCount": 3,
+      "type": "lesson"
+    },
+    {
+      "dayOrder": 1,
+      "periodOrder": 3,
+      "room": "M.2",
+      "subject": "6Sci",
+      "teacher": "Mrs Jenkins",
+      "studentCount": 9,
+      "type": "lesson"
+    },
+    {
+      "dayOrder": 1,
+      "periodOrder": 3,
+      "room": "M.1",
+      "subject": "7Sci",
+      "teacher": "Dr Lodhi",
+      "studentCount": 13,
+      "type": "lesson"
+    },
+    {
+      "dayOrder": 1,
+      "periodOrder": 3,
+      "room": "1.6",
+      "subject": "8XMaths",
+      "teacher": "Mrs McKendry",
+      "studentCount": 9,
+      "type": "lesson"
+    },
+    {
+      "dayOrder": 1,
+      "periodOrder": 3,
+      "room": "1.5",
+      "subject": "8YMaths",
+      "teacher": "Ms Wright",
+      "studentCount": 10,
+      "type": "lesson"
+    },
+    {
+      "dayOrder": 1,
+      "periodOrder": 3,
+      "room": "1.2",
+      "subject": "9XPSHEE",
+      "teacher": "Ms Mitchell",
+      "studentCount": 11,
+      "type": "lesson"
+    },
+    {
+      "dayOrder": 1,
+      "periodOrder": 3,
+      "room": "2.2",
+      "subject": "9YDes",
+      "teacher": "Ms Blades",
+      "studentCount": 11,
+      "type": "lesson"
+    },
+    {
+      "dayOrder": 1,
+      "periodOrder": 3,
+      "room": "1.8",
+      "subject": "10Econ1",
+      "teacher": "Miss Muhammad Sharif",
+      "studentCount": 14,
+      "type": "lesson"
+    },
+    {
+      "dayOrder": 1,
+      "periodOrder": 3,
+      "room": "1.8",
+      "subject": "10Econ2",
+      "teacher": "Mr McKendry",
+      "studentCount": 11,
+      "type": "lesson"
+    },
+    {
+      "dayOrder": 1,
+      "periodOrder": 3,
+      "room": "M.8",
+      "subject": "10Geog",
+      "teacher": "Mr Ashraf",
+      "studentCount": 3,
+      "type": "lesson"
+    },
+    {
+      "dayOrder": 1,
+      "periodOrder": 3,
+      "room": "1.1",
+      "subject": "11EngLLHL",
+      "teacher": "Miss Cooke",
+      "studentCount": 12,
+      "type": "lesson"
+    },
+    {
+      "dayOrder": 1,
+      "periodOrder": 3,
+      "room": "3.1",
+      "subject": "11EngLLSL",
+      "teacher": "Miss Bolwell",
+      "studentCount": 11,
+      "type": "lesson"
+    },
+    {
+      "dayOrder": 1,
+      "periodOrder": 3,
+      "room": "2.1",
+      "subject": "11EngLit",
+      "teacher": "Ms Stoneman",
+      "studentCount": 12,
+      "type": "lesson"
+    },
+    {
+      "dayOrder": 1,
+      "periodOrder": 3,
+      "room": "M.7",
+      "subject": "11/12 EngB",
+      "teacher": "Mr Byrne",
+      "studentCount": 6,
+      "type": "lesson"
+    },
+    {
+      "dayOrder": 1,
+      "periodOrder": 3,
+      "room": "LG.1",
+      "subject": "12ESSHL",
+      "teacher": "Mr Steiner",
+      "studentCount": 6,
+      "type": "lesson"
+    },
+    {
+      "dayOrder": 1,
+      "periodOrder": 3,
+      "room": "2.12",
+      "subject": "ILT2",
+      "teacher": "Miss Priestley",
+      "studentCount": 1,
+      "type": "lesson"
+    },
+    {
+      "dayOrder": 1,
+      "periodOrder": 3,
+      "room": "M.9",
+      "subject": "12ArabicB SL",
+      "teacher": "Mrs Hammad",
+      "studentCount": 1,
+      "type": "lesson"
+    },
+    {
+      "dayOrder": 1,
+      "periodOrder": 3,
+      "room": "M.6 (Office)",
+      "subject": "12GermanB",
+      "teacher": "Miss Osta Merdan",
+      "studentCount": 1,
+      "type": "lesson"
+    },
+    {
+      "dayOrder": 1,
+      "periodOrder": 3,
+      "room": "4.1 Nest",
+      "subject": "12ItalianB",
+      "teacher": "Miss De Felice",
+      "studentCount": 1,
+      "type": "lesson"
+    },
+    {
+      "dayOrder": 1,
+      "periodOrder": 3,
+      "room": "1.7",
+      "subject": "12UkrainianA",
+      "teacher": "Miss Aleksenko",
+      "studentCount": 1,
+      "type": "lesson"
+    },
+    {
+      "dayOrder": 1,
+      "periodOrder": 3,
+      "room": "3.2",
+      "subject": "12PortA3",
+      "teacher": "Miss Nogueira-Lima",
+      "studentCount": 1,
+      "type": "lesson"
+    },
+    {
+      "dayOrder": 1,
+      "periodOrder": 4,
+      "room": "1.5",
+      "subject": "6Maths",
+      "teacher": "Ms Wright",
+      "studentCount": 9,
+      "type": "lesson"
+    },
+    {
+      "dayOrder": 1,
+      "periodOrder": 4,
+      "room": "1.6",
+      "subject": "7Maths",
+      "teacher": "Mr Bari",
+      "studentCount": 13,
+      "type": "lesson"
+    },
+    {
+      "dayOrder": 1,
+      "periodOrder": 4,
+      "room": "M.1",
+      "subject": "8XSci",
+      "teacher": "Mr Smith II",
+      "studentCount": 9,
+      "type": "lesson"
+    },
+    {
+      "dayOrder": 1,
+      "periodOrder": 4,
+      "room": "M.2",
+      "subject": "8YSci",
+      "teacher": "Mr Steiner",
+      "studentCount": 10,
+      "type": "lesson"
+    },
+    {
+      "dayOrder": 1,
+      "periodOrder": 4,
+      "room": "2.10 (Art 1)",
+      "subject": "9XPL",
+      "teacher": "Miss Priestley",
+      "studentCount": 11,
+      "type": "lesson"
+    },
+    {
+      "dayOrder": 1,
+      "periodOrder": 4,
+      "room": "2.2",
+      "subject": "9YDes",
+      "teacher": "Ms Blades",
+      "studentCount": 11,
+      "type": "lesson"
+    },
+    {
+      "dayOrder": 1,
+      "periodOrder": 4,
+      "room": "1.8",
+      "subject": "10Econ1",
+      "teacher": "Miss Muhammad Sharif",
+      "studentCount": 14,
+      "type": "lesson"
+    },
+    {
+      "dayOrder": 1,
+      "periodOrder": 4,
+      "room": "1.8",
+      "subject": "10Econ2",
+      "teacher": "Mr McKendry",
+      "studentCount": 11,
+      "type": "lesson"
+    },
+    {
+      "dayOrder": 1,
+      "periodOrder": 4,
+      "room": "M.8",
+      "subject": "10Geog",
+      "teacher": "Mr Ashraf",
+      "studentCount": 3,
+      "type": "lesson"
+    },
+    {
+      "dayOrder": 1,
+      "periodOrder": 4,
+      "room": "1.1",
+      "subject": "11EngLLHL",
+      "teacher": "Miss Cooke",
+      "studentCount": 12,
+      "type": "lesson"
+    },
+    {
+      "dayOrder": 1,
+      "periodOrder": 4,
+      "room": "3.1",
+      "subject": "11EngLLSL",
+      "teacher": "Miss Bolwell",
+      "studentCount": 11,
+      "type": "lesson"
+    },
+    {
+      "dayOrder": 1,
+      "periodOrder": 4,
+      "room": "2.1",
+      "subject": "11EngLit",
+      "teacher": "Ms Stoneman",
+      "studentCount": 12,
+      "type": "lesson"
+    },
+    {
+      "dayOrder": 1,
+      "periodOrder": 4,
+      "room": "M.7",
+      "subject": "11/12 EngB",
+      "teacher": "Mr Byrne",
+      "studentCount": 6,
+      "type": "lesson"
+    },
+    {
+      "dayOrder": 1,
+      "periodOrder": 4,
+      "room": "3.2",
+      "subject": "12ManAB",
+      "teacher": "Ms Lin",
+      "studentCount": 3,
+      "type": "lesson"
+    },
+    {
+      "dayOrder": 1,
+      "periodOrder": 4,
+      "room": "1.2",
+      "subject": "12SpB",
+      "teacher": "Ms Delgado Suarez",
+      "studentCount": 9,
+      "type": "lesson"
+    },
+    {
+      "dayOrder": 1,
+      "periodOrder": 4,
+      "room": "2.12",
+      "subject": "ILT2",
+      "teacher": "Miss Priestley",
+      "studentCount": 1,
+      "type": "lesson"
+    },
+    {
+      "dayOrder": 1,
+      "periodOrder": 4,
+      "room": "M.9",
+      "subject": "12ArabicB SL",
+      "teacher": "Mrs Hammad",
+      "studentCount": 1,
+      "type": "lesson"
+    },
+    {
+      "dayOrder": 1,
+      "periodOrder": 4,
+      "room": "M.6 (Office)",
+      "subject": "12GermanB",
+      "teacher": "Miss Osta Merdan",
+      "studentCount": 1,
+      "type": "lesson"
+    },
+    {
+      "dayOrder": 1,
+      "periodOrder": 4,
+      "room": "4.1 Nest",
+      "subject": "12RussianAb",
+      "teacher": "Miss Aleksenko",
+      "studentCount": 1,
+      "type": "lesson"
+    },
+    {
+      "dayOrder": 1,
+      "periodOrder": 4,
+      "room": "LG.1",
+      "subject": "12SpA",
+      "teacher": "Ms Pelaez-Perez",
+      "studentCount": 1,
+      "type": "lesson"
+    },
+    {
+      "dayOrder": 1,
+      "periodOrder": 4,
+      "room": "1.7",
+      "subject": "12PortA",
+      "teacher": "Miss Nogueira-Lima",
+      "studentCount": 2,
+      "type": "lesson"
+    },
+    {
+      "dayOrder": 1,
+      "periodOrder": 6,
+      "room": "SH",
+      "subject": "6/7 PHE",
+      "teacher": "Mr Callender",
+      "studentCount": 22,
+      "type": "lesson"
+    },
+    {
+      "dayOrder": 1,
+      "periodOrder": 6,
+      "room": "SH",
+      "subject": "6/7 PHE2",
+      "teacher": "Ms Gardner",
+      "studentCount": null,
+      "type": "lesson"
+    },
+    {
+      "dayOrder": 1,
+      "periodOrder": 6,
+      "room": "2.12",
+      "subject": "8/9Man",
+      "teacher": "Ms Lin",
+      "studentCount": 9,
+      "type": "lesson"
+    },
+    {
+      "dayOrder": 1,
+      "periodOrder": 6,
+      "room": "2.2",
+      "subject": "8/9Span1",
+      "teacher": "Ms Pelaez-Perez",
+      "studentCount": 2,
+      "type": "lesson"
+    },
+    {
+      "dayOrder": 1,
+      "periodOrder": 6,
+      "room": "1.1",
+      "subject": "8/9Span2",
+      "teacher": "Mr Byrne",
+      "studentCount": 11,
+      "type": "lesson"
+    },
+    {
+      "dayOrder": 1,
+      "periodOrder": 6,
+      "room": "1.2",
+      "subject": "8/9Span3",
+      "teacher": "Ms Delgado Suarez",
+      "studentCount": 13,
+      "type": "lesson"
+    },
+    {
+      "dayOrder": 1,
+      "periodOrder": 6,
+      "room": "3.2",
+      "subject": "10Music",
+      "teacher": "Mr Burtenshaw",
+      "studentCount": 6,
+      "type": "lesson"
+    },
+    {
+      "dayOrder": 1,
+      "periodOrder": 6,
+      "room": "LG.1",
+      "subject": "10Che",
+      "teacher": "Dr Lodhi",
+      "studentCount": 16,
+      "type": "lesson"
+    },
+    {
+      "dayOrder": 1,
+      "periodOrder": 6,
+      "room": "M.1",
+      "subject": "11Phy",
+      "teacher": "Mr Smith II",
+      "studentCount": 8,
+      "type": "lesson"
+    },
+    {
+      "dayOrder": 1,
+      "periodOrder": 6,
+      "room": "M.9",
+      "subject": "12MAA HL",
+      "teacher": "Ms Bartholomew",
+      "studentCount": 6,
+      "type": "lesson"
+    },
+    {
+      "dayOrder": 1,
+      "periodOrder": 6,
+      "room": "M.8",
+      "subject": "12MAI HL",
+      "teacher": "Mr Bari",
+      "studentCount": 6,
+      "type": "lesson"
+    },
+    {
+      "dayOrder": 1,
+      "periodOrder": 6,
+      "room": "1.6",
+      "subject": "12MAA SL",
+      "teacher": "Mrs McKendry",
+      "studentCount": 8,
+      "type": "lesson"
+    },
+    {
+      "dayOrder": 1,
+      "periodOrder": 6,
+      "room": "1.5",
+      "subject": "12MAI SL",
+      "teacher": "Ms Fritz",
+      "studentCount": 11,
+      "type": "lesson"
+    },
+    {
+      "dayOrder": 1,
+      "periodOrder": 6,
+      "room": "M.2",
+      "subject": "11ESSAHL",
+      "teacher": "Mr Steiner",
+      "studentCount": 3,
+      "type": "lesson"
+    },
+    {
+      "dayOrder": 1,
+      "periodOrder": 6,
+      "room": "3.1",
+      "subject": "11MAI SL 2",
+      "teacher": "Mr Afonso",
+      "studentCount": 7,
+      "type": "lesson"
+    },
+    {
+      "dayOrder": 1,
+      "periodOrder": 6,
+      "room": "2.13",
+      "subject": "ILT3",
+      "teacher": "Miss Priestley",
+      "studentCount": 6,
+      "type": "lesson"
+    },
+    {
+      "dayOrder": 1,
+      "periodOrder": 6,
+      "room": "M.7",
+      "subject": "11SwedishB",
+      "teacher": "Miss Nordstrom",
+      "studentCount": 1,
+      "type": "lesson"
+    },
+    {
+      "dayOrder": 1,
+      "periodOrder": 6,
+      "room": "2.1",
+      "subject": "11 Russian A",
+      "teacher": "Mrs Antonenko",
+      "studentCount": 1,
+      "type": "lesson"
+    },
+    {
+      "dayOrder": 1,
+      "periodOrder": 6,
+      "room": "HUB",
+      "subject": "PamojaMandarin",
+      "teacher": "Miss Duenas",
+      "studentCount": 3,
+      "type": "lesson"
+    },
+    {
+      "dayOrder": 1,
+      "periodOrder": 6,
+      "room": "1.8",
+      "subject": "8/9Span4",
+      "teacher": "Mr Gil",
+      "studentCount": 7,
+      "type": "lesson"
+    },
+    {
+      "dayOrder": 1,
+      "periodOrder": 6,
+      "room": "M.6 (Office)",
+      "subject": "Wellbeing",
+      "teacher": "Ms Al-Shammari",
+      "studentCount": null,
+      "type": "staff"
+    },
+    {
+      "dayOrder": 1,
+      "periodOrder": 6,
+      "room": "M.6 (Office)",
+      "subject": "Wellbeing",
+      "teacher": "Mr Ashraf",
+      "studentCount": null,
+      "type": "staff"
+    },
+    {
+      "dayOrder": 1,
+      "periodOrder": 6,
+      "room": "M.6 (Office)",
+      "subject": "Wellbeing",
+      "teacher": "Miss Dennie",
+      "studentCount": null,
+      "type": "staff"
+    },
+    {
+      "dayOrder": 1,
+      "periodOrder": 6,
+      "room": "M.6 (Office)",
+      "subject": "Wellbeing",
+      "teacher": "Mr Harvey",
+      "studentCount": null,
+      "type": "staff"
+    },
+    {
+      "dayOrder": 1,
+      "periodOrder": 6,
+      "room": "M.6 (Office)",
+      "subject": "Wellbeing",
+      "teacher": "Ms Mitchell",
+      "studentCount": null,
+      "type": "staff"
+    },
+    {
+      "dayOrder": 1,
+      "periodOrder": 7,
+      "room": "SH",
+      "subject": "6/7 PHE",
+      "teacher": "Mr Callender",
+      "studentCount": 22,
+      "type": "lesson"
+    },
+    {
+      "dayOrder": 1,
+      "periodOrder": 7,
+      "room": "SH",
+      "subject": "6/7 PHE2",
+      "teacher": "Ms Gardner",
+      "studentCount": null,
+      "type": "lesson"
+    },
+    {
+      "dayOrder": 1,
+      "periodOrder": 7,
+      "room": "2.12",
+      "subject": "8/9Man",
+      "teacher": "Ms Lin",
+      "studentCount": 9,
+      "type": "lesson"
+    },
+    {
+      "dayOrder": 1,
+      "periodOrder": 7,
+      "room": "2.2",
+      "subject": "8/9Span1",
+      "teacher": "Ms Pelaez-Perez",
+      "studentCount": 2,
+      "type": "lesson"
+    },
+    {
+      "dayOrder": 1,
+      "periodOrder": 7,
+      "room": "1.1",
+      "subject": "8/9Span2",
+      "teacher": "Mr Byrne",
+      "studentCount": 11,
+      "type": "lesson"
+    },
+    {
+      "dayOrder": 1,
+      "periodOrder": 7,
+      "room": "1.2",
+      "subject": "8/9Span3",
+      "teacher": "Ms Delgado Suarez",
+      "studentCount": 13,
+      "type": "lesson"
+    },
+    {
+      "dayOrder": 1,
+      "periodOrder": 7,
+      "room": "3.2",
+      "subject": "10Music",
+      "teacher": "Mr Burtenshaw",
+      "studentCount": 6,
+      "type": "lesson"
+    },
+    {
+      "dayOrder": 1,
+      "periodOrder": 7,
+      "room": "LG.1",
+      "subject": "10Che",
+      "teacher": "Dr Lodhi",
+      "studentCount": 16,
+      "type": "lesson"
+    },
+    {
+      "dayOrder": 1,
+      "periodOrder": 7,
+      "room": "M.2",
+      "subject": "11ESSB",
+      "teacher": "Mr Steiner",
+      "studentCount": 6,
+      "type": "lesson"
+    },
+    {
+      "dayOrder": 1,
+      "periodOrder": 7,
+      "room": "M.1",
+      "subject": "11Bio",
+      "teacher": "Ms Liao",
+      "studentCount": 10,
+      "type": "lesson"
+    },
+    {
+      "dayOrder": 1,
+      "periodOrder": 7,
+      "room": "M.7",
+      "subject": "11GP",
+      "teacher": "Miss Austin",
+      "studentCount": 6,
+      "type": "lesson"
+    },
+    {
+      "dayOrder": 1,
+      "periodOrder": 7,
+      "room": "1.6",
+      "subject": "11EconA",
+      "teacher": "Miss Muhammad Sharif",
+      "studentCount": 10,
+      "type": "lesson"
+    },
+    {
+      "dayOrder": 1,
+      "periodOrder": 7,
+      "room": "M.8",
+      "subject": "12EngLLHL",
+      "teacher": "Miss Cooke",
+      "studentCount": 11,
+      "type": "lesson"
+    },
+    {
+      "dayOrder": 1,
+      "periodOrder": 7,
+      "room": "3.1",
+      "subject": "12EngLLSL",
+      "teacher": "Miss Bolwell",
+      "studentCount": 10,
+      "type": "lesson"
+    },
+    {
+      "dayOrder": 1,
+      "periodOrder": 7,
+      "room": "2.1",
+      "subject": "12EngLit",
+      "teacher": "Ms Stoneman",
+      "studentCount": 9,
+      "type": "lesson"
+    },
+    {
+      "dayOrder": 1,
+      "periodOrder": 7,
+      "room": "2.13",
+      "subject": "ILT3",
+      "teacher": "Miss Priestley",
+      "studentCount": 6,
+      "type": "lesson"
+    },
+    {
+      "dayOrder": 1,
+      "periodOrder": 7,
+      "room": "1.8",
+      "subject": "8/9Span4",
+      "teacher": "Mr Gil",
+      "studentCount": 7,
+      "type": "lesson"
+    },
+    {
+      "dayOrder": 1,
+      "periodOrder": 7,
+      "room": "1.5",
+      "subject": "Math Meeting",
+      "teacher": "Mr Afonso",
+      "studentCount": null,
+      "type": "staff"
+    },
+    {
+      "dayOrder": 1,
+      "periodOrder": 7,
+      "room": "1.5",
+      "subject": "Math Meeting",
+      "teacher": "Mr Bari",
+      "studentCount": null,
+      "type": "staff"
+    },
+    {
+      "dayOrder": 1,
+      "periodOrder": 7,
+      "room": "1.5",
+      "subject": "Math Meeting",
+      "teacher": "Ms Bartholomew",
+      "studentCount": null,
+      "type": "staff"
+    },
+    {
+      "dayOrder": 1,
+      "periodOrder": 7,
+      "room": "1.5",
+      "subject": "Math Meeting",
+      "teacher": "Ms Fritz",
+      "studentCount": null,
+      "type": "staff"
+    },
+    {
+      "dayOrder": 1,
+      "periodOrder": 7,
+      "room": "1.5",
+      "subject": "Math Meeting",
+      "teacher": "Mrs McKendry",
+      "studentCount": null,
+      "type": "staff"
+    },
+    {
+      "dayOrder": 1,
+      "periodOrder": 7,
+      "room": "1.5",
+      "subject": "Math Meeting",
+      "teacher": "Ms Wright",
+      "studentCount": null,
+      "type": "staff"
+    },
+    {
+      "dayOrder": 1,
+      "periodOrder": 8,
+      "room": "SH",
+      "subject": "6/7 PHE",
+      "teacher": "Mr Callender",
+      "studentCount": 22,
+      "type": "lesson"
+    },
+    {
+      "dayOrder": 1,
+      "periodOrder": 8,
+      "room": "SH",
+      "subject": "6/7 PHE2",
+      "teacher": "Ms Gardner",
+      "studentCount": null,
+      "type": "lesson"
+    },
+    {
+      "dayOrder": 1,
+      "periodOrder": 8,
+      "room": "1.7",
+      "subject": "8XPSHEE",
+      "teacher": "Mr Bari",
+      "studentCount": 9,
+      "type": "lesson"
+    },
+    {
+      "dayOrder": 1,
+      "periodOrder": 8,
+      "room": "2.2",
+      "subject": "8YDes",
+      "teacher": "Ms Blades",
+      "studentCount": 10,
+      "type": "lesson"
+    },
+    {
+      "dayOrder": 1,
+      "periodOrder": 8,
+      "room": "1.5",
+      "subject": "9MathEX",
+      "teacher": "Ms Wright",
+      "studentCount": 14,
+      "type": "lesson"
+    },
+    {
+      "dayOrder": 1,
+      "periodOrder": 8,
+      "room": "1.6",
+      "subject": "9MathST",
+      "teacher": "Mrs McKendry",
+      "studentCount": 8,
+      "type": "lesson"
+    },
+    {
+      "dayOrder": 1,
+      "periodOrder": 8,
+      "room": "1.8",
+      "subject": "10PSHEE1",
+      "teacher": "Mr Harvey",
+      "studentCount": 29,
+      "type": "lesson"
+    },
+    {
+      "dayOrder": 1,
+      "periodOrder": 8,
+      "room": "2.12",
+      "subject": "11ManB",
+      "teacher": "Ms Lin",
+      "studentCount": 2,
+      "type": "lesson"
+    },
+    {
+      "dayOrder": 1,
+      "periodOrder": 8,
+      "room": "1.2",
+      "subject": "11SpB",
+      "teacher": "Ms Delgado Suarez",
+      "studentCount": 14,
+      "type": "lesson"
+    },
+    {
+      "dayOrder": 1,
+      "periodOrder": 8,
+      "room": "M.7",
+      "subject": "11SpanAB",
+      "teacher": "Mr Byrne",
+      "studentCount": 5,
+      "type": "lesson"
+    },
+    {
+      "dayOrder": 1,
+      "periodOrder": 8,
+      "room": "M.8",
+      "subject": "12EngLLHL",
+      "teacher": "Miss Cooke",
+      "studentCount": 11,
+      "type": "lesson"
+    },
+    {
+      "dayOrder": 1,
+      "periodOrder": 8,
+      "room": "3.1",
+      "subject": "12EngLLSL",
+      "teacher": "Miss Bolwell",
+      "studentCount": 10,
+      "type": "lesson"
+    },
+    {
+      "dayOrder": 1,
+      "periodOrder": 8,
+      "room": "2.1",
+      "subject": "12EngLit",
+      "teacher": "Ms Stoneman",
+      "studentCount": 9,
+      "type": "lesson"
+    },
+    {
+      "dayOrder": 1,
+      "periodOrder": 8,
+      "room": "M.2",
+      "subject": "11GermanB",
+      "teacher": "Miss Osta Merdan",
+      "studentCount": 2,
+      "type": "lesson"
+    },
+    {
+      "dayOrder": 1,
+      "periodOrder": 8,
+      "room": "HUB",
+      "subject": "Pamoja4",
+      "teacher": "Miss Duenas",
+      "studentCount": 1,
+      "type": "lesson"
+    },
+    {
+      "dayOrder": 1,
+      "periodOrder": 8,
+      "room": "1.1",
+      "subject": "11SpA",
+      "teacher": "Ms Pelaez-Perez",
+      "studentCount": 5,
+      "type": "lesson"
+    },
+    {
+      "dayOrder": 1,
+      "periodOrder": 8,
+      "room": "4.1 Nest",
+      "subject": "8Danish",
+      "teacher": "Miss Berman",
+      "studentCount": 1,
+      "type": "lesson"
+    },
+    {
+      "dayOrder": 1,
+      "periodOrder": 8,
+      "room": "LG.1",
+      "subject": "Science Meeting",
+      "teacher": "Mr Hagos",
+      "studentCount": null,
+      "type": "staff"
+    },
+    {
+      "dayOrder": 1,
+      "periodOrder": 8,
+      "room": "LG.1",
+      "subject": "Science Meeting",
+      "teacher": "Mrs Jenkins",
+      "studentCount": null,
+      "type": "staff"
+    },
+    {
+      "dayOrder": 1,
+      "periodOrder": 8,
+      "room": "LG.1",
+      "subject": "Science Meeting",
+      "teacher": "Ms Liao",
+      "studentCount": null,
+      "type": "staff"
+    },
+    {
+      "dayOrder": 1,
+      "periodOrder": 8,
+      "room": "LG.1",
+      "subject": "Science Meeting",
+      "teacher": "Dr Lodhi",
+      "studentCount": null,
+      "type": "staff"
+    },
+    {
+      "dayOrder": 1,
+      "periodOrder": 8,
+      "room": "LG.1",
+      "subject": "Science Meeting",
+      "teacher": "Mr Smith II",
+      "studentCount": null,
+      "type": "staff"
+    },
+    {
+      "dayOrder": 1,
+      "periodOrder": 8,
+      "room": "LG.1",
+      "subject": "Science Meeting",
+      "teacher": "Mr Steiner",
+      "studentCount": null,
+      "type": "staff"
+    },
+    {
+      "dayOrder": 1,
+      "periodOrder": 8,
+      "room": "M.6 (Office)",
+      "subject": "I&S Meeting",
+      "teacher": "Mr Ashraf",
+      "studentCount": null,
+      "type": "staff"
+    },
+    {
+      "dayOrder": 1,
+      "periodOrder": 8,
+      "room": "M.6 (Office)",
+      "subject": "I&S Meeting",
+      "teacher": "Miss Austin",
+      "studentCount": null,
+      "type": "staff"
+    },
+    {
+      "dayOrder": 1,
+      "periodOrder": 8,
+      "room": "M.6 (Office)",
+      "subject": "I&S Meeting",
+      "teacher": "Mr McKendry",
+      "studentCount": null,
+      "type": "staff"
+    },
+    {
+      "dayOrder": 1,
+      "periodOrder": 8,
+      "room": "M.6 (Office)",
+      "subject": "I&S Meeting",
+      "teacher": "Miss Muhammad Sharif",
+      "studentCount": null,
+      "type": "staff"
+    },
+    {
+      "dayOrder": 2,
+      "periodOrder": 2,
+      "room": "1.1",
+      "subject": "7Eng",
+      "teacher": "Mr Jennings",
+      "studentCount": 13,
+      "type": "lesson"
+    },
+    {
+      "dayOrder": 2,
+      "periodOrder": 2,
+      "room": "2.2",
+      "subject": "8XEng",
+      "teacher": "Miss Cooke",
+      "studentCount": 9,
+      "type": "lesson"
+    },
+    {
+      "dayOrder": 2,
+      "periodOrder": 2,
+      "room": "3.1",
+      "subject": "8YEng",
+      "teacher": "Miss Bolwell",
+      "studentCount": 10,
+      "type": "lesson"
+    },
+    {
+      "dayOrder": 2,
+      "periodOrder": 2,
+      "room": "2.1",
+      "subject": "9XIndSoc",
+      "teacher": "Mr McKendry",
+      "studentCount": 11,
+      "type": "lesson"
+    },
+    {
+      "dayOrder": 2,
+      "periodOrder": 2,
+      "room": "1.2",
+      "subject": "9YIndSoc",
+      "teacher": "Mr Ashraf",
+      "studentCount": 11,
+      "type": "lesson"
+    },
+    {
+      "dayOrder": 2,
+      "periodOrder": 2,
+      "room": "1.5",
+      "subject": "10MathEX1",
+      "teacher": "Ms Bartholomew",
+      "studentCount": 11,
+      "type": "lesson"
+    },
+    {
+      "dayOrder": 2,
+      "periodOrder": 2,
+      "room": "1.6",
+      "subject": "10MathEX2",
+      "teacher": "Ms Wright",
+      "studentCount": 10,
+      "type": "lesson"
+    },
+    {
+      "dayOrder": 2,
+      "periodOrder": 2,
+      "room": "M.8",
+      "subject": "10MathST",
+      "teacher": "Mr Bari",
+      "studentCount": 8,
+      "type": "lesson"
+    },
+    {
+      "dayOrder": 2,
+      "periodOrder": 2,
+      "room": "1.8",
+      "subject": "11EconB",
+      "teacher": "Miss Muhammad Sharif",
+      "studentCount": 12,
+      "type": "lesson"
+    },
+    {
+      "dayOrder": 2,
+      "periodOrder": 2,
+      "room": "2.10 (Art 1)",
+      "subject": "11VA",
+      "teacher": "Miss Dever",
+      "studentCount": 7,
+      "type": "lesson"
+    },
+    {
+      "dayOrder": 2,
+      "periodOrder": 2,
+      "room": "3.2",
+      "subject": "11Music",
+      "teacher": "Mr Burtenshaw",
+      "studentCount": 7,
+      "type": "lesson"
+    },
+    {
+      "dayOrder": 2,
+      "periodOrder": 2,
+      "room": "1.7",
+      "subject": "11/12 Theatre",
+      "teacher": "Ms Foster",
+      "studentCount": 8,
+      "type": "lesson"
+    },
+    {
+      "dayOrder": 2,
+      "periodOrder": 2,
+      "room": "LG.1",
+      "subject": "12Bio",
+      "teacher": "Ms Liao",
+      "studentCount": 9,
+      "type": "lesson"
+    },
+    {
+      "dayOrder": 2,
+      "periodOrder": 2,
+      "room": "M.1",
+      "subject": "12Phy",
+      "teacher": "Mr Smith II",
+      "studentCount": 10,
+      "type": "lesson"
+    },
+    {
+      "dayOrder": 2,
+      "periodOrder": 2,
+      "room": "M.2",
+      "subject": "6Sci",
+      "teacher": "Mrs Jenkins",
+      "studentCount": 9,
+      "type": "lesson"
+    },
+    {
+      "dayOrder": 2,
+      "periodOrder": 2,
+      "room": "M.7",
+      "subject": "11JapaneseB",
+      "teacher": "Mrs Maehara",
+      "studentCount": 1,
+      "type": "lesson"
+    },
+    {
+      "dayOrder": 2,
+      "periodOrder": 2,
+      "room": "M.9",
+      "subject": "12ArabicB SL",
+      "teacher": "Mrs Hammad",
+      "studentCount": 1,
+      "type": "lesson"
+    },
+    {
+      "dayOrder": 2,
+      "periodOrder": 3,
+      "room": "2.10 (Art 1)",
+      "subject": "6VA",
+      "teacher": "Mrs Dance",
+      "studentCount": 9,
+      "type": "lesson"
+    },
+    {
+      "dayOrder": 2,
+      "periodOrder": 3,
+      "room": "3.2",
+      "subject": "8X Music",
+      "teacher": "Mr Jennings",
+      "studentCount": 9,
+      "type": "lesson"
+    },
+    {
+      "dayOrder": 2,
+      "periodOrder": 3,
+      "room": "2.2",
+      "subject": "8YDes",
+      "teacher": "Ms Blades",
+      "studentCount": 10,
+      "type": "lesson"
+    },
+    {
+      "dayOrder": 2,
+      "periodOrder": 3,
+      "room": "2.1",
+      "subject": "9XIndSoc",
+      "teacher": "Mr McKendry",
+      "studentCount": 11,
+      "type": "lesson"
+    },
+    {
+      "dayOrder": 2,
+      "periodOrder": 3,
+      "room": "M.1",
+      "subject": "10Phys",
+      "teacher": "Mr Smith II",
+      "studentCount": 17,
+      "type": "lesson"
+    },
+    {
+      "dayOrder": 2,
+      "periodOrder": 3,
+      "room": "M.2",
+      "subject": "10ESS",
+      "teacher": "Mr Steiner",
+      "studentCount": 5,
+      "type": "lesson"
+    },
+    {
+      "dayOrder": 2,
+      "periodOrder": 3,
+      "room": "M.9",
+      "subject": "11MAA HL",
+      "teacher": "Ms Bartholomew",
+      "studentCount": 7,
+      "type": "lesson"
+    },
+    {
+      "dayOrder": 2,
+      "periodOrder": 3,
+      "room": "M.8",
+      "subject": "11MAI HL",
+      "teacher": "Mr Bari",
+      "studentCount": 6,
+      "type": "lesson"
+    },
+    {
+      "dayOrder": 2,
+      "periodOrder": 3,
+      "room": "1.5",
+      "subject": "11MAA SL",
+      "teacher": "Mrs McKendry",
+      "studentCount": 9,
+      "type": "lesson"
+    },
+    {
+      "dayOrder": 2,
+      "periodOrder": 3,
+      "room": "3.1",
+      "subject": "11MAI SL 1",
+      "teacher": "Mr Afonso",
+      "studentCount": 11,
+      "type": "lesson"
+    },
+    {
+      "dayOrder": 2,
+      "periodOrder": 3,
+      "room": "LG.1",
+      "subject": "12Chem",
+      "teacher": "Dr Lodhi",
+      "studentCount": 9,
+      "type": "lesson"
+    },
+    {
+      "dayOrder": 2,
+      "periodOrder": 3,
+      "room": "1.8",
+      "subject": "12EconB",
+      "teacher": "Miss Muhammad Sharif",
+      "studentCount": 6,
+      "type": "lesson"
+    },
+    {
+      "dayOrder": 2,
+      "periodOrder": 3,
+      "room": "1.6",
+      "subject": "12GP",
+      "teacher": "Miss Austin",
+      "studentCount": 10,
+      "type": "lesson"
+    },
+    {
+      "dayOrder": 2,
+      "periodOrder": 3,
+      "room": "2.12",
+      "subject": "ILT4",
+      "teacher": "Miss Priestley",
+      "studentCount": 7,
+      "type": "lesson"
+    },
+    {
+      "dayOrder": 2,
+      "periodOrder": 3,
+      "room": "1.2",
+      "subject": "7IndSoc",
+      "teacher": "Mr Ashraf",
+      "studentCount": 13,
+      "type": "lesson"
+    },
+    {
+      "dayOrder": 2,
+      "periodOrder": 3,
+      "room": "1.1",
+      "subject": "9YPSHEE",
+      "teacher": "Mr Harvey",
+      "studentCount": 11,
+      "type": "lesson"
+    },
+    {
+      "dayOrder": 2,
+      "periodOrder": 4,
+      "room": "2.10 (Art 1)",
+      "subject": "6VA",
+      "teacher": "Mrs Dance",
+      "studentCount": 9,
+      "type": "lesson"
+    },
+    {
+      "dayOrder": 2,
+      "periodOrder": 4,
+      "room": "3.2",
+      "subject": "8X Music",
+      "teacher": "Mr Jennings",
+      "studentCount": 9,
+      "type": "lesson"
+    },
+    {
+      "dayOrder": 2,
+      "periodOrder": 4,
+      "room": "2.2",
+      "subject": "8YDes",
+      "teacher": "Ms Blades",
+      "studentCount": 10,
+      "type": "lesson"
+    },
+    {
+      "dayOrder": 2,
+      "periodOrder": 4,
+      "room": "1.5",
+      "subject": "9MathEX",
+      "teacher": "Ms Wright",
+      "studentCount": 14,
+      "type": "lesson"
+    },
+    {
+      "dayOrder": 2,
+      "periodOrder": 4,
+      "room": "1.6",
+      "subject": "9MathST",
+      "teacher": "Mrs McKendry",
+      "studentCount": 8,
+      "type": "lesson"
+    },
+    {
+      "dayOrder": 2,
+      "periodOrder": 4,
+      "room": "M.1",
+      "subject": "10Phys",
+      "teacher": "Mr Smith II",
+      "studentCount": 17,
+      "type": "lesson"
+    },
+    {
+      "dayOrder": 2,
+      "periodOrder": 4,
+      "room": "M.2",
+      "subject": "10ESS",
+      "teacher": "Mr Steiner",
+      "studentCount": 5,
+      "type": "lesson"
+    },
+    {
+      "dayOrder": 2,
+      "periodOrder": 4,
+      "room": "M.7",
+      "subject": "11Hist",
+      "teacher": "Miss Austin",
+      "studentCount": 7,
+      "type": "lesson"
+    },
+    {
+      "dayOrder": 2,
+      "periodOrder": 4,
+      "room": "M.9",
+      "subject": "11SpA HL",
+      "teacher": "Ms Pelaez-Perez",
+      "studentCount": 1,
+      "type": "lesson"
+    },
+    {
+      "dayOrder": 2,
+      "periodOrder": 4,
+      "room": "LG.1",
+      "subject": "11Chem",
+      "teacher": "Dr Lodhi",
+      "studentCount": 9,
+      "type": "lesson"
+    },
+    {
+      "dayOrder": 2,
+      "periodOrder": 4,
+      "room": "1.8",
+      "subject": "12EngLLHL",
+      "teacher": "Miss Cooke",
+      "studentCount": 11,
+      "type": "lesson"
+    },
+    {
+      "dayOrder": 2,
+      "periodOrder": 4,
+      "room": "2.1",
+      "subject": "12EngLit",
+      "teacher": "Ms Stoneman",
+      "studentCount": 9,
+      "type": "lesson"
+    },
+    {
+      "dayOrder": 2,
+      "periodOrder": 4,
+      "room": "2.12",
+      "subject": "ILT4",
+      "teacher": "Miss Priestley",
+      "studentCount": 7,
+      "type": "lesson"
+    },
+    {
+      "dayOrder": 2,
+      "periodOrder": 4,
+      "room": "3.1",
+      "subject": "7PSHEE",
+      "teacher": "Ms Mitchell",
+      "studentCount": 13,
+      "type": "lesson"
+    },
+    {
+      "dayOrder": 2,
+      "periodOrder": 4,
+      "room": "1.2",
+      "subject": "11Geo",
+      "teacher": "Mr Ashraf",
+      "studentCount": 9,
+      "type": "lesson"
+    },
+    {
+      "dayOrder": 2,
+      "periodOrder": 6,
+      "room": "1.2",
+      "subject": "6IndSoc",
+      "teacher": "Mr McKendry",
+      "studentCount": 9,
+      "type": "lesson"
+    },
+    {
+      "dayOrder": 2,
+      "periodOrder": 6,
+      "room": "2.10 (Art 1)",
+      "subject": "7VA",
+      "teacher": "Mrs Dance",
+      "studentCount": 13,
+      "type": "lesson"
+    },
+    {
+      "dayOrder": 2,
+      "periodOrder": 6,
+      "room": "2.2",
+      "subject": "8XDes",
+      "teacher": "Ms Blades",
+      "studentCount": 9,
+      "type": "lesson"
+    },
+    {
+      "dayOrder": 2,
+      "periodOrder": 6,
+      "room": "1.7",
+      "subject": "8Y Drama",
+      "teacher": "Miss Bolwell",
+      "studentCount": 10,
+      "type": "lesson"
+    },
+    {
+      "dayOrder": 2,
+      "periodOrder": 6,
+      "room": "2.1",
+      "subject": "9XEng",
+      "teacher": "Ms Stoneman",
+      "studentCount": 11,
+      "type": "lesson"
+    },
+    {
+      "dayOrder": 2,
+      "periodOrder": 6,
+      "room": "1.1",
+      "subject": "9YEng",
+      "teacher": "Miss Cooke",
+      "studentCount": 11,
+      "type": "lesson"
+    },
+    {
+      "dayOrder": 2,
+      "periodOrder": 6,
+      "room": "LG.1",
+      "subject": "10Bio",
+      "teacher": "Ms Liao",
+      "studentCount": 13,
+      "type": "lesson"
+    },
+    {
+      "dayOrder": 2,
+      "periodOrder": 6,
+      "room": "M.7",
+      "subject": "10Hist",
+      "teacher": "Miss Austin",
+      "studentCount": 4,
+      "type": "lesson"
+    },
+    {
+      "dayOrder": 2,
+      "periodOrder": 6,
+      "room": "M.2",
+      "subject": "11ESSA",
+      "teacher": "Mr Steiner",
+      "studentCount": 16,
+      "type": "lesson"
+    },
+    {
+      "dayOrder": 2,
+      "periodOrder": 6,
+      "room": "M.1",
+      "subject": "11Phy",
+      "teacher": "Mr Smith II",
+      "studentCount": 8,
+      "type": "lesson"
+    },
+    {
+      "dayOrder": 2,
+      "periodOrder": 6,
+      "room": "M.9",
+      "subject": "12MAA HL",
+      "teacher": "Ms Bartholomew",
+      "studentCount": 6,
+      "type": "lesson"
+    },
+    {
+      "dayOrder": 2,
+      "periodOrder": 6,
+      "room": "M.8",
+      "subject": "12MAI HL",
+      "teacher": "Mr Bari",
+      "studentCount": 6,
+      "type": "lesson"
+    },
+    {
+      "dayOrder": 2,
+      "periodOrder": 6,
+      "room": "1.6",
+      "subject": "12MAA SL",
+      "teacher": "Mrs McKendry",
+      "studentCount": 8,
+      "type": "lesson"
+    },
+    {
+      "dayOrder": 2,
+      "periodOrder": 6,
+      "room": "1.5",
+      "subject": "12MAI SL",
+      "teacher": "Ms Fritz",
+      "studentCount": 11,
+      "type": "lesson"
+    },
+    {
+      "dayOrder": 2,
+      "periodOrder": 6,
+      "room": "3.1",
+      "subject": "11MAI SL 2",
+      "teacher": "Mr Afonso",
+      "studentCount": 7,
+      "type": "lesson"
+    },
+    {
+      "dayOrder": 2,
+      "periodOrder": 6,
+      "room": "2.12",
+      "subject": "ILT5",
+      "teacher": "Miss Priestley",
+      "studentCount": 11,
+      "type": "lesson"
+    },
+    {
+      "dayOrder": 2,
+      "periodOrder": 6,
+      "room": "3.2",
+      "subject": "10Turkish",
+      "teacher": "Miss Ozturk",
+      "studentCount": 1,
+      "type": "lesson"
+    },
+    {
+      "dayOrder": 2,
+      "periodOrder": 6,
+      "room": "M.6 (Office)",
+      "subject": "Scheduled Meeting",
+      "teacher": "Ms Shah",
+      "studentCount": null,
+      "type": "staff"
+    },
+    {
+      "dayOrder": 2,
+      "periodOrder": 7,
+      "room": "1.5",
+      "subject": "6Maths",
+      "teacher": "Ms Wright",
+      "studentCount": 9,
+      "type": "lesson"
+    },
+    {
+      "dayOrder": 2,
+      "periodOrder": 7,
+      "room": "2.10 (Art 1)",
+      "subject": "7VA",
+      "teacher": "Mrs Dance",
+      "studentCount": 13,
+      "type": "lesson"
+    },
+    {
+      "dayOrder": 2,
+      "periodOrder": 7,
+      "room": "2.2",
+      "subject": "8XDes",
+      "teacher": "Ms Blades",
+      "studentCount": 9,
+      "type": "lesson"
+    },
+    {
+      "dayOrder": 2,
+      "periodOrder": 7,
+      "room": "1.7",
+      "subject": "8Y Drama",
+      "teacher": "Miss Bolwell",
+      "studentCount": 10,
+      "type": "lesson"
+    },
+    {
+      "dayOrder": 2,
+      "periodOrder": 7,
+      "room": "2.1",
+      "subject": "9XEng",
+      "teacher": "Ms Stoneman",
+      "studentCount": 11,
+      "type": "lesson"
+    },
+    {
+      "dayOrder": 2,
+      "periodOrder": 7,
+      "room": "1.1",
+      "subject": "9YEng",
+      "teacher": "Miss Cooke",
+      "studentCount": 11,
+      "type": "lesson"
+    },
+    {
+      "dayOrder": 2,
+      "periodOrder": 7,
+      "room": "LG.1",
+      "subject": "10Bio",
+      "teacher": "Ms Liao",
+      "studentCount": 13,
+      "type": "lesson"
+    },
+    {
+      "dayOrder": 2,
+      "periodOrder": 7,
+      "room": "M.7",
+      "subject": "10Hist",
+      "teacher": "Miss Austin",
+      "studentCount": 4,
+      "type": "lesson"
+    },
+    {
+      "dayOrder": 2,
+      "periodOrder": 7,
+      "room": "M.2",
+      "subject": "11ESSA",
+      "teacher": "Mr Steiner",
+      "studentCount": 16,
+      "type": "lesson"
+    },
+    {
+      "dayOrder": 2,
+      "periodOrder": 7,
+      "room": "M.1",
+      "subject": "11Phy",
+      "teacher": "Mr Smith II",
+      "studentCount": 8,
+      "type": "lesson"
+    },
+    {
+      "dayOrder": 2,
+      "periodOrder": 7,
+      "room": "2.12",
+      "subject": "11ManAB",
+      "teacher": "Ms Lin",
+      "studentCount": 2,
+      "type": "lesson"
+    },
+    {
+      "dayOrder": 2,
+      "periodOrder": 7,
+      "room": "M.9",
+      "subject": "12MAA HL",
+      "teacher": "Ms Bartholomew",
+      "studentCount": 6,
+      "type": "lesson"
+    },
+    {
+      "dayOrder": 2,
+      "periodOrder": 7,
+      "room": "M.8",
+      "subject": "12MAI HL",
+      "teacher": "Mr Bari",
+      "studentCount": 6,
+      "type": "lesson"
+    },
+    {
+      "dayOrder": 2,
+      "periodOrder": 7,
+      "room": "2.13",
+      "subject": "ILT5",
+      "teacher": "Miss Priestley",
+      "studentCount": 11,
+      "type": "lesson"
+    },
+    {
+      "dayOrder": 2,
+      "periodOrder": 7,
+      "room": "3.2",
+      "subject": "10Turkish",
+      "teacher": "Miss Ozturk",
+      "studentCount": 1,
+      "type": "lesson"
+    },
+    {
+      "dayOrder": 2,
+      "periodOrder": 7,
+      "room": "HUB",
+      "subject": "Pamoja3",
+      "teacher": "Miss Duenas",
+      "studentCount": 3,
+      "type": "lesson"
+    },
+    {
+      "dayOrder": 2,
+      "periodOrder": 7,
+      "room": "2.11 (Art 2)",
+      "subject": "12VA",
+      "teacher": "Miss Dever",
+      "studentCount": 4,
+      "type": "lesson"
+    },
+    {
+      "dayOrder": 2,
+      "periodOrder": 8,
+      "room": "1.5",
+      "subject": "Reading",
+      "teacher": "Ms Wright",
+      "studentCount": 22,
+      "type": "lesson"
+    },
+    {
+      "dayOrder": 2,
+      "periodOrder": 8,
+      "room": "1.5",
+      "subject": "Mentoring 8A",
+      "teacher": "Ms Pelaez-Perez",
+      "studentCount": null,
+      "type": "lesson"
+    },
+    {
+      "dayOrder": 2,
+      "periodOrder": 8,
+      "room": "1.5",
+      "subject": "Mentoring 8B",
+      "teacher": "Mr Bari",
+      "studentCount": null,
+      "type": "lesson"
+    },
+    {
+      "dayOrder": 2,
+      "periodOrder": 8,
+      "room": "HUB",
+      "subject": "12 Reading",
+      "teacher": "Ms Liao",
+      "studentCount": 31,
+      "type": "lesson"
+    },
+    {
+      "dayOrder": 2,
+      "periodOrder": 8,
+      "room": "2.1",
+      "subject": "10 Reading",
+      "teacher": "Ms Al-Shammari",
+      "studentCount": 29,
+      "type": "lesson"
+    },
+    {
+      "dayOrder": 2,
+      "periodOrder": 8,
+      "room": "1.8",
+      "subject": "9 Reading",
+      "teacher": "Ms Foster",
+      "studentCount": 22,
+      "type": "lesson"
+    },
+    {
+      "dayOrder": 2,
+      "periodOrder": 8,
+      "room": "1.8",
+      "subject": "Mentoring 10A",
+      "teacher": "Mr Hagos",
+      "studentCount": null,
+      "type": "lesson"
+    },
+    {
+      "dayOrder": 2,
+      "periodOrder": 8,
+      "room": "1.8",
+      "subject": "Mentoring 10B",
+      "teacher": "Ms Mitchell",
+      "studentCount": null,
+      "type": "lesson"
+    },
+    {
+      "dayOrder": 2,
+      "periodOrder": 8,
+      "room": "1.6",
+      "subject": "8 Reading (G8 Class / Reading)",
+      "teacher": "Miss Priestley",
+      "studentCount": 19,
+      "type": "lesson"
+    },
+    {
+      "dayOrder": 2,
+      "periodOrder": 8,
+      "room": "M.2",
+      "subject": "Mentoring 1A",
+      "teacher": "Mr Lippman",
+      "studentCount": null,
+      "type": "lesson"
+    },
+    {
+      "dayOrder": 2,
+      "periodOrder": 8,
+      "room": "M.2",
+      "subject": "Mentoring 1B",
+      "teacher": "Ms Stoneman",
+      "studentCount": null,
+      "type": "lesson"
+    },
+    {
+      "dayOrder": 2,
+      "periodOrder": 8,
+      "room": "2.10 (Art 1)",
+      "subject": "Mentoring 2A",
+      "teacher": "Mr Callender",
+      "studentCount": null,
+      "type": "lesson"
+    },
+    {
+      "dayOrder": 2,
+      "periodOrder": 8,
+      "room": "2.10 (Art 1)",
+      "subject": "Mentoring 2B",
+      "teacher": "Miss Bolwell",
+      "studentCount": null,
+      "type": "lesson"
+    },
+    {
+      "dayOrder": 2,
+      "periodOrder": 8,
+      "room": "LG.1",
+      "subject": "Mentoring 3A",
+      "teacher": "Mr Jennings",
+      "studentCount": null,
+      "type": "lesson"
+    },
+    {
+      "dayOrder": 2,
+      "periodOrder": 8,
+      "room": "LG.1",
+      "subject": "Mentoring 3B",
+      "teacher": "Miss Dever",
+      "studentCount": null,
+      "type": "lesson"
+    },
+    {
+      "dayOrder": 2,
+      "periodOrder": 8,
+      "room": "1.1",
+      "subject": "Mentoring 4A",
+      "teacher": "Mr Afonso",
+      "studentCount": null,
+      "type": "lesson"
+    },
+    {
+      "dayOrder": 2,
+      "periodOrder": 8,
+      "room": "1.1",
+      "subject": "Mentoring 4B",
+      "teacher": "Mr McKendry",
+      "studentCount": null,
+      "type": "lesson"
+    },
+    {
+      "dayOrder": 2,
+      "periodOrder": 8,
+      "room": "1.2",
+      "subject": "Mentoring 5A",
+      "teacher": "Mr Harvey",
+      "studentCount": null,
+      "type": "lesson"
+    },
+    {
+      "dayOrder": 2,
+      "periodOrder": 8,
+      "room": "1.2",
+      "subject": "Mentoring 5B",
+      "teacher": "Mr Ashraf",
+      "studentCount": null,
+      "type": "lesson"
+    },
+    {
+      "dayOrder": 2,
+      "periodOrder": 8,
+      "room": "3.1",
+      "subject": "Mentoring 6A",
+      "teacher": "Mr Smith II",
+      "studentCount": null,
+      "type": "lesson"
+    },
+    {
+      "dayOrder": 2,
+      "periodOrder": 8,
+      "room": "3.1",
+      "subject": "Mentoring 6B",
+      "teacher": "Mrs McKendry",
+      "studentCount": null,
+      "type": "lesson"
+    },
+    {
+      "dayOrder": 2,
+      "periodOrder": 8,
+      "room": "M.1",
+      "subject": "Mentoring 7B",
+      "teacher": "Mrs Jenkins",
+      "studentCount": null,
+      "type": "lesson"
+    },
+    {
+      "dayOrder": 2,
+      "periodOrder": 8,
+      "room": "M.1",
+      "subject": "Mentoring 7A",
+      "teacher": "Ms Ellis",
+      "studentCount": null,
+      "type": "lesson"
+    },
+    {
+      "dayOrder": 2,
+      "periodOrder": 8,
+      "room": "3.2",
+      "subject": "Mentoring 9A",
+      "teacher": "Mr Burtenshaw",
+      "studentCount": null,
+      "type": "lesson"
+    },
+    {
+      "dayOrder": 2,
+      "periodOrder": 8,
+      "room": "3.2",
+      "subject": "Mentoring 9B",
+      "teacher": "Miss Dennie",
+      "studentCount": null,
+      "type": "lesson"
+    },
+    {
+      "dayOrder": 2,
+      "periodOrder": 8,
+      "room": "2.12",
+      "subject": "G11 GR (G11 Group / Reading)",
+      "teacher": "Ms Fritz",
+      "studentCount": 40,
+      "type": "lesson"
+    },
+    {
+      "dayOrder": 3,
+      "periodOrder": 1,
+      "room": "M.7",
+      "subject": "11/12 FreA",
+      "teacher": "Ms Bolzan",
+      "studentCount": 1,
+      "type": "lesson"
+    },
+    {
+      "dayOrder": 3,
+      "periodOrder": 2,
+      "room": "2.10 (Art 1)",
+      "subject": "6VA",
+      "teacher": "Mrs Dance",
+      "studentCount": 9,
+      "type": "lesson"
+    },
+    {
+      "dayOrder": 3,
+      "periodOrder": 2,
+      "room": "1.2",
+      "subject": "7IndSoc",
+      "teacher": "Mr Ashraf",
+      "studentCount": 13,
+      "type": "lesson"
+    },
+    {
+      "dayOrder": 3,
+      "periodOrder": 2,
+      "room": "2.12",
+      "subject": "8/9Man",
+      "teacher": "Ms Lin",
+      "studentCount": 9,
+      "type": "lesson"
+    },
+    {
+      "dayOrder": 3,
+      "periodOrder": 2,
+      "room": "2.12",
+      "subject": "ILT3a",
+      "teacher": "Miss Priestley",
+      "studentCount": 5,
+      "type": "lesson"
+    },
+    {
+      "dayOrder": 3,
+      "periodOrder": 2,
+      "room": "2.2",
+      "subject": "8/9Span1",
+      "teacher": "Ms Pelaez-Perez",
+      "studentCount": 2,
+      "type": "lesson"
+    },
+    {
+      "dayOrder": 3,
+      "periodOrder": 2,
+      "room": "1.1",
+      "subject": "8/9Span2",
+      "teacher": "Mr Byrne",
+      "studentCount": 11,
+      "type": "lesson"
+    },
+    {
+      "dayOrder": 3,
+      "periodOrder": 2,
+      "room": "2.1",
+      "subject": "8/9Span3",
+      "teacher": "Ms Delgado Suarez",
+      "studentCount": 13,
+      "type": "lesson"
+    },
+    {
+      "dayOrder": 3,
+      "periodOrder": 2,
+      "room": "3.2",
+      "subject": "10Music",
+      "teacher": "Mr Burtenshaw",
+      "studentCount": 6,
+      "type": "lesson"
+    },
+    {
+      "dayOrder": 3,
+      "periodOrder": 2,
+      "room": "LG.1",
+      "subject": "10Che",
+      "teacher": "Dr Lodhi",
+      "studentCount": 16,
+      "type": "lesson"
+    },
+    {
+      "dayOrder": 3,
+      "periodOrder": 2,
+      "room": "1.8",
+      "subject": "11ToK3",
+      "teacher": "Ms Bartholomew",
+      "studentCount": 13,
+      "type": "lesson"
+    },
+    {
+      "dayOrder": 3,
+      "periodOrder": 2,
+      "room": "1.5",
+      "subject": "11ToK1",
+      "teacher": "Ms Fritz",
+      "studentCount": 13,
+      "type": "lesson"
+    },
+    {
+      "dayOrder": 3,
+      "periodOrder": 2,
+      "room": "1.6",
+      "subject": "11ToK2",
+      "teacher": "Mr Lippman",
+      "studentCount": 14,
+      "type": "lesson"
+    },
+    {
+      "dayOrder": 3,
+      "periodOrder": 2,
+      "room": "3.1",
+      "subject": "12EconA",
+      "teacher": "Miss Muhammad Sharif",
+      "studentCount": 8,
+      "type": "lesson"
+    },
+    {
+      "dayOrder": 3,
+      "periodOrder": 2,
+      "room": "M.7",
+      "subject": "12His",
+      "teacher": "Miss Austin",
+      "studentCount": 4,
+      "type": "lesson"
+    },
+    {
+      "dayOrder": 3,
+      "periodOrder": 2,
+      "room": "2.11 (Art 2)",
+      "subject": "12VA",
+      "teacher": "Miss Dever",
+      "studentCount": 4,
+      "type": "lesson"
+    },
+    {
+      "dayOrder": 3,
+      "periodOrder": 2,
+      "room": "M.8",
+      "subject": "12Geo",
+      "teacher": "Mr McKendry",
+      "studentCount": 2,
+      "type": "lesson"
+    },
+    {
+      "dayOrder": 3,
+      "periodOrder": 2,
+      "room": "4.1 Nest",
+      "subject": "12RussianA",
+      "teacher": "Miss Aleksenko",
+      "studentCount": 1,
+      "type": "lesson"
+    },
+    {
+      "dayOrder": 3,
+      "periodOrder": 2,
+      "room": "M.9",
+      "subject": "10FrenchB2",
+      "teacher": "Ms Bolzan",
+      "studentCount": 1,
+      "type": "lesson"
+    },
+    {
+      "dayOrder": 3,
+      "periodOrder": 2,
+      "room": "M.2",
+      "subject": "8/9Span4",
+      "teacher": "Mr Gil",
+      "studentCount": 7,
+      "type": "lesson"
+    },
+    {
+      "dayOrder": 3,
+      "periodOrder": 3,
+      "room": "2.10 (Art 1)",
+      "subject": "6VA",
+      "teacher": "Mrs Dance",
+      "studentCount": 9,
+      "type": "lesson"
+    },
+    {
+      "dayOrder": 3,
+      "periodOrder": 3,
+      "room": "1.2",
+      "subject": "7IndSoc",
+      "teacher": "Mr Ashraf",
+      "studentCount": 13,
+      "type": "lesson"
+    },
+    {
+      "dayOrder": 3,
+      "periodOrder": 3,
+      "room": "3.2",
+      "subject": "8X Music",
+      "teacher": "Mr Jennings",
+      "studentCount": 9,
+      "type": "lesson"
+    },
+    {
+      "dayOrder": 3,
+      "periodOrder": 3,
+      "room": "1.1",
+      "subject": "8YIndSoc",
+      "teacher": "Mr McKendry",
+      "studentCount": 10,
+      "type": "lesson"
+    },
+    {
+      "dayOrder": 3,
+      "periodOrder": 3,
+      "room": "M.2",
+      "subject": "9XSci",
+      "teacher": "Ms Liao",
+      "studentCount": 11,
+      "type": "lesson"
+    },
+    {
+      "dayOrder": 3,
+      "periodOrder": 3,
+      "room": "M.1",
+      "subject": "9YSci",
+      "teacher": "Mr Smith II",
+      "studentCount": 11,
+      "type": "lesson"
+    },
+    {
+      "dayOrder": 3,
+      "periodOrder": 3,
+      "room": "2.2",
+      "subject": "10Des",
+      "teacher": "Ms Blades",
+      "studentCount": 8,
+      "type": "lesson"
+    },
+    {
+      "dayOrder": 3,
+      "periodOrder": 3,
+      "room": "SH",
+      "subject": "10Drama",
+      "teacher": "Ms Foster",
+      "studentCount": 9,
+      "type": "lesson"
+    },
+    {
+      "dayOrder": 3,
+      "periodOrder": 3,
+      "room": "2.11 (Art 2)",
+      "subject": "10VA",
+      "teacher": "Miss Dever",
+      "studentCount": 9,
+      "type": "lesson"
+    },
+    {
+      "dayOrder": 3,
+      "periodOrder": 3,
+      "room": "M.9",
+      "subject": "11MAA HL",
+      "teacher": "Ms Bartholomew",
+      "studentCount": 7,
+      "type": "lesson"
+    },
+    {
+      "dayOrder": 3,
+      "periodOrder": 3,
+      "room": "M.8",
+      "subject": "11MAI HL",
+      "teacher": "Mr Bari",
+      "studentCount": 6,
+      "type": "lesson"
+    },
+    {
+      "dayOrder": 3,
+      "periodOrder": 3,
+      "room": "1.5",
+      "subject": "11MAA SL",
+      "teacher": "Mrs McKendry",
+      "studentCount": 9,
+      "type": "lesson"
+    },
+    {
+      "dayOrder": 3,
+      "periodOrder": 3,
+      "room": "2.1",
+      "subject": "11MAI SL 1",
+      "teacher": "Mr Afonso",
+      "studentCount": 11,
+      "type": "lesson"
+    },
+    {
+      "dayOrder": 3,
+      "periodOrder": 3,
+      "room": "1.8",
+      "subject": "12EconB",
+      "teacher": "Miss Muhammad Sharif",
+      "studentCount": 6,
+      "type": "lesson"
+    },
+    {
+      "dayOrder": 3,
+      "periodOrder": 3,
+      "room": "LG.1",
+      "subject": "12Chem",
+      "teacher": "Dr Lodhi",
+      "studentCount": 9,
+      "type": "lesson"
+    },
+    {
+      "dayOrder": 3,
+      "periodOrder": 3,
+      "room": "1.6",
+      "subject": "12GP",
+      "teacher": "Miss Austin",
+      "studentCount": 10,
+      "type": "lesson"
+    },
+    {
+      "dayOrder": 3,
+      "periodOrder": 3,
+      "room": "2.12",
+      "subject": "ILT1",
+      "teacher": "Miss Priestley",
+      "studentCount": 2,
+      "type": "lesson"
+    },
+    {
+      "dayOrder": 3,
+      "periodOrder": 3,
+      "room": "3.1",
+      "subject": "12Music",
+      "teacher": "Mr Burtenshaw",
+      "studentCount": 3,
+      "type": "lesson"
+    },
+    {
+      "dayOrder": 3,
+      "periodOrder": 3,
+      "room": "2.13",
+      "subject": "10FrenchB1",
+      "teacher": "Ms Bolzan",
+      "studentCount": 1,
+      "type": "lesson"
+    },
+    {
+      "dayOrder": 3,
+      "periodOrder": 3,
+      "room": "M.6 (Office)",
+      "subject": "Languages Meeting",
+      "teacher": "Mr Byrne",
+      "studentCount": null,
+      "type": "staff"
+    },
+    {
+      "dayOrder": 3,
+      "periodOrder": 3,
+      "room": "M.6 (Office)",
+      "subject": "Languages Meeting",
+      "teacher": "Ms Delgado Suarez",
+      "studentCount": null,
+      "type": "staff"
+    },
+    {
+      "dayOrder": 3,
+      "periodOrder": 3,
+      "room": "M.6 (Office)",
+      "subject": "Languages Meeting",
+      "teacher": "Ms Lin",
+      "studentCount": null,
+      "type": "staff"
+    },
+    {
+      "dayOrder": 3,
+      "periodOrder": 3,
+      "room": "M.6 (Office)",
+      "subject": "Languages Meeting",
+      "teacher": "Ms Pelaez-Perez",
+      "studentCount": null,
+      "type": "staff"
+    },
+    {
+      "dayOrder": 3,
+      "periodOrder": 4,
+      "room": "1.5",
+      "subject": "6Maths",
+      "teacher": "Ms Wright",
+      "studentCount": 9,
+      "type": "lesson"
+    },
+    {
+      "dayOrder": 3,
+      "periodOrder": 4,
+      "room": "2.10 (Art 1)",
+      "subject": "7VA",
+      "teacher": "Mrs Dance",
+      "studentCount": 13,
+      "type": "lesson"
+    },
+    {
+      "dayOrder": 3,
+      "periodOrder": 4,
+      "room": "1.2",
+      "subject": "8XIndSoc",
+      "teacher": "Mr Ashraf",
+      "studentCount": 9,
+      "type": "lesson"
+    },
+    {
+      "dayOrder": 3,
+      "periodOrder": 4,
+      "room": "1.7",
+      "subject": "8Y Drama",
+      "teacher": "Miss Bolwell",
+      "studentCount": 10,
+      "type": "lesson"
+    },
+    {
+      "dayOrder": 3,
+      "periodOrder": 4,
+      "room": "M.2",
+      "subject": "9XSci",
+      "teacher": "Ms Liao",
+      "studentCount": 11,
+      "type": "lesson"
+    },
+    {
+      "dayOrder": 3,
+      "periodOrder": 4,
+      "room": "M.1",
+      "subject": "9YSci",
+      "teacher": "Mr Smith II",
+      "studentCount": 11,
+      "type": "lesson"
+    },
+    {
+      "dayOrder": 3,
+      "periodOrder": 4,
+      "room": "2.2",
+      "subject": "10Des",
+      "teacher": "Ms Blades",
+      "studentCount": 8,
+      "type": "lesson"
+    },
+    {
+      "dayOrder": 3,
+      "periodOrder": 4,
+      "room": "SH",
+      "subject": "10Drama",
+      "teacher": "Ms Foster",
+      "studentCount": 9,
+      "type": "lesson"
+    },
+    {
+      "dayOrder": 3,
+      "periodOrder": 4,
+      "room": "2.11 (Art 2)",
+      "subject": "10VA",
+      "teacher": "Miss Dever",
+      "studentCount": 9,
+      "type": "lesson"
+    },
+    {
+      "dayOrder": 3,
+      "periodOrder": 4,
+      "room": "M.9",
+      "subject": "11MAA HL",
+      "teacher": "Ms Bartholomew",
+      "studentCount": 7,
+      "type": "lesson"
+    },
+    {
+      "dayOrder": 3,
+      "periodOrder": 4,
+      "room": "M.8",
+      "subject": "11MAI HL",
+      "teacher": "Mr Bari",
+      "studentCount": 6,
+      "type": "lesson"
+    },
+    {
+      "dayOrder": 3,
+      "periodOrder": 4,
+      "room": "1.8",
+      "subject": "12EconB",
+      "teacher": "Miss Muhammad Sharif",
+      "studentCount": 6,
+      "type": "lesson"
+    },
+    {
+      "dayOrder": 3,
+      "periodOrder": 4,
+      "room": "LG.1",
+      "subject": "12Chem",
+      "teacher": "Dr Lodhi",
+      "studentCount": 9,
+      "type": "lesson"
+    },
+    {
+      "dayOrder": 3,
+      "periodOrder": 4,
+      "room": "1.6",
+      "subject": "12GP",
+      "teacher": "Miss Austin",
+      "studentCount": 10,
+      "type": "lesson"
+    },
+    {
+      "dayOrder": 3,
+      "periodOrder": 4,
+      "room": "3.1",
+      "subject": "12Music",
+      "teacher": "Mr Burtenshaw",
+      "studentCount": 3,
+      "type": "lesson"
+    },
+    {
+      "dayOrder": 3,
+      "periodOrder": 4,
+      "room": "2.12",
+      "subject": "ILT1",
+      "teacher": "Miss Priestley",
+      "studentCount": 2,
+      "type": "lesson"
+    },
+    {
+      "dayOrder": 3,
+      "periodOrder": 4,
+      "room": "M.7",
+      "subject": "11ItalianB",
+      "teacher": "Miss De Felice",
+      "studentCount": 2,
+      "type": "lesson"
+    },
+    {
+      "dayOrder": 3,
+      "periodOrder": 4,
+      "room": "2.13",
+      "subject": "10FrenchB1",
+      "teacher": "Ms Bolzan",
+      "studentCount": 1,
+      "type": "lesson"
+    },
+    {
+      "dayOrder": 3,
+      "periodOrder": 4,
+      "room": "HUB",
+      "subject": "Pamoja6",
+      "teacher": "Miss Duenas",
+      "studentCount": 2,
+      "type": "lesson"
+    },
+    {
+      "dayOrder": 3,
+      "periodOrder": 6,
+      "room": "1.6",
+      "subject": "7Maths",
+      "teacher": "Mr Bari",
+      "studentCount": 13,
+      "type": "lesson"
+    },
+    {
+      "dayOrder": 3,
+      "periodOrder": 6,
+      "room": "1.5",
+      "subject": "8XMaths",
+      "teacher": "Mrs McKendry",
+      "studentCount": 9,
+      "type": "lesson"
+    },
+    {
+      "dayOrder": 3,
+      "periodOrder": 6,
+      "room": "2.12",
+      "subject": "8YPL",
+      "teacher": "Miss Priestley",
+      "studentCount": 10,
+      "type": "lesson"
+    },
+    {
+      "dayOrder": 3,
+      "periodOrder": 6,
+      "room": "2.10 (Art 1)",
+      "subject": "9XVA",
+      "teacher": "Miss Dever",
+      "studentCount": 11,
+      "type": "lesson"
+    },
+    {
+      "dayOrder": 3,
+      "periodOrder": 6,
+      "room": "3.2",
+      "subject": "9YMusic",
+      "teacher": "Mr Jennings",
+      "studentCount": 11,
+      "type": "lesson"
+    },
+    {
+      "dayOrder": 3,
+      "periodOrder": 6,
+      "room": "1.8",
+      "subject": "10Econ1",
+      "teacher": "Miss Muhammad Sharif",
+      "studentCount": 14,
+      "type": "lesson"
+    },
+    {
+      "dayOrder": 3,
+      "periodOrder": 6,
+      "room": "1.8",
+      "subject": "10Econ2",
+      "teacher": "Mr McKendry",
+      "studentCount": 11,
+      "type": "lesson"
+    },
+    {
+      "dayOrder": 3,
+      "periodOrder": 6,
+      "room": "M.8",
+      "subject": "10Geog",
+      "teacher": "Mr Ashraf",
+      "studentCount": 3,
+      "type": "lesson"
+    },
+    {
+      "dayOrder": 3,
+      "periodOrder": 6,
+      "room": "1.1",
+      "subject": "11EngLLHL",
+      "teacher": "Miss Cooke",
+      "studentCount": 12,
+      "type": "lesson"
+    },
+    {
+      "dayOrder": 3,
+      "periodOrder": 6,
+      "room": "2.1",
+      "subject": "11EngLit",
+      "teacher": "Ms Stoneman",
+      "studentCount": 12,
+      "type": "lesson"
+    },
+    {
+      "dayOrder": 3,
+      "periodOrder": 6,
+      "room": "M.7",
+      "subject": "11/12 EngB",
+      "teacher": "Mr Byrne",
+      "studentCount": 6,
+      "type": "lesson"
+    },
+    {
+      "dayOrder": 3,
+      "periodOrder": 6,
+      "room": "M.9",
+      "subject": "12Fre AB",
+      "teacher": "Ms Bolzan",
+      "studentCount": 6,
+      "type": "lesson"
+    },
+    {
+      "dayOrder": 3,
+      "periodOrder": 6,
+      "room": "3.1",
+      "subject": "12ManAB",
+      "teacher": "Ms Lin",
+      "studentCount": 3,
+      "type": "lesson"
+    },
+    {
+      "dayOrder": 3,
+      "periodOrder": 6,
+      "room": "1.2",
+      "subject": "12SpB",
+      "teacher": "Ms Delgado Suarez",
+      "studentCount": 9,
+      "type": "lesson"
+    },
+    {
+      "dayOrder": 3,
+      "periodOrder": 6,
+      "room": "2.13",
+      "subject": "ILT2",
+      "teacher": "Miss Priestley",
+      "studentCount": 1,
+      "type": "lesson"
+    },
+    {
+      "dayOrder": 3,
+      "periodOrder": 6,
+      "room": "4.1 Nest",
+      "subject": "12GermanB",
+      "teacher": "Miss Osta Merdan",
+      "studentCount": 1,
+      "type": "lesson"
+    },
+    {
+      "dayOrder": 3,
+      "periodOrder": 6,
+      "room": "M.1",
+      "subject": "12ItalianAb",
+      "teacher": "Miss De Felice",
+      "studentCount": 1,
+      "type": "lesson"
+    },
+    {
+      "dayOrder": 3,
+      "periodOrder": 6,
+      "room": "2.5 (Counsellor)",
+      "subject": "12UkrainianA",
+      "teacher": "Miss Aleksenko",
+      "studentCount": 1,
+      "type": "lesson"
+    },
+    {
+      "dayOrder": 3,
+      "periodOrder": 6,
+      "room": "1.7",
+      "subject": "12SpA",
+      "teacher": "Ms Pelaez-Perez",
+      "studentCount": 1,
+      "type": "lesson"
+    },
+    {
+      "dayOrder": 3,
+      "periodOrder": 6,
+      "room": "HUB",
+      "subject": "Pamoja8",
+      "teacher": "Miss Duenas",
+      "studentCount": 2,
+      "type": "lesson"
+    },
+    {
+      "dayOrder": 3,
+      "periodOrder": 6,
+      "room": "2.2",
+      "subject": "6PSHEE",
+      "teacher": "Ms Mitchell",
+      "studentCount": 9,
+      "type": "lesson"
+    },
+    {
+      "dayOrder": 3,
+      "periodOrder": 7,
+      "room": "1.1",
+      "subject": "10Span1",
+      "teacher": "Ms Pelaez-Perez",
+      "studentCount": 10,
+      "type": "lesson"
+    },
+    {
+      "dayOrder": 3,
+      "periodOrder": 7,
+      "room": "1.2",
+      "subject": "10Span2",
+      "teacher": "Ms Delgado Suarez",
+      "studentCount": 7,
+      "type": "lesson"
+    },
+    {
+      "dayOrder": 3,
+      "periodOrder": 7,
+      "room": "3.1",
+      "subject": "10Man",
+      "teacher": "Ms Lin",
+      "studentCount": 3,
+      "type": "lesson"
+    },
+    {
+      "dayOrder": 3,
+      "periodOrder": 7,
+      "room": "LG.1",
+      "subject": "11Bio",
+      "teacher": "Ms Liao",
+      "studentCount": 10,
+      "type": "lesson"
+    },
+    {
+      "dayOrder": 3,
+      "periodOrder": 7,
+      "room": "M.7",
+      "subject": "11GP",
+      "teacher": "Miss Austin",
+      "studentCount": 6,
+      "type": "lesson"
+    },
+    {
+      "dayOrder": 3,
+      "periodOrder": 7,
+      "room": "1.6",
+      "subject": "11EconA",
+      "teacher": "Miss Muhammad Sharif",
+      "studentCount": 10,
+      "type": "lesson"
+    },
+    {
+      "dayOrder": 3,
+      "periodOrder": 7,
+      "room": "1.8",
+      "subject": "12ToK1",
+      "teacher": "Ms Bartholomew",
+      "studentCount": 31,
+      "type": "lesson"
+    },
+    {
+      "dayOrder": 3,
+      "periodOrder": 7,
+      "room": "1.8",
+      "subject": "12ToK2",
+      "teacher": "Ms Foster",
+      "studentCount": null,
+      "type": "lesson"
+    },
+    {
+      "dayOrder": 3,
+      "periodOrder": 7,
+      "room": "SH",
+      "subject": "EXP PK",
+      "teacher": "Mr Callender",
+      "studentCount": 18,
+      "type": "lesson"
+    },
+    {
+      "dayOrder": 3,
+      "periodOrder": 7,
+      "room": "2.10 (Art 1)",
+      "subject": "EXP CLAY",
+      "teacher": "Mrs Dance",
+      "studentCount": 11,
+      "type": "lesson"
+    },
+    {
+      "dayOrder": 3,
+      "periodOrder": 7,
+      "room": "2.1",
+      "subject": "EXP NEW",
+      "teacher": "Mr Harvey",
+      "studentCount": 9,
+      "type": "lesson"
+    },
+    {
+      "dayOrder": 3,
+      "periodOrder": 7,
+      "room": "M.2",
+      "subject": "EXP ERC",
+      "teacher": "Ms Mitchell",
+      "studentCount": 4,
+      "type": "lesson"
+    },
+    {
+      "dayOrder": 3,
+      "periodOrder": 7,
+      "room": "3.2",
+      "subject": "EXP MUS",
+      "teacher": "Mr Burtenshaw",
+      "studentCount": 4,
+      "type": "lesson"
+    },
+    {
+      "dayOrder": 3,
+      "periodOrder": 7,
+      "room": "Canteen",
+      "subject": "EXP ROB",
+      "teacher": "Mrs McKendry",
+      "studentCount": null,
+      "type": "lesson"
+    },
+    {
+      "dayOrder": 3,
+      "periodOrder": 7,
+      "room": "2.12",
+      "subject": "ILT6",
+      "teacher": "Miss Priestley",
+      "studentCount": 4,
+      "type": "lesson"
+    },
+    {
+      "dayOrder": 3,
+      "periodOrder": 7,
+      "room": "M.8",
+      "subject": "10JapaneseB",
+      "teacher": "Mrs Maehara",
+      "studentCount": 1,
+      "type": "lesson"
+    },
+    {
+      "dayOrder": 3,
+      "periodOrder": 7,
+      "room": "HUB",
+      "subject": "Pamoja2",
+      "teacher": "Miss Duenas",
+      "studentCount": 3,
+      "type": "lesson"
+    },
+    {
+      "dayOrder": 3,
+      "periodOrder": 7,
+      "room": "2.2",
+      "subject": "10Arabic",
+      "teacher": "Mrs Hammad",
+      "studentCount": 2,
+      "type": "lesson"
+    },
+    {
+      "dayOrder": 3,
+      "periodOrder": 7,
+      "room": "M.1",
+      "subject": "EXP HG",
+      "teacher": "Ms Ellis",
+      "studentCount": 10,
+      "type": "lesson"
+    },
+    {
+      "dayOrder": 3,
+      "periodOrder": 7,
+      "room": "1.5",
+      "subject": "EXP ARCH",
+      "teacher": "Mr Jennings",
+      "studentCount": 7,
+      "type": "lesson"
+    },
+    {
+      "dayOrder": 3,
+      "periodOrder": 7,
+      "room": "M.9",
+      "subject": "10FrenchB3",
+      "teacher": "Ms Bolzan",
+      "studentCount": 1,
+      "type": "lesson"
+    },
+    {
+      "dayOrder": 3,
+      "periodOrder": 8,
+      "room": "1.1",
+      "subject": "10Span1",
+      "teacher": "Ms Pelaez-Perez",
+      "studentCount": 10,
+      "type": "lesson"
+    },
+    {
+      "dayOrder": 3,
+      "periodOrder": 8,
+      "room": "1.2",
+      "subject": "10Span2",
+      "teacher": "Ms Delgado Suarez",
+      "studentCount": 7,
+      "type": "lesson"
+    },
+    {
+      "dayOrder": 3,
+      "periodOrder": 8,
+      "room": "3.1",
+      "subject": "10Man",
+      "teacher": "Ms Lin",
+      "studentCount": 3,
+      "type": "lesson"
+    },
+    {
+      "dayOrder": 3,
+      "periodOrder": 8,
+      "room": "LG.1",
+      "subject": "11Bio",
+      "teacher": "Ms Liao",
+      "studentCount": 10,
+      "type": "lesson"
+    },
+    {
+      "dayOrder": 3,
+      "periodOrder": 8,
+      "room": "M.7",
+      "subject": "11GP",
+      "teacher": "Miss Austin",
+      "studentCount": 6,
+      "type": "lesson"
+    },
+    {
+      "dayOrder": 3,
+      "periodOrder": 8,
+      "room": "1.8",
+      "subject": "12ToK1",
+      "teacher": "Ms Bartholomew",
+      "studentCount": 31,
+      "type": "lesson"
+    },
+    {
+      "dayOrder": 3,
+      "periodOrder": 8,
+      "room": "1.8",
+      "subject": "12ToK2",
+      "teacher": "Ms Foster",
+      "studentCount": null,
+      "type": "lesson"
+    },
+    {
+      "dayOrder": 3,
+      "periodOrder": 8,
+      "room": "SH",
+      "subject": "EXP PK",
+      "teacher": "Mr Callender",
+      "studentCount": 18,
+      "type": "lesson"
+    },
+    {
+      "dayOrder": 3,
+      "periodOrder": 8,
+      "room": "2.10 (Art 1)",
+      "subject": "EXP CLAY",
+      "teacher": "Mrs Dance",
+      "studentCount": 11,
+      "type": "lesson"
+    },
+    {
+      "dayOrder": 3,
+      "periodOrder": 8,
+      "room": "2.1",
+      "subject": "EXP NEW",
+      "teacher": "Mr Harvey",
+      "studentCount": 9,
+      "type": "lesson"
+    },
+    {
+      "dayOrder": 3,
+      "periodOrder": 8,
+      "room": "M.2",
+      "subject": "EXP ERC",
+      "teacher": "Ms Mitchell",
+      "studentCount": 4,
+      "type": "lesson"
+    },
+    {
+      "dayOrder": 3,
+      "periodOrder": 8,
+      "room": "3.2",
+      "subject": "EXP MUS",
+      "teacher": "Mr Burtenshaw",
+      "studentCount": 4,
+      "type": "lesson"
+    },
+    {
+      "dayOrder": 3,
+      "periodOrder": 8,
+      "room": "Canteen",
+      "subject": "EXP ROB",
+      "teacher": "Mrs McKendry",
+      "studentCount": null,
+      "type": "lesson"
+    },
+    {
+      "dayOrder": 3,
+      "periodOrder": 8,
+      "room": "1.6",
+      "subject": "11EconA",
+      "teacher": "Miss Muhammad Sharif",
+      "studentCount": 10,
+      "type": "lesson"
+    },
+    {
+      "dayOrder": 3,
+      "periodOrder": 8,
+      "room": "M.8",
+      "subject": "10JapaneseB",
+      "teacher": "Mrs Maehara",
+      "studentCount": 1,
+      "type": "lesson"
+    },
+    {
+      "dayOrder": 3,
+      "periodOrder": 8,
+      "room": "M.9",
+      "subject": "10FrenchB",
+      "teacher": "Ms Bolzan",
+      "studentCount": 2,
+      "type": "lesson"
+    },
+    {
+      "dayOrder": 3,
+      "periodOrder": 8,
+      "room": "2.12",
+      "subject": "ILT6c",
+      "teacher": "Miss Priestley",
+      "studentCount": 4,
+      "type": "lesson"
+    },
+    {
+      "dayOrder": 3,
+      "periodOrder": 8,
+      "room": "HUB",
+      "subject": "Pamoja2",
+      "teacher": "Miss Duenas",
+      "studentCount": 3,
+      "type": "lesson"
+    },
+    {
+      "dayOrder": 3,
+      "periodOrder": 8,
+      "room": "2.2",
+      "subject": "10Arabic",
+      "teacher": "Mrs Hammad",
+      "studentCount": 2,
+      "type": "lesson"
+    },
+    {
+      "dayOrder": 3,
+      "periodOrder": 8,
+      "room": "M.1",
+      "subject": "EXP HG",
+      "teacher": "Ms Ellis",
+      "studentCount": 10,
+      "type": "lesson"
+    },
+    {
+      "dayOrder": 3,
+      "periodOrder": 8,
+      "room": "2.5 (Counsellor)",
+      "subject": "10ItalianB",
+      "teacher": "Miss De Felice",
+      "studentCount": 1,
+      "type": "lesson"
+    },
+    {
+      "dayOrder": 3,
+      "periodOrder": 8,
+      "room": "1.5",
+      "subject": "EXP ARCH",
+      "teacher": "Mr Jennings",
+      "studentCount": 7,
+      "type": "lesson"
+    },
+    {
+      "dayOrder": 4,
+      "periodOrder": 1,
+      "room": "M.7",
+      "subject": "11/12 FreB",
+      "teacher": "Ms Bolzan",
+      "studentCount": 5,
+      "type": "lesson"
+    },
+    {
+      "dayOrder": 4,
+      "periodOrder": 2,
+      "room": "2.1",
+      "subject": "6IndSoc",
+      "teacher": "Mr McKendry",
+      "studentCount": 9,
+      "type": "lesson"
+    },
+    {
+      "dayOrder": 4,
+      "periodOrder": 2,
+      "room": "1.2",
+      "subject": "7IndSoc",
+      "teacher": "Mr Ashraf",
+      "studentCount": 13,
+      "type": "lesson"
+    },
+    {
+      "dayOrder": 4,
+      "periodOrder": 2,
+      "room": "1.1",
+      "subject": "8XEng",
+      "teacher": "Miss Cooke",
+      "studentCount": 9,
+      "type": "lesson"
+    },
+    {
+      "dayOrder": 4,
+      "periodOrder": 2,
+      "room": "1.5",
+      "subject": "8YMaths",
+      "teacher": "Ms Wright",
+      "studentCount": 10,
+      "type": "lesson"
+    },
+    {
+      "dayOrder": 4,
+      "periodOrder": 2,
+      "room": "M.2",
+      "subject": "9XSci",
+      "teacher": "Ms Liao",
+      "studentCount": 11,
+      "type": "lesson"
+    },
+    {
+      "dayOrder": 4,
+      "periodOrder": 2,
+      "room": "M.1",
+      "subject": "9YSci",
+      "teacher": "Mr Smith II",
+      "studentCount": 11,
+      "type": "lesson"
+    },
+    {
+      "dayOrder": 4,
+      "periodOrder": 2,
+      "room": "2.2",
+      "subject": "10Des",
+      "teacher": "Ms Blades",
+      "studentCount": 8,
+      "type": "lesson"
+    },
+    {
+      "dayOrder": 4,
+      "periodOrder": 2,
+      "room": "1.7",
+      "subject": "10Drama",
+      "teacher": "Ms Foster",
+      "studentCount": 9,
+      "type": "lesson"
+    },
+    {
+      "dayOrder": 4,
+      "periodOrder": 2,
+      "room": "2.10 (Art 1)",
+      "subject": "10VA",
+      "teacher": "Miss Dever",
+      "studentCount": 9,
+      "type": "lesson"
+    },
+    {
+      "dayOrder": 4,
+      "periodOrder": 2,
+      "room": "M.9",
+      "subject": "11MAA HL",
+      "teacher": "Ms Bartholomew",
+      "studentCount": 7,
+      "type": "lesson"
+    },
+    {
+      "dayOrder": 4,
+      "periodOrder": 2,
+      "room": "M.8",
+      "subject": "11MAI HL",
+      "teacher": "Mr Bari",
+      "studentCount": 6,
+      "type": "lesson"
+    },
+    {
+      "dayOrder": 4,
+      "periodOrder": 2,
+      "room": "1.6",
+      "subject": "11MAA SL",
+      "teacher": "Mrs McKendry",
+      "studentCount": 9,
+      "type": "lesson"
+    },
+    {
+      "dayOrder": 4,
+      "periodOrder": 2,
+      "room": "2.13",
+      "subject": "11MAI SL 1",
+      "teacher": "Mr Afonso",
+      "studentCount": 11,
+      "type": "lesson"
+    },
+    {
+      "dayOrder": 4,
+      "periodOrder": 2,
+      "room": "1.8",
+      "subject": "12EconB",
+      "teacher": "Miss Muhammad Sharif",
+      "studentCount": 6,
+      "type": "lesson"
+    },
+    {
+      "dayOrder": 4,
+      "periodOrder": 2,
+      "room": "LG.1",
+      "subject": "12Chem",
+      "teacher": "Dr Lodhi",
+      "studentCount": 9,
+      "type": "lesson"
+    },
+    {
+      "dayOrder": 4,
+      "periodOrder": 2,
+      "room": "3.2",
+      "subject": "12GP",
+      "teacher": "Miss Austin",
+      "studentCount": 10,
+      "type": "lesson"
+    },
+    {
+      "dayOrder": 4,
+      "periodOrder": 2,
+      "room": "2.5 (Counsellor)",
+      "subject": "12PortA2",
+      "teacher": "Miss Nogueira-Lima",
+      "studentCount": 1,
+      "type": "lesson"
+    },
+    {
+      "dayOrder": 4,
+      "periodOrder": 2,
+      "room": "2.12",
+      "subject": "ILT1a",
+      "teacher": "Miss Priestley",
+      "studentCount": 3,
+      "type": "lesson"
+    },
+    {
+      "dayOrder": 4,
+      "periodOrder": 2,
+      "room": "3.1",
+      "subject": "11ESSB",
+      "teacher": "Mr Steiner",
+      "studentCount": 6,
+      "type": "lesson"
+    },
+    {
+      "dayOrder": 4,
+      "periodOrder": 3,
+      "room": "2.12",
+      "subject": "7PL",
+      "teacher": "Miss Priestley",
+      "studentCount": 13,
+      "type": "lesson"
+    },
+    {
+      "dayOrder": 4,
+      "periodOrder": 3,
+      "room": "1.1",
+      "subject": "8XEng",
+      "teacher": "Miss Cooke",
+      "studentCount": 9,
+      "type": "lesson"
+    },
+    {
+      "dayOrder": 4,
+      "periodOrder": 3,
+      "room": "3.1",
+      "subject": "8YEng",
+      "teacher": "Miss Bolwell",
+      "studentCount": 10,
+      "type": "lesson"
+    },
+    {
+      "dayOrder": 4,
+      "periodOrder": 3,
+      "room": "2.10 (Art 1)",
+      "subject": "9XVA",
+      "teacher": "Miss Dever",
+      "studentCount": 11,
+      "type": "lesson"
+    },
+    {
+      "dayOrder": 4,
+      "periodOrder": 3,
+      "room": "3.2",
+      "subject": "9YMusic",
+      "teacher": "Mr Jennings",
+      "studentCount": 11,
+      "type": "lesson"
+    },
+    {
+      "dayOrder": 4,
+      "periodOrder": 3,
+      "room": "1.5",
+      "subject": "10MathEX1",
+      "teacher": "Ms Bartholomew",
+      "studentCount": 11,
+      "type": "lesson"
+    },
+    {
+      "dayOrder": 4,
+      "periodOrder": 3,
+      "room": "1.6",
+      "subject": "10MathEX2",
+      "teacher": "Ms Wright",
+      "studentCount": 10,
+      "type": "lesson"
+    },
+    {
+      "dayOrder": 4,
+      "periodOrder": 3,
+      "room": "1.2",
+      "subject": "10MathST",
+      "teacher": "Mr Bari",
+      "studentCount": 8,
+      "type": "lesson"
+    },
+    {
+      "dayOrder": 4,
+      "periodOrder": 3,
+      "room": "LG.1",
+      "subject": "11Chem",
+      "teacher": "Dr Lodhi",
+      "studentCount": 9,
+      "type": "lesson"
+    },
+    {
+      "dayOrder": 4,
+      "periodOrder": 3,
+      "room": "M.7",
+      "subject": "11Hist",
+      "teacher": "Miss Austin",
+      "studentCount": 7,
+      "type": "lesson"
+    },
+    {
+      "dayOrder": 4,
+      "periodOrder": 3,
+      "room": "M.9",
+      "subject": "11/12 FreA",
+      "teacher": "Ms Bolzan",
+      "studentCount": 1,
+      "type": "lesson"
+    },
+    {
+      "dayOrder": 4,
+      "periodOrder": 3,
+      "room": "M.9",
+      "subject": "11FrenchBHL1",
+      "teacher": "Ms Bolzan",
+      "studentCount": 1,
+      "type": "lesson"
+    },
+    {
+      "dayOrder": 4,
+      "periodOrder": 3,
+      "room": "M.8",
+      "subject": "11Geo",
+      "teacher": "Mr Ashraf",
+      "studentCount": 9,
+      "type": "lesson"
+    },
+    {
+      "dayOrder": 4,
+      "periodOrder": 3,
+      "room": "M.2",
+      "subject": "12ESS",
+      "teacher": "Mr Steiner",
+      "studentCount": 16,
+      "type": "lesson"
+    },
+    {
+      "dayOrder": 4,
+      "periodOrder": 3,
+      "room": "2.1",
+      "subject": "6IndSoc",
+      "teacher": "Mr McKendry",
+      "studentCount": 9,
+      "type": "lesson"
+    },
+    {
+      "dayOrder": 4,
+      "periodOrder": 3,
+      "room": "M.1",
+      "subject": "12ItalianB",
+      "teacher": "Miss De Felice",
+      "studentCount": 1,
+      "type": "lesson"
+    },
+    {
+      "dayOrder": 4,
+      "periodOrder": 3,
+      "room": "2.5 (Counsellor)",
+      "subject": "12RussianAb",
+      "teacher": "Miss Aleksenko",
+      "studentCount": 1,
+      "type": "lesson"
+    },
+    {
+      "dayOrder": 4,
+      "periodOrder": 3,
+      "room": "2.13",
+      "subject": "11SwedishB",
+      "teacher": "Miss Nordstrom",
+      "studentCount": 1,
+      "type": "lesson"
+    },
+    {
+      "dayOrder": 4,
+      "periodOrder": 3,
+      "room": "2.2",
+      "subject": "12PortA1",
+      "teacher": "Miss Nogueira-Lima",
+      "studentCount": 1,
+      "type": "lesson"
+    },
+    {
+      "dayOrder": 4,
+      "periodOrder": 3,
+      "room": "HUB",
+      "subject": "Pamoja1",
+      "teacher": "Miss Duenas",
+      "studentCount": 3,
+      "type": "lesson"
+    },
+    {
+      "dayOrder": 4,
+      "periodOrder": 3,
+      "room": "4.1 Nest",
+      "subject": "11 Russian A",
+      "teacher": "Mrs Antonenko",
+      "studentCount": 1,
+      "type": "lesson"
+    },
+    {
+      "dayOrder": 4,
+      "periodOrder": 4,
+      "room": "1.5",
+      "subject": "6Maths",
+      "teacher": "Ms Wright",
+      "studentCount": 9,
+      "type": "lesson"
+    },
+    {
+      "dayOrder": 4,
+      "periodOrder": 4,
+      "room": "1.6",
+      "subject": "7Maths",
+      "teacher": "Mr Bari",
+      "studentCount": 13,
+      "type": "lesson"
+    },
+    {
+      "dayOrder": 4,
+      "periodOrder": 4,
+      "room": "2.2",
+      "subject": "8XDes",
+      "teacher": "Ms Blades",
+      "studentCount": 9,
+      "type": "lesson"
+    },
+    {
+      "dayOrder": 4,
+      "periodOrder": 4,
+      "room": "3.1",
+      "subject": "8YEng",
+      "teacher": "Miss Bolwell",
+      "studentCount": 10,
+      "type": "lesson"
+    },
+    {
+      "dayOrder": 4,
+      "periodOrder": 4,
+      "room": "2.10 (Art 1)",
+      "subject": "9XVA",
+      "teacher": "Miss Dever",
+      "studentCount": 11,
+      "type": "lesson"
+    },
+    {
+      "dayOrder": 4,
+      "periodOrder": 4,
+      "room": "3.2",
+      "subject": "9YMusic",
+      "teacher": "Mr Jennings",
+      "studentCount": 11,
+      "type": "lesson"
+    },
+    {
+      "dayOrder": 4,
+      "periodOrder": 4,
+      "room": "1.1",
+      "subject": "10Span1",
+      "teacher": "Ms Pelaez-Perez",
+      "studentCount": 10,
+      "type": "lesson"
+    },
+    {
+      "dayOrder": 4,
+      "periodOrder": 4,
+      "room": "1.2",
+      "subject": "10Span2",
+      "teacher": "Ms Delgado Suarez",
+      "studentCount": 7,
+      "type": "lesson"
+    },
+    {
+      "dayOrder": 4,
+      "periodOrder": 4,
+      "room": "2.1",
+      "subject": "10Man",
+      "teacher": "Ms Lin",
+      "studentCount": 3,
+      "type": "lesson"
+    },
+    {
+      "dayOrder": 4,
+      "periodOrder": 4,
+      "room": "LG.1",
+      "subject": "11Chem",
+      "teacher": "Dr Lodhi",
+      "studentCount": 9,
+      "type": "lesson"
+    },
+    {
+      "dayOrder": 4,
+      "periodOrder": 4,
+      "room": "M.7",
+      "subject": "11Hist",
+      "teacher": "Miss Austin",
+      "studentCount": 7,
+      "type": "lesson"
+    },
+    {
+      "dayOrder": 4,
+      "periodOrder": 4,
+      "room": "M.8",
+      "subject": "11Geo",
+      "teacher": "Mr Ashraf",
+      "studentCount": 9,
+      "type": "lesson"
+    },
+    {
+      "dayOrder": 4,
+      "periodOrder": 4,
+      "room": "M.2",
+      "subject": "12ESS",
+      "teacher": "Mr Steiner",
+      "studentCount": 16,
+      "type": "lesson"
+    },
+    {
+      "dayOrder": 4,
+      "periodOrder": 4,
+      "room": "M.1",
+      "subject": "12ItalianB",
+      "teacher": "Miss De Felice",
+      "studentCount": 1,
+      "type": "lesson"
+    },
+    {
+      "dayOrder": 4,
+      "periodOrder": 4,
+      "room": "2.5 (Counsellor)",
+      "subject": "12RussianAb",
+      "teacher": "Miss Aleksenko",
+      "studentCount": 1,
+      "type": "lesson"
+    },
+    {
+      "dayOrder": 4,
+      "periodOrder": 4,
+      "room": "2.12",
+      "subject": "11SwedishB",
+      "teacher": "Miss Nordstrom",
+      "studentCount": 1,
+      "type": "lesson"
+    },
+    {
+      "dayOrder": 4,
+      "periodOrder": 4,
+      "room": "2.12",
+      "subject": "ILT6a",
+      "teacher": "Miss Priestley",
+      "studentCount": 7,
+      "type": "lesson"
+    },
+    {
+      "dayOrder": 4,
+      "periodOrder": 4,
+      "room": "1.8",
+      "subject": "10GermanA",
+      "teacher": "Dr Milde",
+      "studentCount": 1,
+      "type": "lesson"
+    },
+    {
+      "dayOrder": 4,
+      "periodOrder": 4,
+      "room": "1.7",
+      "subject": "12PortA3",
+      "teacher": "Miss Nogueira-Lima",
+      "studentCount": 1,
+      "type": "lesson"
+    },
+    {
+      "dayOrder": 4,
+      "periodOrder": 4,
+      "room": "2.13",
+      "subject": "10Turkish",
+      "teacher": "Miss Ozturk",
+      "studentCount": 1,
+      "type": "lesson"
+    },
+    {
+      "dayOrder": 4,
+      "periodOrder": 4,
+      "room": "HUB",
+      "subject": "Pamoja1",
+      "teacher": "Miss Duenas",
+      "studentCount": 3,
+      "type": "lesson"
+    },
+    {
+      "dayOrder": 4,
+      "periodOrder": 4,
+      "room": "4.1 Nest",
+      "subject": "11 Russian A",
+      "teacher": "Mrs Antonenko",
+      "studentCount": 1,
+      "type": "lesson"
+    },
+    {
+      "dayOrder": 4,
+      "periodOrder": 4,
+      "room": "M.9",
+      "subject": "10FrenchB3",
+      "teacher": "Ms Bolzan",
+      "studentCount": 1,
+      "type": "lesson"
+    },
+    {
+      "dayOrder": 4,
+      "periodOrder": 6,
+      "room": "3.1",
+      "subject": "6Eng",
+      "teacher": "Mr Jennings",
+      "studentCount": 9,
+      "type": "lesson"
+    },
+    {
+      "dayOrder": 4,
+      "periodOrder": 6,
+      "room": "LG.1",
+      "subject": "7Sci",
+      "teacher": "Dr Lodhi",
+      "studentCount": 13,
+      "type": "lesson"
+    },
+    {
+      "dayOrder": 4,
+      "periodOrder": 6,
+      "room": "SH",
+      "subject": "8XPHE",
+      "teacher": "Mr Callender",
+      "studentCount": 9,
+      "type": "lesson"
+    },
+    {
+      "dayOrder": 4,
+      "periodOrder": 6,
+      "room": "SH",
+      "subject": "8YPHE",
+      "teacher": "Ms Gardner",
+      "studentCount": 10,
+      "type": "lesson"
+    },
+    {
+      "dayOrder": 4,
+      "periodOrder": 6,
+      "room": "2.2",
+      "subject": "9XDes",
+      "teacher": "Ms Blades",
+      "studentCount": 11,
+      "type": "lesson"
+    },
+    {
+      "dayOrder": 4,
+      "periodOrder": 6,
+      "room": "M.1",
+      "subject": "10Phys",
+      "teacher": "Mr Smith II",
+      "studentCount": 17,
+      "type": "lesson"
+    },
+    {
+      "dayOrder": 4,
+      "periodOrder": 6,
+      "room": "M.2",
+      "subject": "10ESS",
+      "teacher": "Mr Steiner",
+      "studentCount": 5,
+      "type": "lesson"
+    },
+    {
+      "dayOrder": 4,
+      "periodOrder": 6,
+      "room": "1.8",
+      "subject": "11ToK1",
+      "teacher": "Ms Bartholomew",
+      "studentCount": 13,
+      "type": "lesson"
+    },
+    {
+      "dayOrder": 4,
+      "periodOrder": 6,
+      "room": "1.5",
+      "subject": "11ToK2",
+      "teacher": "Ms Fritz",
+      "studentCount": 14,
+      "type": "lesson"
+    },
+    {
+      "dayOrder": 4,
+      "periodOrder": 6,
+      "room": "1.6",
+      "subject": "11ToK3",
+      "teacher": "Mr Lippman",
+      "studentCount": 13,
+      "type": "lesson"
+    },
+    {
+      "dayOrder": 4,
+      "periodOrder": 6,
+      "room": "2.1",
+      "subject": "12EconA",
+      "teacher": "Miss Muhammad Sharif",
+      "studentCount": 8,
+      "type": "lesson"
+    },
+    {
+      "dayOrder": 4,
+      "periodOrder": 6,
+      "room": "M.7",
+      "subject": "12His",
+      "teacher": "Miss Austin",
+      "studentCount": 4,
+      "type": "lesson"
+    },
+    {
+      "dayOrder": 4,
+      "periodOrder": 6,
+      "room": "M.8",
+      "subject": "12Geo HL",
+      "teacher": "Mr McKendry",
+      "studentCount": 1,
+      "type": "lesson"
+    },
+    {
+      "dayOrder": 4,
+      "periodOrder": 6,
+      "room": "2.13",
+      "subject": "ILT4",
+      "teacher": "Miss Priestley",
+      "studentCount": 7,
+      "type": "lesson"
+    },
+    {
+      "dayOrder": 4,
+      "periodOrder": 6,
+      "room": "2.5 (Counsellor)",
+      "subject": "12RussianA",
+      "teacher": "Miss Aleksenko",
+      "studentCount": 1,
+      "type": "lesson"
+    },
+    {
+      "dayOrder": 4,
+      "periodOrder": 6,
+      "room": "1.7",
+      "subject": "12PortA3",
+      "teacher": "Miss Nogueira-Lima",
+      "studentCount": 1,
+      "type": "lesson"
+    },
+    {
+      "dayOrder": 4,
+      "periodOrder": 6,
+      "room": "1.2",
+      "subject": "9YIndSoc",
+      "teacher": "Mr Ashraf",
+      "studentCount": 11,
+      "type": "lesson"
+    },
+    {
+      "dayOrder": 4,
+      "periodOrder": 6,
+      "room": "1.1",
+      "subject": "12SpB HL",
+      "teacher": "Ms Delgado Suarez",
+      "studentCount": 2,
+      "type": "lesson"
+    },
+    {
+      "dayOrder": 4,
+      "periodOrder": 6,
+      "room": "M.9",
+      "subject": "11/12 FreA",
+      "teacher": "Ms Bolzan",
+      "studentCount": 1,
+      "type": "lesson"
+    },
+    {
+      "dayOrder": 4,
+      "periodOrder": 7,
+      "room": "3.1",
+      "subject": "6Eng",
+      "teacher": "Mr Jennings",
+      "studentCount": 9,
+      "type": "lesson"
+    },
+    {
+      "dayOrder": 4,
+      "periodOrder": 7,
+      "room": "LG.1",
+      "subject": "7Sci",
+      "teacher": "Dr Lodhi",
+      "studentCount": 13,
+      "type": "lesson"
+    },
+    {
+      "dayOrder": 4,
+      "periodOrder": 7,
+      "room": "SH",
+      "subject": "8XPHE",
+      "teacher": "Mr Callender",
+      "studentCount": 9,
+      "type": "lesson"
+    },
+    {
+      "dayOrder": 4,
+      "periodOrder": 7,
+      "room": "SH",
+      "subject": "8YPHE",
+      "teacher": "Ms Gardner",
+      "studentCount": 10,
+      "type": "lesson"
+    },
+    {
+      "dayOrder": 4,
+      "periodOrder": 7,
+      "room": "2.2",
+      "subject": "9XDes",
+      "teacher": "Ms Blades",
+      "studentCount": 11,
+      "type": "lesson"
+    },
+    {
+      "dayOrder": 4,
+      "periodOrder": 7,
+      "room": "1.2",
+      "subject": "9YIndSoc",
+      "teacher": "Mr Ashraf",
+      "studentCount": 11,
+      "type": "lesson"
+    },
+    {
+      "dayOrder": 4,
+      "periodOrder": 7,
+      "room": "1.1",
+      "subject": "10Eng1",
+      "teacher": "Miss Cooke",
+      "studentCount": 16,
+      "type": "lesson"
+    },
+    {
+      "dayOrder": 4,
+      "periodOrder": 7,
+      "room": "2.1",
+      "subject": "10Eng2",
+      "teacher": "Ms Stoneman",
+      "studentCount": 13,
+      "type": "lesson"
+    },
+    {
+      "dayOrder": 4,
+      "periodOrder": 7,
+      "room": "1.8",
+      "subject": "11EconB",
+      "teacher": "Miss Muhammad Sharif",
+      "studentCount": 12,
+      "type": "lesson"
+    },
+    {
+      "dayOrder": 4,
+      "periodOrder": 7,
+      "room": "2.10 (Art 1)",
+      "subject": "11VA",
+      "teacher": "Miss Dever",
+      "studentCount": 7,
+      "type": "lesson"
+    },
+    {
+      "dayOrder": 4,
+      "periodOrder": 7,
+      "room": "3.2",
+      "subject": "11/12 Music",
+      "teacher": "Mr Burtenshaw",
+      "studentCount": 10,
+      "type": "lesson"
+    },
+    {
+      "dayOrder": 4,
+      "periodOrder": 7,
+      "room": "1.7",
+      "subject": "11Theatre",
+      "teacher": "Ms Foster",
+      "studentCount": 5,
+      "type": "lesson"
+    },
+    {
+      "dayOrder": 4,
+      "periodOrder": 7,
+      "room": "M.7",
+      "subject": "11FreBHL",
+      "teacher": "Ms Bolzan",
+      "studentCount": 2,
+      "type": "lesson"
+    },
+    {
+      "dayOrder": 4,
+      "periodOrder": 7,
+      "room": "M.2",
+      "subject": "12Bio",
+      "teacher": "Ms Liao",
+      "studentCount": 9,
+      "type": "lesson"
+    },
+    {
+      "dayOrder": 4,
+      "periodOrder": 7,
+      "room": "M.1",
+      "subject": "12Phy",
+      "teacher": "Mr Smith II",
+      "studentCount": 10,
+      "type": "lesson"
+    },
+    {
+      "dayOrder": 4,
+      "periodOrder": 7,
+      "room": "2.5 (Counsellor)",
+      "subject": "12RussianA",
+      "teacher": "Miss Aleksenko",
+      "studentCount": 1,
+      "type": "lesson"
+    },
+    {
+      "dayOrder": 4,
+      "periodOrder": 7,
+      "room": "HUB",
+      "subject": "Pamoja7",
+      "teacher": "Miss Duenas",
+      "studentCount": 5,
+      "type": "lesson"
+    },
+    {
+      "dayOrder": 4,
+      "periodOrder": 7,
+      "room": "M.9",
+      "subject": "12ItalianAb",
+      "teacher": "Miss De Felice",
+      "studentCount": 1,
+      "type": "lesson"
+    },
+    {
+      "dayOrder": 4,
+      "periodOrder": 8,
+      "room": "M.8",
+      "subject": "6/7Span2",
+      "teacher": "Ms Delgado Suarez",
+      "studentCount": 4,
+      "type": "lesson"
+    },
+    {
+      "dayOrder": 4,
+      "periodOrder": 8,
+      "room": "3.1",
+      "subject": "6/7Man",
+      "teacher": "Ms Lin",
+      "studentCount": 8,
+      "type": "lesson"
+    },
+    {
+      "dayOrder": 4,
+      "periodOrder": 8,
+      "room": "2.2",
+      "subject": "6/7Span1",
+      "teacher": "Ms Pelaez-Perez",
+      "studentCount": 10,
+      "type": "lesson"
+    },
+    {
+      "dayOrder": 4,
+      "periodOrder": 8,
+      "room": "SH",
+      "subject": "8XPHE",
+      "teacher": "Mr Callender",
+      "studentCount": 9,
+      "type": "lesson"
+    },
+    {
+      "dayOrder": 4,
+      "periodOrder": 8,
+      "room": "SH",
+      "subject": "8YPHE",
+      "teacher": "Ms Gardner",
+      "studentCount": 10,
+      "type": "lesson"
+    },
+    {
+      "dayOrder": 4,
+      "periodOrder": 8,
+      "room": "1.5",
+      "subject": "9MathEX",
+      "teacher": "Ms Wright",
+      "studentCount": 14,
+      "type": "lesson"
+    },
+    {
+      "dayOrder": 4,
+      "periodOrder": 8,
+      "room": "1.6",
+      "subject": "9MathST",
+      "teacher": "Mrs McKendry",
+      "studentCount": 8,
+      "type": "lesson"
+    },
+    {
+      "dayOrder": 4,
+      "periodOrder": 8,
+      "room": "1.1",
+      "subject": "10Eng1",
+      "teacher": "Miss Cooke",
+      "studentCount": 16,
+      "type": "lesson"
+    },
+    {
+      "dayOrder": 4,
+      "periodOrder": 8,
+      "room": "2.1",
+      "subject": "10Eng2",
+      "teacher": "Ms Stoneman",
+      "studentCount": 13,
+      "type": "lesson"
+    },
+    {
+      "dayOrder": 4,
+      "periodOrder": 8,
+      "room": "1.8",
+      "subject": "11EconB",
+      "teacher": "Miss Muhammad Sharif",
+      "studentCount": 12,
+      "type": "lesson"
+    },
+    {
+      "dayOrder": 4,
+      "periodOrder": 8,
+      "room": "2.10 (Art 1)",
+      "subject": "11VA",
+      "teacher": "Miss Dever",
+      "studentCount": 7,
+      "type": "lesson"
+    },
+    {
+      "dayOrder": 4,
+      "periodOrder": 8,
+      "room": "3.2",
+      "subject": "11/12 Music",
+      "teacher": "Mr Burtenshaw",
+      "studentCount": 10,
+      "type": "lesson"
+    },
+    {
+      "dayOrder": 4,
+      "periodOrder": 8,
+      "room": "1.7",
+      "subject": "11Theatre",
+      "teacher": "Ms Foster",
+      "studentCount": 5,
+      "type": "lesson"
+    },
+    {
+      "dayOrder": 4,
+      "periodOrder": 8,
+      "room": "M.2",
+      "subject": "12Bio",
+      "teacher": "Ms Liao",
+      "studentCount": 9,
+      "type": "lesson"
+    },
+    {
+      "dayOrder": 4,
+      "periodOrder": 8,
+      "room": "M.1",
+      "subject": "12Phy",
+      "teacher": "Mr Smith II",
+      "studentCount": 10,
+      "type": "lesson"
+    },
+    {
+      "dayOrder": 4,
+      "periodOrder": 8,
+      "room": "HUB",
+      "subject": "Pamoja7",
+      "teacher": "Miss Duenas",
+      "studentCount": 5,
+      "type": "lesson"
+    },
+    {
+      "dayOrder": 4,
+      "periodOrder": 8,
+      "room": "M.9",
+      "subject": "12ItalianAb",
+      "teacher": "Miss De Felice",
+      "studentCount": 1,
+      "type": "lesson"
+    },
+    {
+      "dayOrder": 4,
+      "periodOrder": 9,
+      "room": "M.9",
+      "subject": "12Fre AB",
+      "teacher": "Ms Bolzan",
+      "studentCount": 6,
+      "type": "lesson"
+    },
+    {
+      "dayOrder": 5,
+      "periodOrder": 2,
+      "room": "M.8",
+      "subject": "6/7Span2",
+      "teacher": "Ms Delgado Suarez",
+      "studentCount": 4,
+      "type": "lesson"
+    },
+    {
+      "dayOrder": 5,
+      "periodOrder": 2,
+      "room": "3.1",
+      "subject": "6/7Man",
+      "teacher": "Ms Lin",
+      "studentCount": 8,
+      "type": "lesson"
+    },
+    {
+      "dayOrder": 5,
+      "periodOrder": 2,
+      "room": "2.2",
+      "subject": "6/7Span1",
+      "teacher": "Ms Pelaez-Perez",
+      "studentCount": 10,
+      "type": "lesson"
+    },
+    {
+      "dayOrder": 5,
+      "periodOrder": 2,
+      "room": "1.6",
+      "subject": "8XMaths",
+      "teacher": "Mrs McKendry",
+      "studentCount": 9,
+      "type": "lesson"
+    },
+    {
+      "dayOrder": 5,
+      "periodOrder": 2,
+      "room": "1.2",
+      "subject": "8YPSHEE",
+      "teacher": "Mr Harvey",
+      "studentCount": 10,
+      "type": "lesson"
+    },
+    {
+      "dayOrder": 5,
+      "periodOrder": 2,
+      "room": "SH",
+      "subject": "9XPHE",
+      "teacher": "Mr Callender",
+      "studentCount": 11,
+      "type": "lesson"
+    },
+    {
+      "dayOrder": 5,
+      "periodOrder": 2,
+      "room": "SH",
+      "subject": "9YPHE",
+      "teacher": "Ms Gardner",
+      "studentCount": 11,
+      "type": "lesson"
+    },
+    {
+      "dayOrder": 5,
+      "periodOrder": 2,
+      "room": "1.1",
+      "subject": "10Eng1",
+      "teacher": "Miss Cooke",
+      "studentCount": 16,
+      "type": "lesson"
+    },
+    {
+      "dayOrder": 5,
+      "periodOrder": 2,
+      "room": "2.1",
+      "subject": "10Eng2",
+      "teacher": "Ms Stoneman",
+      "studentCount": 13,
+      "type": "lesson"
+    },
+    {
+      "dayOrder": 5,
+      "periodOrder": 2,
+      "room": "1.8",
+      "subject": "11EconB",
+      "teacher": "Miss Muhammad Sharif",
+      "studentCount": 12,
+      "type": "lesson"
+    },
+    {
+      "dayOrder": 5,
+      "periodOrder": 2,
+      "room": "2.10 (Art 1)",
+      "subject": "11VA",
+      "teacher": "Miss Dever",
+      "studentCount": 7,
+      "type": "lesson"
+    },
+    {
+      "dayOrder": 5,
+      "periodOrder": 2,
+      "room": "1.7",
+      "subject": "11/12 Theatre",
+      "teacher": "Ms Foster",
+      "studentCount": 8,
+      "type": "lesson"
+    },
+    {
+      "dayOrder": 5,
+      "periodOrder": 2,
+      "room": "3.2",
+      "subject": "11Music",
+      "teacher": "Mr Burtenshaw",
+      "studentCount": 7,
+      "type": "lesson"
+    },
+    {
+      "dayOrder": 5,
+      "periodOrder": 2,
+      "room": "LG.1",
+      "subject": "12Bio",
+      "teacher": "Ms Liao",
+      "studentCount": 9,
+      "type": "lesson"
+    },
+    {
+      "dayOrder": 5,
+      "periodOrder": 2,
+      "room": "M.1",
+      "subject": "12Phy",
+      "teacher": "Mr Smith II",
+      "studentCount": 10,
+      "type": "lesson"
+    },
+    {
+      "dayOrder": 5,
+      "periodOrder": 3,
+      "room": "3.1",
+      "subject": "6Eng",
+      "teacher": "Mr Jennings",
+      "studentCount": 9,
+      "type": "lesson"
+    },
+    {
+      "dayOrder": 5,
+      "periodOrder": 3,
+      "room": "2.2",
+      "subject": "7Des",
+      "teacher": "Ms Blades",
+      "studentCount": 13,
+      "type": "lesson"
+    },
+    {
+      "dayOrder": 5,
+      "periodOrder": 3,
+      "room": "1.2",
+      "subject": "8XIndSoc",
+      "teacher": "Mr Ashraf",
+      "studentCount": 9,
+      "type": "lesson"
+    },
+    {
+      "dayOrder": 5,
+      "periodOrder": 3,
+      "room": "M.2",
+      "subject": "8YSci",
+      "teacher": "Mr Steiner",
+      "studentCount": 10,
+      "type": "lesson"
+    },
+    {
+      "dayOrder": 5,
+      "periodOrder": 3,
+      "room": "SH",
+      "subject": "9XPHE",
+      "teacher": "Mr Callender",
+      "studentCount": 11,
+      "type": "lesson"
+    },
+    {
+      "dayOrder": 5,
+      "periodOrder": 3,
+      "room": "SH",
+      "subject": "9YPHE",
+      "teacher": "Ms Gardner",
+      "studentCount": 11,
+      "type": "lesson"
+    },
+    {
+      "dayOrder": 5,
+      "periodOrder": 3,
+      "room": "1.5",
+      "subject": "10MathEX1",
+      "teacher": "Ms Bartholomew",
+      "studentCount": 11,
+      "type": "lesson"
+    },
+    {
+      "dayOrder": 5,
+      "periodOrder": 3,
+      "room": "1.6",
+      "subject": "10MathEX2",
+      "teacher": "Ms Wright",
+      "studentCount": 10,
+      "type": "lesson"
+    },
+    {
+      "dayOrder": 5,
+      "periodOrder": 3,
+      "room": "1.1",
+      "subject": "10MathST",
+      "teacher": "Mr Bari",
+      "studentCount": 8,
+      "type": "lesson"
+    },
+    {
+      "dayOrder": 5,
+      "periodOrder": 3,
+      "room": "M.9",
+      "subject": "11SpanAB",
+      "teacher": "Mr Byrne",
+      "studentCount": 5,
+      "type": "lesson"
+    },
+    {
+      "dayOrder": 5,
+      "periodOrder": 3,
+      "room": "M.1",
+      "subject": "11SpA",
+      "teacher": "Ms Pelaez-Perez",
+      "studentCount": 5,
+      "type": "lesson"
+    },
+    {
+      "dayOrder": 5,
+      "periodOrder": 3,
+      "room": "2.12",
+      "subject": "11ManB",
+      "teacher": "Ms Lin",
+      "studentCount": 2,
+      "type": "lesson"
+    },
+    {
+      "dayOrder": 5,
+      "periodOrder": 3,
+      "room": "2.1",
+      "subject": "11SpB",
+      "teacher": "Ms Delgado Suarez",
+      "studentCount": 14,
+      "type": "lesson"
+    },
+    {
+      "dayOrder": 5,
+      "periodOrder": 3,
+      "room": "M.6 (Office)",
+      "subject": "11/12 FreB",
+      "teacher": "Ms Bolzan",
+      "studentCount": 5,
+      "type": "lesson"
+    },
+    {
+      "dayOrder": 5,
+      "periodOrder": 3,
+      "room": "1.8",
+      "subject": "12EconA",
+      "teacher": "Miss Muhammad Sharif",
+      "studentCount": 8,
+      "type": "lesson"
+    },
+    {
+      "dayOrder": 5,
+      "periodOrder": 3,
+      "room": "M.7",
+      "subject": "12His",
+      "teacher": "Miss Austin",
+      "studentCount": 4,
+      "type": "lesson"
+    },
+    {
+      "dayOrder": 5,
+      "periodOrder": 3,
+      "room": "2.10 (Art 1)",
+      "subject": "12VA",
+      "teacher": "Miss Dever",
+      "studentCount": 4,
+      "type": "lesson"
+    },
+    {
+      "dayOrder": 5,
+      "periodOrder": 3,
+      "room": "M.8",
+      "subject": "12Geo",
+      "teacher": "Mr McKendry",
+      "studentCount": 2,
+      "type": "lesson"
+    },
+    {
+      "dayOrder": 5,
+      "periodOrder": 3,
+      "room": "1.7",
+      "subject": "12Theatre",
+      "teacher": "Ms Foster",
+      "studentCount": 3,
+      "type": "lesson"
+    },
+    {
+      "dayOrder": 5,
+      "periodOrder": 3,
+      "room": "2.5 (Counsellor)",
+      "subject": "11ItalianB",
+      "teacher": "Miss De Felice",
+      "studentCount": 2,
+      "type": "lesson"
+    },
+    {
+      "dayOrder": 5,
+      "periodOrder": 3,
+      "room": "2.13",
+      "subject": "11JapaneseB",
+      "teacher": "Mrs Maehara",
+      "studentCount": 1,
+      "type": "lesson"
+    },
+    {
+      "dayOrder": 5,
+      "periodOrder": 3,
+      "room": "HUB",
+      "subject": "Pamoja5",
+      "teacher": "Miss Duenas",
+      "studentCount": 3,
+      "type": "lesson"
+    },
+    {
+      "dayOrder": 5,
+      "periodOrder": 3,
+      "room": "HUB",
+      "subject": "PamojaMandarin",
+      "teacher": "Miss Duenas",
+      "studentCount": 3,
+      "type": "lesson"
+    },
+    {
+      "dayOrder": 5,
+      "periodOrder": 3,
+      "room": "3.2",
+      "subject": "11GermanB",
+      "teacher": "Miss Osta Merdan",
+      "studentCount": 2,
+      "type": "lesson"
+    },
+    {
+      "dayOrder": 5,
+      "periodOrder": 4,
+      "room": "M.1",
+      "subject": "6Sci",
+      "teacher": "Mrs Jenkins",
+      "studentCount": 9,
+      "type": "lesson"
+    },
+    {
+      "dayOrder": 5,
+      "periodOrder": 4,
+      "room": "2.2",
+      "subject": "7Des",
+      "teacher": "Ms Blades",
+      "studentCount": 13,
+      "type": "lesson"
+    },
+    {
+      "dayOrder": 5,
+      "periodOrder": 4,
+      "room": "1.2",
+      "subject": "8XIndSoc",
+      "teacher": "Mr Ashraf",
+      "studentCount": 9,
+      "type": "lesson"
+    },
+    {
+      "dayOrder": 5,
+      "periodOrder": 4,
+      "room": "M.2",
+      "subject": "8YSci",
+      "teacher": "Mr Steiner",
+      "studentCount": 10,
+      "type": "lesson"
+    },
+    {
+      "dayOrder": 5,
+      "periodOrder": 4,
+      "room": "SH",
+      "subject": "9XPHE",
+      "teacher": "Mr Callender",
+      "studentCount": 11,
+      "type": "lesson"
+    },
+    {
+      "dayOrder": 5,
+      "periodOrder": 4,
+      "room": "SH",
+      "subject": "9YPHE",
+      "teacher": "Ms Gardner",
+      "studentCount": 11,
+      "type": "lesson"
+    },
+    {
+      "dayOrder": 5,
+      "periodOrder": 4,
+      "room": "1.5",
+      "subject": "10MathEX1",
+      "teacher": "Ms Bartholomew",
+      "studentCount": 11,
+      "type": "lesson"
+    },
+    {
+      "dayOrder": 5,
+      "periodOrder": 4,
+      "room": "1.6",
+      "subject": "10MathEX2",
+      "teacher": "Ms Wright",
+      "studentCount": 10,
+      "type": "lesson"
+    },
+    {
+      "dayOrder": 5,
+      "periodOrder": 4,
+      "room": "1.1",
+      "subject": "10MathST",
+      "teacher": "Mr Bari",
+      "studentCount": 8,
+      "type": "lesson"
+    },
+    {
+      "dayOrder": 5,
+      "periodOrder": 4,
+      "room": "M.9",
+      "subject": "11SpanAB",
+      "teacher": "Mr Byrne",
+      "studentCount": 5,
+      "type": "lesson"
+    },
+    {
+      "dayOrder": 5,
+      "periodOrder": 4,
+      "room": "3.1",
+      "subject": "11SpA",
+      "teacher": "Ms Pelaez-Perez",
+      "studentCount": 5,
+      "type": "lesson"
+    },
+    {
+      "dayOrder": 5,
+      "periodOrder": 4,
+      "room": "2.12",
+      "subject": "11ManB",
+      "teacher": "Ms Lin",
+      "studentCount": 2,
+      "type": "lesson"
+    },
+    {
+      "dayOrder": 5,
+      "periodOrder": 4,
+      "room": "2.12",
+      "subject": "English Meeting",
+      "teacher": "Miss Bolwell",
+      "studentCount": null,
+      "type": "staff"
+    },
+    {
+      "dayOrder": 5,
+      "periodOrder": 4,
+      "room": "2.12",
+      "subject": "English Meeting",
+      "teacher": "Miss Cooke",
+      "studentCount": null,
+      "type": "staff"
+    },
+    {
+      "dayOrder": 5,
+      "periodOrder": 4,
+      "room": "2.12",
+      "subject": "English Meeting",
+      "teacher": "Mr Jennings",
+      "studentCount": null,
+      "type": "staff"
+    },
+    {
+      "dayOrder": 5,
+      "periodOrder": 4,
+      "room": "2.12",
+      "subject": "English Meeting",
+      "teacher": "Ms Stoneman",
+      "studentCount": null,
+      "type": "staff"
+    },
+    {
+      "dayOrder": 5,
+      "periodOrder": 4,
+      "room": "2.1",
+      "subject": "11SpB",
+      "teacher": "Ms Delgado Suarez",
+      "studentCount": 14,
+      "type": "lesson"
+    },
+    {
+      "dayOrder": 5,
+      "periodOrder": 4,
+      "room": "M.6 (Office)",
+      "subject": "11/12 FreB",
+      "teacher": "Ms Bolzan",
+      "studentCount": 5,
+      "type": "lesson"
+    },
+    {
+      "dayOrder": 5,
+      "periodOrder": 4,
+      "room": "1.8",
+      "subject": "12EconA",
+      "teacher": "Miss Muhammad Sharif",
+      "studentCount": 8,
+      "type": "lesson"
+    },
+    {
+      "dayOrder": 5,
+      "periodOrder": 4,
+      "room": "M.7",
+      "subject": "12His",
+      "teacher": "Miss Austin",
+      "studentCount": 4,
+      "type": "lesson"
+    },
+    {
+      "dayOrder": 5,
+      "periodOrder": 4,
+      "room": "2.10 (Art 1)",
+      "subject": "12VA",
+      "teacher": "Miss Dever",
+      "studentCount": 4,
+      "type": "lesson"
+    },
+    {
+      "dayOrder": 5,
+      "periodOrder": 4,
+      "room": "M.8",
+      "subject": "12Geo",
+      "teacher": "Mr McKendry",
+      "studentCount": 2,
+      "type": "lesson"
+    },
+    {
+      "dayOrder": 5,
+      "periodOrder": 4,
+      "room": "1.7",
+      "subject": "12Theatre",
+      "teacher": "Ms Foster",
+      "studentCount": 3,
+      "type": "lesson"
+    },
+    {
+      "dayOrder": 5,
+      "periodOrder": 4,
+      "room": "2.5 (Counsellor)",
+      "subject": "11ItalianB",
+      "teacher": "Miss De Felice",
+      "studentCount": 2,
+      "type": "lesson"
+    },
+    {
+      "dayOrder": 5,
+      "periodOrder": 4,
+      "room": "2.13",
+      "subject": "11JapaneseB",
+      "teacher": "Mrs Maehara",
+      "studentCount": 1,
+      "type": "lesson"
+    },
+    {
+      "dayOrder": 5,
+      "periodOrder": 4,
+      "room": "HUB",
+      "subject": "Pamoja5",
+      "teacher": "Miss Duenas",
+      "studentCount": 3,
+      "type": "lesson"
+    },
+    {
+      "dayOrder": 5,
+      "periodOrder": 4,
+      "room": "HUB",
+      "subject": "PamojaMandarin",
+      "teacher": "Miss Duenas",
+      "studentCount": 3,
+      "type": "lesson"
+    },
+    {
+      "dayOrder": 5,
+      "periodOrder": 4,
+      "room": "3.2",
+      "subject": "11GermanB",
+      "teacher": "Miss Osta Merdan",
+      "studentCount": 2,
+      "type": "lesson"
+    },
+    {
+      "dayOrder": 5,
+      "periodOrder": 6,
+      "room": "1.1",
+      "subject": "7Eng",
+      "teacher": "Mr Jennings",
+      "studentCount": 13,
+      "type": "lesson"
+    },
+    {
+      "dayOrder": 5,
+      "periodOrder": 6,
+      "room": "2.12",
+      "subject": "8XPL",
+      "teacher": "Miss Priestley",
+      "studentCount": 9,
+      "type": "lesson"
+    },
+    {
+      "dayOrder": 5,
+      "periodOrder": 6,
+      "room": "1.5",
+      "subject": "8YMaths",
+      "teacher": "Ms Wright",
+      "studentCount": 10,
+      "type": "lesson"
+    },
+    {
+      "dayOrder": 5,
+      "periodOrder": 6,
+      "room": "2.1",
+      "subject": "9XEng",
+      "teacher": "Ms Stoneman",
+      "studentCount": 11,
+      "type": "lesson"
+    },
+    {
+      "dayOrder": 5,
+      "periodOrder": 6,
+      "room": "1.2",
+      "subject": "9YEng",
+      "teacher": "Miss Cooke",
+      "studentCount": 11,
+      "type": "lesson"
+    },
+    {
+      "dayOrder": 5,
+      "periodOrder": 6,
+      "room": "LG.1",
+      "subject": "10Bio",
+      "teacher": "Ms Liao",
+      "studentCount": 13,
+      "type": "lesson"
+    },
+    {
+      "dayOrder": 5,
+      "periodOrder": 6,
+      "room": "M.7",
+      "subject": "10Hist",
+      "teacher": "Miss Austin",
+      "studentCount": 4,
+      "type": "lesson"
+    },
+    {
+      "dayOrder": 5,
+      "periodOrder": 6,
+      "room": "M.2",
+      "subject": "11ESSA",
+      "teacher": "Mr Steiner",
+      "studentCount": 16,
+      "type": "lesson"
+    },
+    {
+      "dayOrder": 5,
+      "periodOrder": 6,
+      "room": "M.1",
+      "subject": "11Phy",
+      "teacher": "Mr Smith II",
+      "studentCount": 8,
+      "type": "lesson"
+    },
+    {
+      "dayOrder": 5,
+      "periodOrder": 6,
+      "room": "M.9",
+      "subject": "12MAA HL",
+      "teacher": "Ms Bartholomew",
+      "studentCount": 6,
+      "type": "lesson"
+    },
+    {
+      "dayOrder": 5,
+      "periodOrder": 6,
+      "room": "M.8",
+      "subject": "12MAI HL",
+      "teacher": "Mr Bari",
+      "studentCount": 6,
+      "type": "lesson"
+    },
+    {
+      "dayOrder": 5,
+      "periodOrder": 6,
+      "room": "1.6",
+      "subject": "12MAA SL",
+      "teacher": "Mrs McKendry",
+      "studentCount": 8,
+      "type": "lesson"
+    },
+    {
+      "dayOrder": 5,
+      "periodOrder": 6,
+      "room": "3.1",
+      "subject": "12MAI SL",
+      "teacher": "Ms Fritz",
+      "studentCount": 11,
+      "type": "lesson"
+    },
+    {
+      "dayOrder": 5,
+      "periodOrder": 6,
+      "room": "2.2",
+      "subject": "6Des",
+      "teacher": "Ms Blades",
+      "studentCount": 9,
+      "type": "lesson"
+    },
+    {
+      "dayOrder": 5,
+      "periodOrder": 6,
+      "room": "1.8",
+      "subject": "11MAI SL 2",
+      "teacher": "Mr Afonso",
+      "studentCount": 7,
+      "type": "lesson"
+    },
+    {
+      "dayOrder": 5,
+      "periodOrder": 6,
+      "room": "2.5 (Counsellor)",
+      "subject": "10GermanA",
+      "teacher": "Dr Milde",
+      "studentCount": 1,
+      "type": "lesson"
+    },
+    {
+      "dayOrder": 5,
+      "periodOrder": 6,
+      "room": "3.2",
+      "subject": "10JapaneseB",
+      "teacher": "Mrs Maehara",
+      "studentCount": 1,
+      "type": "lesson"
+    },
+    {
+      "dayOrder": 5,
+      "periodOrder": 6,
+      "room": "1.7",
+      "subject": "10ItalianB",
+      "teacher": "Miss De Felice",
+      "studentCount": 1,
+      "type": "lesson"
+    },
+    {
+      "dayOrder": 5,
+      "periodOrder": 6,
+      "room": "M.6 (Office)",
+      "subject": "10FrenchB1",
+      "teacher": "Ms Bolzan",
+      "studentCount": 1,
+      "type": "lesson"
+    },
+    {
+      "dayOrder": 5,
+      "periodOrder": 6,
+      "room": "2.13",
+      "subject": "ILT5a",
+      "teacher": "Miss Priestley",
+      "studentCount": 8,
+      "type": "lesson"
+    },
+    {
+      "dayOrder": 5,
+      "periodOrder": 7,
+      "room": "2.2",
+      "subject": "6Des",
+      "teacher": "Ms Blades",
+      "studentCount": 9,
+      "type": "lesson"
+    },
+    {
+      "dayOrder": 5,
+      "periodOrder": 7,
+      "room": "1.1",
+      "subject": "7Eng",
+      "teacher": "Mr Jennings",
+      "studentCount": 13,
+      "type": "lesson"
+    },
+    {
+      "dayOrder": 5,
+      "periodOrder": 7,
+      "room": "M.1",
+      "subject": "8XSci",
+      "teacher": "Mr Smith II",
+      "studentCount": 9,
+      "type": "lesson"
+    },
+    {
+      "dayOrder": 5,
+      "periodOrder": 7,
+      "room": "3.1",
+      "subject": "8YIndSoc",
+      "teacher": "Mr McKendry",
+      "studentCount": 10,
+      "type": "lesson"
+    },
+    {
+      "dayOrder": 5,
+      "periodOrder": 7,
+      "room": "1.5",
+      "subject": "9MathEX",
+      "teacher": "Ms Wright",
+      "studentCount": 14,
+      "type": "lesson"
+    },
+    {
+      "dayOrder": 5,
+      "periodOrder": 7,
+      "room": "1.6",
+      "subject": "9MathST",
+      "teacher": "Mrs McKendry",
+      "studentCount": 8,
+      "type": "lesson"
+    },
+    {
+      "dayOrder": 5,
+      "periodOrder": 7,
+      "room": "2.10 (Art 1)",
+      "subject": "10Span1",
+      "teacher": "Ms Pelaez-Perez",
+      "studentCount": 10,
+      "type": "lesson"
+    },
+    {
+      "dayOrder": 5,
+      "periodOrder": 7,
+      "room": "M.9",
+      "subject": "10Span2",
+      "teacher": "Ms Delgado Suarez",
+      "studentCount": 7,
+      "type": "lesson"
+    },
+    {
+      "dayOrder": 5,
+      "periodOrder": 7,
+      "room": "2.12",
+      "subject": "10Man",
+      "teacher": "Ms Lin",
+      "studentCount": 3,
+      "type": "lesson"
+    },
+    {
+      "dayOrder": 5,
+      "periodOrder": 7,
+      "room": "2.12",
+      "subject": "ILT6b",
+      "teacher": "Miss Priestley",
+      "studentCount": 3,
+      "type": "lesson"
+    },
+    {
+      "dayOrder": 5,
+      "periodOrder": 7,
+      "room": "1.8",
+      "subject": "11EconA",
+      "teacher": "Miss Muhammad Sharif",
+      "studentCount": 10,
+      "type": "lesson"
+    },
+    {
+      "dayOrder": 5,
+      "periodOrder": 7,
+      "room": "LG.1",
+      "subject": "11Bio",
+      "teacher": "Ms Liao",
+      "studentCount": 10,
+      "type": "lesson"
+    },
+    {
+      "dayOrder": 5,
+      "periodOrder": 7,
+      "room": "M.7",
+      "subject": "11GP",
+      "teacher": "Miss Austin",
+      "studentCount": 6,
+      "type": "lesson"
+    },
+    {
+      "dayOrder": 5,
+      "periodOrder": 7,
+      "room": "M.2",
+      "subject": "11ESSB",
+      "teacher": "Mr Steiner",
+      "studentCount": 6,
+      "type": "lesson"
+    },
+    {
+      "dayOrder": 5,
+      "periodOrder": 7,
+      "room": "1.2",
+      "subject": "12EngLLHL",
+      "teacher": "Miss Cooke",
+      "studentCount": 11,
+      "type": "lesson"
+    },
+    {
+      "dayOrder": 5,
+      "periodOrder": 7,
+      "room": "3.2",
+      "subject": "12EngLLSL",
+      "teacher": "Miss Bolwell",
+      "studentCount": 10,
+      "type": "lesson"
+    },
+    {
+      "dayOrder": 5,
+      "periodOrder": 7,
+      "room": "2.1",
+      "subject": "12EngLit",
+      "teacher": "Ms Stoneman",
+      "studentCount": 9,
+      "type": "lesson"
+    },
+    {
+      "dayOrder": 5,
+      "periodOrder": 7,
+      "room": "2.5 (Counsellor)",
+      "subject": "10GermanA",
+      "teacher": "Dr Milde",
+      "studentCount": 1,
+      "type": "lesson"
+    },
+    {
+      "dayOrder": 5,
+      "periodOrder": 7,
+      "room": "M.6 (Office)",
+      "subject": "10FrenchB2",
+      "teacher": "Ms Bolzan",
+      "studentCount": 1,
+      "type": "lesson"
+    },
+    {
+      "dayOrder": 5,
+      "periodOrder": 7,
+      "room": "1.7",
+      "subject": "10ItalianB",
+      "teacher": "Miss De Felice",
+      "studentCount": 1,
+      "type": "lesson"
+    },
+    {
+      "dayOrder": 5,
+      "periodOrder": 7,
+      "room": "2.13",
+      "subject": "10Arabic",
+      "teacher": "Mrs Hammad",
+      "studentCount": 2,
+      "type": "lesson"
+    },
+    {
+      "dayOrder": 5,
+      "periodOrder": 8,
+      "room": "1.6",
+      "subject": "7Maths",
+      "teacher": "Mr Bari",
+      "studentCount": 13,
+      "type": "lesson"
+    },
+    {
+      "dayOrder": 5,
+      "periodOrder": 8,
+      "room": "M.1",
+      "subject": "8XSci",
+      "teacher": "Mr Smith II",
+      "studentCount": 9,
+      "type": "lesson"
+    },
+    {
+      "dayOrder": 5,
+      "periodOrder": 8,
+      "room": "3.1",
+      "subject": "8YIndSoc",
+      "teacher": "Mr McKendry",
+      "studentCount": 10,
+      "type": "lesson"
+    },
+    {
+      "dayOrder": 5,
+      "periodOrder": 8,
+      "room": "LG.1",
+      "subject": "9XSci",
+      "teacher": "Ms Liao",
+      "studentCount": 11,
+      "type": "lesson"
+    },
+    {
+      "dayOrder": 5,
+      "periodOrder": 8,
+      "room": "1.8",
+      "subject": "9YPL",
+      "teacher": "Miss Priestley",
+      "studentCount": 11,
+      "type": "lesson"
+    },
+    {
+      "dayOrder": 5,
+      "periodOrder": 8,
+      "room": "2.12",
+      "subject": "10PP2",
+      "teacher": "Mrs Jenkins",
+      "studentCount": 29,
+      "type": "lesson"
+    },
+    {
+      "dayOrder": 5,
+      "periodOrder": 8,
+      "room": "1.1",
+      "subject": "11EngLLHL",
+      "teacher": "Miss Cooke",
+      "studentCount": 12,
+      "type": "lesson"
+    },
+    {
+      "dayOrder": 5,
+      "periodOrder": 8,
+      "room": "1.5",
+      "subject": "11EngLLSL",
+      "teacher": "Miss Bolwell",
+      "studentCount": 11,
+      "type": "lesson"
+    },
+    {
+      "dayOrder": 5,
+      "periodOrder": 8,
+      "room": "2.1",
+      "subject": "11EngLit",
+      "teacher": "Ms Stoneman",
+      "studentCount": 12,
+      "type": "lesson"
+    },
+    {
+      "dayOrder": 5,
+      "periodOrder": 8,
+      "room": "M.7",
+      "subject": "11/12 EngB",
+      "teacher": "Mr Byrne",
+      "studentCount": 6,
+      "type": "lesson"
+    },
+    {
+      "dayOrder": 5,
+      "periodOrder": 8,
+      "room": "M.9",
+      "subject": "12Fre AB",
+      "teacher": "Ms Bolzan",
+      "studentCount": 6,
+      "type": "lesson"
+    },
+    {
+      "dayOrder": 5,
+      "periodOrder": 8,
+      "room": "3.2",
+      "subject": "12ManAB",
+      "teacher": "Ms Lin",
+      "studentCount": 3,
+      "type": "lesson"
+    },
+    {
+      "dayOrder": 5,
+      "periodOrder": 8,
+      "room": "1.2",
+      "subject": "12SpB",
+      "teacher": "Ms Delgado Suarez",
+      "studentCount": 9,
+      "type": "lesson"
+    },
+    {
+      "dayOrder": 5,
+      "periodOrder": 8,
+      "room": "M.2",
+      "subject": "6PL",
+      "teacher": "Miss Dennie",
+      "studentCount": 9,
+      "type": "lesson"
+    },
+    {
+      "dayOrder": 5,
+      "periodOrder": 8,
+      "room": "2.13",
+      "subject": "10PP1",
+      "teacher": "Ms Blades",
+      "studentCount": null,
+      "type": "lesson"
+    },
+    {
+      "dayOrder": 5,
+      "periodOrder": 8,
+      "room": "1.7",
+      "subject": "12SpA",
+      "teacher": "Ms Pelaez-Perez",
+      "studentCount": 1,
+      "type": "lesson"
+    },
+    {
+      "dayOrder": 5,
+      "periodOrder": 8,
+      "room": "2.2",
+      "subject": "12PortA",
+      "teacher": "Miss Nogueira-Lima",
+      "studentCount": 2,
+      "type": "lesson"
+    },
+    {
+      "dayOrder": 2,
+      "periodOrder": 9,
+      "room": "1.5",
+      "subject": "9Italian",
+      "teacher": "Miss De Felice",
+      "studentCount": 3,
+      "type": "lesson"
+    },
+    {
+      "dayOrder": 2,
+      "periodOrder": 9,
+      "room": "1.6",
+      "subject": "9German1",
+      "teacher": "Dr Milde",
+      "studentCount": 1,
+      "type": "lesson"
+    },
+    {
+      "dayOrder": 2,
+      "periodOrder": 9,
+      "room": "M.7",
+      "subject": "11 Japanese (AS)",
+      "teacher": "Mrs Maehara",
+      "studentCount": 1,
+      "type": "lesson"
+    },
+    {
+      "dayOrder": 1,
+      "periodOrder": 9,
+      "room": "1.5",
+      "subject": "G67German",
+      "teacher": "Miss Osta Merdan",
+      "studentCount": 3,
+      "type": "lesson"
+    },
+    {
+      "dayOrder": 1,
+      "periodOrder": 9,
+      "room": "1.6",
+      "subject": "9Portuguese",
+      "teacher": "Miss Doca",
+      "studentCount": 1,
+      "type": "lesson"
+    },
+    {
+      "dayOrder": 1,
+      "periodOrder": 9,
+      "room": "1.1",
+      "subject": "6Arabic",
+      "teacher": "Mrs Hammad",
+      "studentCount": 1,
+      "type": "lesson"
+    },
+    {
+      "dayOrder": 1,
+      "periodOrder": 9,
+      "room": "1.2",
+      "subject": "8Danish",
+      "teacher": "Miss Berman",
+      "studentCount": 1,
+      "type": "lesson"
+    },
+    {
+      "dayOrder": 5,
+      "periodOrder": 9,
+      "room": "1.6",
+      "subject": "8Russian",
+      "teacher": "Mrs Antonenko",
+      "studentCount": 2,
+      "type": "lesson"
+    },
+    {
+      "dayOrder": 5,
+      "periodOrder": 9,
+      "room": "1.5",
+      "subject": "8Arabic",
+      "teacher": "Mrs Hammad",
+      "studentCount": 1,
+      "type": "lesson"
+    },
+    {
+      "dayOrder": 5,
+      "periodOrder": 9,
+      "room": "1.2",
+      "subject": "9German2",
+      "teacher": "Dr Milde",
+      "studentCount": 2,
+      "type": "lesson"
+    },
+    {
+      "dayOrder": 3,
+      "periodOrder": 9,
+      "room": "1.5",
+      "subject": "9French",
+      "teacher": "Miss Lannuzel",
+      "studentCount": 1,
+      "type": "lesson"
+    }
+  ]
+}

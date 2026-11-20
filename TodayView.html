@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Today</title>
+    <link rel="stylesheet" href="/static/signin/styles.css" />
+    <link rel="stylesheet" href="/static/signin/halcyon-shell.css" />
+    <link rel="stylesheet" href="/static/signin/halcyon-subpages.css?v=15" />
+    <link rel="stylesheet" href="/static/signin/halcyon-tools-section.css?v=3" />
+    <link rel="stylesheet" href="/static/today/today.css?v=4" />
+  </head>
+  <body class="halcyon-page halcyon-tools-section">
+    <div class="halcyon-app">
+      <div id="halcyonNavMount"></div>
+      <script>
+        window.HALCYON_NAV_MODE = 'tools';
+        window.HALCYON_SECTION_PAGE = 'today';
+      </script>
+      <script src="/static/signin/halcyon-nav.js?v=21"></script>
+      <script src="/static/signin/halcyon-shell.js?v=9"></script>
+      <main class="halcyon-main page-today">
+        <div class="today-content">
+          <section class="header-panel">
+            <div class="header-main">
+              <h1>Today</h1>
+              <p class="meta">School-wide calendar · iSAMS registration · staff absences</p>
+              <p class="today-generated meta" id="generatedMeta">Loading…</p>
+            </div>
+            <div class="today-header-actions">
+              <input type="date" id="dayPicker" class="today-day-picker" aria-label="Date" />
+              <button type="button" class="btn btn-primary" id="btnRefresh">Refresh</button>
+            </div>
+          </section>
+
+          <p id="err" class="halcyon-status-msg" hidden></p>
+          <p id="loading" class="today-loading">Loading today’s data…</p>
+
+          <div id="todayBody" class="today-body" hidden>
+            <div class="today-grid">
+              <section class="grid-panel today-panel" id="panelCalendar">
+                <h2 class="panel-title">School calendar</h2>
+                <p class="today-panel-link">
+                  <a href="/school-calendar-year">View full academic year →</a>
+                </p>
+                <div class="today-panel-body" id="calendarBody"></div>
+              </section>
+
+              <section class="grid-panel today-panel" id="panelRegistration">
+                <h2 class="panel-title">Registration</h2>
+                <div class="today-panel-body" id="registrationBody"></div>
+              </section>
+
+              <section class="grid-panel today-panel today-panel-wide" id="panelStaff">
+                <h2 class="panel-title">Staff absences</h2>
+                <div class="today-panel-body" id="staffBody"></div>
+              </section>
+            </div>
+          </div>
+        </div>
+      </main>
+    </div>
+    <script src="/static/today/today.js?v=4"></script>
+  </body>
+</html>

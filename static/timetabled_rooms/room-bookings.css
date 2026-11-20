@@ -1,0 +1,247 @@
+/* Ad-hoc 15-minute room bookings on Timetabled Rooms */
+
+.room-booking-hint {
+  font-size: 0.75rem;
+  color: #64748b;
+  margin: 0.35rem 0 0.75rem;
+}
+
+td.empty.bookable {
+  cursor: pointer;
+}
+
+td.empty.bookable:hover {
+  outline: 2px solid #c026d3;
+  outline-offset: -2px;
+  background: #fdf4ff;
+}
+
+td.empty .empty-slot {
+  position: relative;
+  overflow: hidden;
+}
+
+td.empty.has-bookings .empty-slot.has-booking-content::before {
+  content: none;
+}
+
+td.empty.available-now.has-bookings .empty-slot.has-booking-content::before {
+  content: none;
+}
+
+td.empty.room-blocked {
+  cursor: not-allowed;
+  background: #fff7ed !important;
+}
+
+td.empty.room-blocked .empty-slot,
+td.empty.room-blocked.available-now .empty-slot {
+  position: relative !important;
+  inset: auto !important;
+  display: block !important;
+  width: auto !important;
+  height: 100% !important;
+  min-height: 100% !important;
+  border: none !important;
+  background: transparent !important;
+  color: inherit !important;
+  font-weight: normal !important;
+  font-size: inherit !important;
+  text-transform: none !important;
+  letter-spacing: normal !important;
+  align-items: stretch !important;
+  justify-content: flex-start !important;
+}
+
+td.empty.room-blocked .empty-slot::before,
+td.empty.room-blocked.available-now .empty-slot::before {
+  content: none !important;
+}
+
+td.empty.room-blocked:hover {
+  outline: none;
+  background: #fff7ed !important;
+}
+
+td.empty.room-blocked.bookable {
+  cursor: not-allowed;
+}
+
+td.empty.room-blocked.bookable:hover {
+  outline: none;
+  background: #fff7ed !important;
+}
+
+td.empty.room-restricted {
+  background: #f8fafc;
+}
+
+td.empty.room-restricted .empty-slot::after {
+  content: "Restricted";
+  position: absolute;
+  top: 2px;
+  right: 4px;
+  font-size: 0.58rem;
+  font-weight: 600;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+  color: #64748b;
+  pointer-events: none;
+}
+
+.room-block-chip {
+  position: absolute;
+  left: 5%;
+  right: 5%;
+  width: auto;
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0.15rem 0.35rem;
+  border-radius: 6px;
+  background: #ffedd5;
+  border: 1px solid #fdba74;
+  color: #9a3412;
+  font-size: 0.68rem;
+  line-height: 1.2;
+  font-weight: 600;
+  text-align: center;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 0;
+  z-index: 0;
+  pointer-events: none;
+}
+
+td.empty.has-bookings .empty-slot.has-block-content::before,
+td.empty.available-now .empty-slot.has-block-content::before {
+  content: none;
+}
+
+.room-booking-chip {
+  position: absolute;
+  left: 5%;
+  right: 5%;
+  width: auto;
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0.15rem 0.35rem;
+  border-radius: 6px;
+  background: #fae8ff;
+  border: 1px solid #e879f9;
+  color: #86198f;
+  font-size: 0.68rem;
+  line-height: 1.2;
+  text-align: left;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  min-height: 0;
+  z-index: 1;
+}
+
+.room-booking-chip strong {
+  display: block;
+  font-weight: 600;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+.room-booking-modal-backdrop {
+  position: fixed;
+  inset: 0;
+  background: rgba(15, 23, 42, 0.45);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 1000;
+  padding: 1rem;
+}
+
+.room-booking-modal-backdrop[hidden] {
+  display: none !important;
+}
+
+.room-booking-modal {
+  background: #fff;
+  border-radius: 10px;
+  box-shadow: 0 20px 40px rgba(15, 23, 42, 0.18);
+  width: min(420px, 100%);
+  padding: 1.25rem 1.35rem 1.1rem;
+}
+
+.room-booking-modal h2 {
+  margin: 0 0 0.35rem;
+  font-size: 1.15rem;
+}
+
+.room-booking-modal .meta {
+  margin: 0 0 1rem;
+  color: #475569;
+  font-size: 0.875rem;
+}
+
+.room-booking-modal label {
+  display: block;
+  margin: 0.65rem 0 0.25rem;
+  font-size: 0.8125rem;
+  font-weight: 600;
+}
+
+.room-booking-modal input,
+.room-booking-modal select {
+  width: 100%;
+  box-sizing: border-box;
+  padding: 0.45rem 0.55rem;
+  border: 1px solid #cbd5e1;
+  border-radius: 6px;
+  font: inherit;
+}
+
+.room-booking-modal-actions {
+  display: flex;
+  gap: 0.5rem;
+  justify-content: flex-end;
+  margin-top: 1rem;
+}
+
+.room-booking-modal-actions button {
+  border: 0;
+  border-radius: 6px;
+  padding: 0.45rem 0.85rem;
+  font: inherit;
+  cursor: pointer;
+}
+
+.room-booking-modal-actions .primary {
+  background: #2563eb;
+  color: #fff;
+}
+
+.room-booking-modal-actions .secondary {
+  background: #e2e8f0;
+  color: #0f172a;
+}
+
+.room-booking-repeat-summary {
+  font-size: 0.8125rem;
+  color: #475569;
+  margin: 0.35rem 0 0.5rem;
+  line-height: 1.35;
+}
+
+.room-booking-error {
+  color: #b91c1c;
+  font-size: 0.8125rem;
+  margin-top: 0.5rem;
+}
+
+.legend-item .legend-swatch.booking {
+  background: #fae8ff;
+  border: 1px solid #e879f9;
+}

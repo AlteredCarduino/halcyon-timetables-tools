@@ -1,0 +1,439 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Teaching Staff</title>
+    <link rel="stylesheet" href="/static/signin/styles.css" />
+    <link rel="stylesheet" href="/static/signin/halcyon-shell.css" />
+    <link rel="stylesheet" href="/static/signin/halcyon-subpages.css?v=23" />
+    <link rel="stylesheet" href="/static/signin/halcyon-tools-section.css?v=3" />
+    <style>
+      .page-teaching-staff .tst-content {
+        font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+        color: #1f2937;
+        line-height: 1.35;
+        padding: 0.5rem 0.65rem 1rem;
+      }
+      .page-teaching-staff .header-panel,
+      .page-teaching-staff .grid-panel {
+        background: #fff;
+        border: 1px solid #d1d5db;
+        border-radius: 12px;
+        padding: 20px;
+        margin-bottom: 16px;
+      }
+      .page-teaching-staff h1 {
+        margin: 0 0 8px;
+        font-size: 1.7rem;
+      }
+      .page-teaching-staff .meta {
+        color: #6b7280;
+        margin: 0;
+        font-size: 0.9rem;
+      }
+      .page-teaching-staff .header-top,
+      .page-teaching-staff .toolbar {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        gap: 16px;
+        flex-wrap: wrap;
+      }
+      .page-teaching-staff .header-top {
+        margin-bottom: 16px;
+        align-items: flex-start;
+      }
+      .page-teaching-staff .day-tabs,
+      .page-teaching-staff .header-actions {
+        display: flex;
+        gap: 8px;
+        flex-wrap: wrap;
+      }
+      .page-teaching-staff .day-tab,
+      .page-teaching-staff .btn {
+        padding: 8px 14px;
+        border: 1px solid #d1d5db;
+        border-radius: 8px;
+        background: #f9fafb;
+        font: inherit;
+        font-size: 0.9rem;
+        cursor: pointer;
+      }
+      .page-teaching-staff .day-tab.is-active {
+        background: #dbeafe;
+        border-color: #93c5fd;
+        font-weight: 600;
+      }
+      .page-teaching-staff #refresh-btn {
+        background: #2563eb;
+        color: #fff;
+        border-color: #2563eb;
+        font-weight: 600;
+      }
+      .page-teaching-staff #refresh-btn:disabled {
+        opacity: 0.65;
+        cursor: wait;
+      }
+      .page-teaching-staff .field {
+        display: flex;
+        min-width: 220px;
+        flex: 1 1 220px;
+      }
+      .page-teaching-staff .field input {
+        width: 100%;
+        padding: 8px 10px;
+        border: 1px solid #d1d5db;
+        border-radius: 8px;
+        font: inherit;
+        font-size: 0.9rem;
+        height: 38px;
+      }
+      .page-teaching-staff .grid-scroll {
+        overflow: auto;
+        max-height: calc(100vh - 16rem);
+      }
+      .page-teaching-staff .timetable-grid {
+        width: max-content;
+        min-width: 100%;
+        border-collapse: separate;
+        border-spacing: 0;
+      }
+      .page-teaching-staff .timetable-grid th,
+      .page-teaching-staff .timetable-grid td {
+        border-right: 1px solid #d1d5db;
+        border-bottom: 1px solid #d1d5db;
+        vertical-align: top;
+        padding: 8px;
+        background: #fff;
+      }
+      .page-teaching-staff .staff-head,
+      .page-teaching-staff .period-head {
+        position: sticky;
+        top: 0;
+        z-index: 2;
+        background: #f3f4f6;
+        font-weight: 600;
+        white-space: nowrap;
+        text-align: left;
+      }
+      .page-teaching-staff .staff-head,
+      .page-teaching-staff .staff-name {
+        position: sticky;
+        left: 0;
+        z-index: 3;
+        min-width: 11rem;
+        background: #fff;
+      }
+      .page-teaching-staff .staff-head {
+        z-index: 4;
+        background: #f3f4f6;
+      }
+      .page-teaching-staff .period-head {
+        min-width: 8.5rem;
+      }
+      .page-teaching-staff .period-head .period-time {
+        display: block;
+        font-size: 0.82rem;
+        color: #6b7280;
+        font-weight: 500;
+      }
+      .page-teaching-staff .period-head.is-now {
+        box-shadow: inset 0 3px 0 #dc2626;
+      }
+      .page-teaching-staff .staff-name {
+        font-weight: 600;
+        white-space: nowrap;
+      }
+      .page-teaching-staff tr.is-mt .staff-name {
+        background: #f5f3ff;
+      }
+      .page-teaching-staff .group-row td {
+        background: #ede9fe;
+        font-weight: 700;
+        font-size: 0.85rem;
+        color: #5b21b6;
+      }
+      .page-teaching-staff .cell-free {
+        color: #6b7280;
+        text-align: center;
+        font-size: 0.88rem;
+      }
+      .page-teaching-staff .block {
+        border-radius: 8px;
+        padding: 4px 6px;
+        margin-bottom: 4px;
+        font-size: 0.82rem;
+        line-height: 1.25;
+        border: 1px solid transparent;
+      }
+      .page-teaching-staff .block:last-child {
+        margin-bottom: 0;
+      }
+      .page-teaching-staff .block.lesson {
+        background: #dbeafe;
+        border-color: #93c5fd;
+      }
+      .page-teaching-staff .block.meeting {
+        background: #ede9fe;
+        border-color: #c4b5fd;
+      }
+      .page-teaching-staff .block .subject {
+        font-weight: 600;
+      }
+      .page-teaching-staff .block .meta-line {
+        color: #6b7280;
+        font-size: 0.78rem;
+        margin-top: 1px;
+        white-space: nowrap;
+      }
+      .page-teaching-staff .empty-state,
+      .page-teaching-staff .loading {
+        color: #6b7280;
+        padding: 12px 0 0;
+      }
+    </style>
+  </head>
+  <body class="halcyon-page halcyon-tools-section">
+    <div class="halcyon-app">
+      <div id="halcyonNavMount"></div>
+      <script>
+        window.HALCYON_NAV_MODE = 'tools';
+        window.HALCYON_SECTION_PAGE = 'teachingstaff';
+      </script>
+      <script src="/static/signin/halcyon-nav.js?v=31"></script>
+      <script src="/static/signin/halcyon-shell.js?v=9"></script>
+      <main class="halcyon-main page-teaching-staff">
+        <div class="tst-content">
+          <section class="header-panel">
+            <div class="header-top">
+              <div>
+                <h1>Teaching Staff</h1>
+                <p class="meta" id="generated-meta">Loading iSAMS teaching staff…</p>
+              </div>
+              <div class="header-actions">
+                <button type="button" id="refresh-btn">Refresh from iSAMS</button>
+              </div>
+            </div>
+            <div class="toolbar">
+              <div class="day-tabs" id="day-tabs" role="tablist" aria-label="Day"></div>
+              <div class="field">
+                <input id="staff-search" type="search" placeholder="Search" aria-label="Search" autocomplete="off" />
+              </div>
+            </div>
+          </section>
+          <p id="err" class="halcyon-status-msg" hidden></p>
+          <section class="grid-panel">
+            <div class="grid-scroll">
+              <table class="timetable-grid">
+                <thead id="grid-head"></thead>
+                <tbody id="grid-body"></tbody>
+              </table>
+            </div>
+            <p id="empty-state" class="empty-state" hidden>No teaching staff match that search.</p>
+          </section>
+        </div>
+      </main>
+    </div>
+    <script>
+      (function () {
+        var data = null;
+        var dayOrder = 1;
+
+        function el(id) {
+          return document.getElementById(id);
+        }
+
+        function escapeHtml(value) {
+          return String(value == null ? "" : value)
+            .replace(/&/g, "&amp;")
+            .replace(/</g, "&lt;")
+            .replace(/>/g, "&gt;")
+            .replace(/"/g, "&quot;");
+        }
+
+        function parseTime(value) {
+          var parts = String(value || "").split(":");
+          return Number(parts[0]) * 60 + Number(parts[1] || 0);
+        }
+
+        function currentPeriodOrder() {
+          if (!data || data.todayDayOrder !== dayOrder) return null;
+          var now = new Date();
+          var minutes = now.getHours() * 60 + now.getMinutes();
+          var periods = data.periods || [];
+          for (var i = 0; i < periods.length; i++) {
+            var start = parseTime(periods[i].start);
+            var end = parseTime(periods[i].end);
+            if (minutes >= start && minutes < end) return periods[i].order;
+          }
+          return null;
+        }
+
+        function setErr(msg) {
+          var node = el("err");
+          if (!node) return;
+          node.hidden = !msg;
+          node.textContent = msg || "";
+        }
+
+        function renderDays() {
+          var tabs = el("day-tabs");
+          tabs.innerHTML = (data.days || [])
+            .map(function (day) {
+              var active = day.order === dayOrder;
+              return (
+                '<button type="button" class="day-tab' +
+                (active ? " is-active" : "") +
+                '" data-day="' +
+                day.order +
+                '" role="tab" aria-selected="' +
+                (active ? "true" : "false") +
+                '">' +
+                escapeHtml(day.name) +
+                "</button>"
+              );
+            })
+            .join("");
+        }
+
+        function renderBlock(event) {
+          var css = event.type === "meeting" ? "block meeting" : "block lesson";
+          var lines = [];
+          if (event.subject) lines.push('<div class="subject">' + escapeHtml(event.subject) + "</div>");
+          var detail = [event.set, event.room].filter(Boolean).join(" ");
+          if (detail) lines.push('<div class="meta-line">' + escapeHtml(detail) + "</div>");
+          return '<div class="' + css + '">' + lines.join("") + "</div>";
+        }
+
+        function visibleStaff() {
+          var query = el("staff-search").value.trim().toLowerCase();
+          return (data.staff || []).filter(function (person) {
+            if (!query) return true;
+            return String(person.name || "").toLowerCase().indexOf(query) !== -1;
+          });
+        }
+
+        function renderGrid() {
+          var nowOrder = currentPeriodOrder();
+          var head =
+            '<tr><th class="staff-head">Staff</th>' +
+            (data.periods || [])
+              .map(function (period) {
+                var now = period.order === nowOrder ? " is-now" : "";
+                return (
+                  '<th class="period-head' +
+                  now +
+                  '"><span>' +
+                  escapeHtml(period.name) +
+                  '</span><span class="period-time">' +
+                  escapeHtml(period.time) +
+                  "</span></th>"
+                );
+              })
+              .join("") +
+            "</tr>";
+          el("grid-head").innerHTML = head;
+
+          var people = visibleStaff();
+          var empty = el("empty-state");
+          empty.hidden = people.length > 0;
+          var sawMt = false;
+          var body = people
+            .map(function (person) {
+              var group = "";
+              if (person.mtTeacher && !sawMt) {
+                sawMt = true;
+                group =
+                  '<tr class="group-row"><td colspan="' +
+                  ((data.periods || []).length + 1) +
+                  '">MT Teacher</td></tr>';
+              }
+              var slots = (data.slots && data.slots[person.id]) || {};
+              var cells = (data.periods || [])
+                .map(function (period) {
+                  var events = slots[dayOrder + "-" + period.order] || [];
+                  if (!events.length) return '<td class="cell-free">—</td>';
+                  return "<td>" + events.map(renderBlock).join("") + "</td>";
+                })
+                .join("");
+              return (
+                group +
+                '<tr class="' +
+                (person.mtTeacher ? "is-mt" : "") +
+                '"><th class="staff-name" scope="row">' +
+                escapeHtml(person.name) +
+                "</th>" +
+                cells +
+                "</tr>"
+              );
+            })
+            .join("");
+          el("grid-body").innerHTML = body;
+        }
+
+        function applyData(payload) {
+          data = payload;
+          if (data.todayDayOrder) dayOrder = data.todayDayOrder;
+          else if (data.days && data.days.length) dayOrder = data.days[0].order;
+          var meta =
+            "iSAMS teaching staff · " +
+            data.staffCount +
+            " staff · " +
+            data.mtCount +
+            " MT Teacher · updated " +
+            (data.generatedAt || "");
+          if (data.failedCount) meta += " · " + data.failedCount + " could not be loaded";
+          el("generated-meta").textContent = meta;
+          renderDays();
+          renderGrid();
+        }
+
+        function load(refresh) {
+          setErr("");
+          var btn = el("refresh-btn");
+          btn.disabled = true;
+          btn.textContent = "Refreshing…";
+          if (!data) el("generated-meta").textContent = "Loading iSAMS teaching staff…";
+          fetch("/api/teaching-staff-timetable" + (refresh ? "?refresh=1" : ""), {
+            credentials: "same-origin",
+          })
+            .then(function (response) {
+              return response.json().then(function (body) {
+                if (!response.ok || !body || body.ok === false) {
+                  throw new Error((body && body.error) || "Could not load teaching staff");
+                }
+                return body;
+              });
+            })
+            .then(applyData)
+            .catch(function (err) {
+              setErr(err && err.message ? err.message : String(err));
+            })
+            .then(function () {
+              btn.disabled = false;
+              btn.textContent = "Refresh from iSAMS";
+            });
+        }
+
+        el("day-tabs").addEventListener("click", function (ev) {
+          var btn = ev.target.closest("[data-day]");
+          if (!btn || !data) return;
+          dayOrder = Number(btn.getAttribute("data-day"));
+          renderDays();
+          renderGrid();
+        });
+        el("staff-search").addEventListener("input", function () {
+          if (data) renderGrid();
+        });
+        el("refresh-btn").addEventListener("click", function () {
+          load(true);
+        });
+        setInterval(function () {
+          if (data) renderGrid();
+        }, 60000);
+        load(false);
+      })();
+    </script>
+  </body>
+</html>
