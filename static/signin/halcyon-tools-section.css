@@ -1,14 +1,8 @@
 /* Timetables & Tools section: navy background, full-width content */
 
-.halcyon-tools-section.halcyon-page,
-body.halcyon-page.halcyon-tools-section {
-  background-color: #1e2046 !important;
-  background-image: none !important;
-  background-attachment: scroll !important;
-}
-
-.halcyon-tools-section .halcyon-app {
-  background: transparent;
+.halcyon-tools-section.halcyon-page {
+  background-color: #1e2046;
+  background-image: none;
 }
 
 .halcyon-tools-section .drawer-items {

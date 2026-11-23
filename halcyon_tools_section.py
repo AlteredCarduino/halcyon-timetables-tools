@@ -5,8 +5,8 @@ from __future__ import annotations
 import html
 import re
 
-NAV_VERSION = "32"
-CSS_VERSION = "4"
+NAV_VERSION = "30"
+CSS_VERSION = "3"
 
 _TOOLS_CSS_MARKER = "halcyon-tools-section.css"
 _SECTION_NAV_MARKER = "halcyon-tools-section-nav.js"
@@ -18,8 +18,6 @@ _LEGACY_SECTION_PAGES = (
     "calendar",
     "studentemails",
     "roombookingsadmin",
-    "registrationattendance",
-    "registrationattendanceadmin",
 )
 
 

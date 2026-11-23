@@ -7,17 +7,7 @@
  */
 (function () {
   /** Shown at bottom of menu — bump when deploying so iPad/PWA cache can be verified. */
-  var HALCYON_APP_VERSION = '0.47';
-
-  function toolsOrigin() {
-    var origin = typeof window.HALCYON_TOOLS_ORIGIN === 'string' ? window.HALCYON_TOOLS_ORIGIN.trim() : '';
-    return origin.replace(/\/$/, '');
-  }
-
-  function toolsHref(path) {
-    var origin = toolsOrigin();
-    return origin ? origin + path : path;
-  }
+  var HALCYON_APP_VERSION = '0.48';
 
   var MAIN_NAV = [
     { id: 'home', label: 'Home', href: '/', action: 'home' },
@@ -25,28 +15,27 @@
     { id: 'visitorexpected', label: 'Expected visitors', href: '/visitor-expected' },
     { id: 'registration', label: 'Registration', href: '/registration-py' },
     { id: 'firedrill', label: 'Fire Drill', href: '/firedrill' },
-    { id: 'tools', label: 'Timetables & Tools', href: toolsHref('/timetabled-rooms') },
     { id: 'settings', label: 'Settings', href: '', action: 'settings' },
     { id: 'about', label: 'About', href: '', action: 'about' }
   ];
 
   var TOOLS_NAV = [
-    { id: 'timetabledrooms', label: 'Timetabled Rooms', href: toolsHref('/timetabled-rooms') },
-    { id: 'personaltimetables', label: 'Personal Timetables', href: toolsHref('/personal-timetables') },
-    { id: 'teachingstaff', label: 'Teaching Staff', href: toolsHref('/teaching-staff-timetable') },
-    { id: 'lessonout', label: 'Out of lesson', href: toolsHref('/lesson-out') },
-    { id: 'registrationattendance', label: 'Registration Attendance', href: toolsHref('/registration-wholeyear') },
-    { id: 'schoolyearcalendar', label: 'School year calendar', href: toolsHref('/school-calendar-year') },
-    { id: 'calendar', label: 'Calendar', href: toolsHref('/calendar') },
-    { id: 'studentemails', label: 'Student Emails', href: toolsHref('/student-emails') }
+    { id: 'timetabledrooms', label: 'Timetabled Rooms', href: '/timetabled-rooms' },
+    { id: 'personaltimetables', label: 'Personal Timetables', href: '/personal-timetables' },
+    { id: 'teachingstaff', label: 'Teaching Staff', href: '/teaching-staff-timetable' },
+    { id: 'lessonout', label: 'Out of lesson', href: '/lesson-out' },
+    { id: 'registrationattendance', label: 'Registration Attendance', href: '/registration-wholeyear' },
+    { id: 'schoolyearcalendar', label: 'School year calendar', href: '/school-calendar-year' },
+    { id: 'calendar', label: 'Calendar', href: '/calendar' },
+    { id: 'studentemails', label: 'Student Emails', href: '/student-emails' }
   ];
 
   var ADMIN_NAV = [
-    { id: 'roombookingsadmin', label: 'Room Bookings Admin', href: toolsHref('/room-bookings-admin') },
+    { id: 'roombookingsadmin', label: 'Room Bookings Admin', href: '/room-bookings-admin' },
     {
       id: 'registrationattendanceadmin',
       label: 'Registration Attendance Access',
-      href: toolsHref('/registration-attendance-admin')
+      href: '/registration-attendance-admin'
     }
   ];
 
@@ -130,6 +119,7 @@
     var hideMenu = window.HALCYON_HIDE_NAV_MENU === true;
     var topBarClass = 'top-bar top-bar-glass' + (hideMenu ? ' top-bar--no-menu' : '');
 
+    // Markup IDs must match halcyon-shell.js (btnMenu, drawerOverlay, dateLine, weatherLine, …).
     mount.innerHTML =
       '<header class="' +
       topBarClass +

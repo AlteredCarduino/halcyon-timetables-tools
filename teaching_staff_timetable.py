@@ -132,13 +132,18 @@ def _events_for(
             continue
         subject = str(item.get("subjectCode") or "").strip()
         code = str(item.get("code") or "").strip()
+        set_id = str(
+            item.get("setId")
+            or item.get("id")
+            or item.get("teachingSetId")
+            or ""
+        ).strip()
         add(
             item.get("periodId"),
             {
                 "subject": subject or code or "Lesson",
                 "set": code if code and code != subject else "",
-                "code": code,
-                "setId": str(item.get("id") or "").strip(),
+                "setId": set_id,
                 "room": str(item.get("roomCode") or "").strip(),
                 "type": "lesson",
             },

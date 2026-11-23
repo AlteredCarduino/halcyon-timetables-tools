@@ -52,10 +52,12 @@ def _lessons_from_timetable(payload: Dict[str, Any]) -> List[Dict[str, Any]]:
             for event in events:
                 if not isinstance(event, dict) or event.get("type") != "lesson":
                     continue
+                # Teaching staff timetable events expose set code as "set"; setId is optional.
                 set_id = str(event.get("setId") or "").strip()
-                if not set_id:
+                code = str(event.get("code") or event.get("set") or "").strip()
+                if not set_id and not code:
                     continue
-                key = f"{slot}|{set_id}"
+                key = f"{slot}|{set_id or code}"
                 row = grouped.get(key)
                 if row is None:
                     row = {
@@ -63,7 +65,7 @@ def _lessons_from_timetable(payload: Dict[str, Any]) -> List[Dict[str, Any]]:
                         "slot": str(slot),
                         "setId": set_id,
                         "subject": str(event.get("subject") or "Lesson"),
-                        "code": str(event.get("code") or event.get("set") or ""),
+                        "code": code,
                         "room": str(event.get("room") or ""),
                         "teachers": [],
                     }
@@ -72,6 +74,10 @@ def _lessons_from_timetable(payload: Dict[str, Any]) -> List[Dict[str, Any]]:
                     row["teachers"].append(teacher)
                 if not row["room"] and event.get("room"):
                     row["room"] = str(event.get("room"))
+                if not row["setId"] and set_id:
+                    row["setId"] = set_id
+                if not row["code"] and code:
+                    row["code"] = code
     lessons = list(grouped.values())
     for row in lessons:
         row["teachers"].sort(key=str.casefold)

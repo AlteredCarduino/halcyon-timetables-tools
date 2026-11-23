@@ -34,3 +34,9 @@ Same scripts as before (run with `.env` loaded):
 
 This repo still shares Supabase / iSAMS credentials with the Sign In PWA.
 Sign In routes stay in `halcyon-signin-pwa`; this service is Tools-only.
+
+## Sync from Sign In PWA
+
+Tools pages/modules are periodically copied from `halcyon-signin-pwa` (`signInApp_server/`) so this repo stays current while Sign In remains the live host for now.
+
+Last sync: 2026-11-23 (includes Out of lesson setId fix + restored shared top bar).
